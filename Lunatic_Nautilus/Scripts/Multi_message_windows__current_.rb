@@ -180,7 +180,7 @@
   
   # defaults for thought text
   THOUGHT_FONT_COLOR = "#333333"
-  THOUGHT_FONT_NAME = ["BPixelDouble","PlopDump","Comic Sans MS"]
+  THOUGHT_FONT_NAME = ["CodaHandwritingP","BPixelDouble","PlopDump","Comic Sans MS"]
   THOUGHT_FONT_SIZE = 20
 
   # note that you can use an array of fonts for SPEECH_FONT_NAME, etc.

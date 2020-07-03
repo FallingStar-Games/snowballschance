@@ -807,6 +807,46 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 52
+          self_switch_valid: false
+          variable_id: 2
+          variable_valid: true
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: bearbossx2
+          pattern: 0
+          tile_id: 0
+          direction: 6
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
       name: EV004
       y: 9
       x: 0
@@ -6118,6 +6158,30 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &102 !ruby/object:RPG::MoveCommand
+              parameters:
+              - pastcoda_spx2
+              - 0
+              - 8
+              - 0
+              code: 41
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 0
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *102
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 20
           indent: 0
           code: 106
@@ -6197,6 +6261,11 @@ root: !ruby/object:RPG::Map
           - into the unknown.
           indent: 0
           code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 20
+          indent: 0
+          code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - 5
@@ -6289,6 +6358,11 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 20
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 5
           - 10
           - 0
@@ -6362,6 +6436,11 @@ root: !ruby/object:RPG::Map
           - can soon turn to hubris.
           indent: 0
           code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 20
+          indent: 0
+          code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - 5
@@ -6439,19 +6518,99 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 75
+          - 2
+          - 2
+          - 0
+          - 0
+          - 52
+          indent: 0
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 107
           indent: 0
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[4]\\na[The Boss]Ho ho ho! "
+          - "\\p[4]Ho ho ho! "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - How is Miss Diamondback dong?
+          - Hello Miss Diamondback!
           indent: 0
           code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          - 0
+          - 11
+          - 9
+          - 6
+          indent: 0
+          code: 202
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - 43
+          indent: 0
+          code: 207
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &103 !ruby/object:RPG::MoveCommand
+              parameters:
+              - pastcoda_spx2
+              - 0
+              - 8
+              - 1
+              code: 41
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 0
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *103
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: paperstack
+            pitch: 85
+          indent: 0
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          - 10
+          - 0
+          - 0
+          - -320
+          - 200
+          - 0
+          - 200
+          - 255
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 20
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          indent: 0
+          code: 235
         - !ruby/object:RPG::EventCommand
           parameters:
           - "!"
@@ -6474,32 +6633,22 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[0]Doing alright, I guess."
+          - "\\p[0]Uh, hello boss!"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - Enjoying my noodles.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 75
+          - 107
           indent: 0
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[4]\\na[The Boss]Just alright? "
+          - "\\p[4]\\na[The Boss]I like to hear that!"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'What about fantastic? '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - Spectacular? Amazing?
+          - How ya doin'?
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -6509,9 +6658,558 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[0]Don't wanna overstate, you know."
+          - "\\p[0]I'm doing alright."
           indent: 0
           code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 107
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[4]\\na[The Boss]Excellent. Keep up the good work."
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Have you eaten yet?
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 37
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]Yeah, I just finished a little while ago."
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 107
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[4]\\na[The Boss]Good. One cannot feed others "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - without also being fed, after all.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[4]\\na[The Boss]Before I go, "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - is there anything you need help with?
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 37
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]I don't think so. "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - I've got everything covered pretty well.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 107
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[4]\\na[The Boss]That's something I've always liked "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'about you. You always take your work in stride. '
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'And you''re always on-time. '
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 41
+          - 0
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 37
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]I did kinda show up late today though..."
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 107
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[4]\\na[The Boss]You're still nowhere near as bad "
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'as our last cook. She had no respect for time! '
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - She would just show up when she pleased!
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 37
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0](I wish I had the courage to be like that...)"
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 107
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[4]\\na[The Boss]But you, you're different. "
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Better than most young people from your generation.
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 37
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]Uh, thank you."
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 107
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[4]\\na[The Boss]Honestly, you're better than most "
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - young people from your generation.
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 37
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]..."
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0](I don't like when he puts me on a pedistal like "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - that. I'm not better than my peers, right?)
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0](I'd be pretty disapointed in them if they only "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - reached my level.)
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 107
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[4]\\na[The Boss]I have business to tend to. "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Keep up the good work, Codetta!
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &104 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 4
+            - &105 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 4
+            - &106 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 4
+            - &107 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 8
+            - &108 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 4
+              code: 15
+            - &109 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 200
+              code: 42
+            - &110 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &111 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 100
+              code: 42
+            - &112 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &113 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 50
+              code: 42
+            - &114 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &115 !ruby/object:RPG::MoveCommand
+              parameters:
+              - ''
+              - 0
+              - 2
+              - 0
+              code: 41
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 0
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *104
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *105
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *106
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *107
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *108
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *109
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *110
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *111
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *112
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *113
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *114
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *115
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &116 !ruby/object:RPG::MoveCommand
+              parameters:
+              - pastcoda_spx2
+              - 0
+              - 8
+              - 0
+              code: 41
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 0
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *116
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 50
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 37
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0](Phew.)"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0](Glad he didn't get a chance to see my drawings. "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'Last time I told him anything about my stories, '
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - he made fun of me for it...)
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0](Never trusting that guy with my work after "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - that incident, that's for sure...)
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0](Now where was I...)"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 100
+            name: paperflip
+            pitch: 100
+          indent: 0
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          - fuguestory4
+          - 0
+          - 0
+          - -100
+          - 22
+          - 0
+          - 200
+          - 255
+          - 0
+          indent: 0
+          code: 231
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          - 10
+          - 0
+          - 0
+          - 0
+          - 22
+          - 200
+          - 200
+          - 255
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 20
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]\\@How far can one fall into the abyss "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - before they hit the bottom?
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]\\@How hard will one crash upon arrival?"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]\\@Not even Time may tell in this timeless realm..."
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 50
+          - blapk
+          - 0
+          - 0
+          - 0
+          - 0
+          - 100
+          - 100
+          - 0
+          - 0
+          indent: 0
+          code: 231
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          indent: 0
+          code: 242
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 50
+          - 50
+          - 0
+          - 0
+          - 0
+          - 0
+          - 100
+          - 100
+          - 255
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 50
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          indent: 0
+          code: 235
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 2
+          - 0
+          - 0
+          - 53
+          indent: 0
+          code: 122
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -6536,6 +7234,46 @@ root: !ruby/object:RPG::Map
           skippable: false
           repeat: true
         trigger: 3
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 53
+          self_switch_valid: false
+          variable_id: 2
+          variable_valid: true
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
         step_anime: false
         move_frequency: 3
         always_on_top: false
@@ -7158,7 +7896,7 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: EV024
-      y: 8
+      y: 7
       x: 14
       id: 24
   tileset_id: 8

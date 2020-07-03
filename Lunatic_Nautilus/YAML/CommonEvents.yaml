@@ -1,4 +1,4 @@
----
+--- !ruby/object:Hash
 root:
 - 
 - !ruby/object:RPG::CommonEvent
@@ -37947,8 +37947,13 @@ root:
   switch_id: 1
   id: 106
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: Midlow voice
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - message.sound_audio = 'midlow'
+    indent: 0
+    code: 355
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
