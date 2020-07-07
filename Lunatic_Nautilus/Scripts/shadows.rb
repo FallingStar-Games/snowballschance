@@ -3,7 +3,10 @@
 # Based on Genzai Kawakami's shadows, dynamisme&features by Rataime, 
 # extra features Boushy
 #==============================================================================
-# just type "s" in a comment on the event's page to be the light source
+# Type "s" in a comment on the event's page to be the light source
+#
+# Type "o" in a comment for an event to cast a shadow
+#==============================================================================
 CATERPILLAR_COMPATIBLE = false
 SQUAD_MOVE_COMPATIBLE = true
 
@@ -92,7 +95,7 @@ class Sprite_Shadow < RPG::Sprite
   if$game_map.shadows==-1
     self.opacity = 0
   else
-    self.opacity = 1200000/(@distance+6000) 
+    self.opacity = 1200000/(@distance+8000) 
   end
   @distance = @distance ** 0.5
   if @distancemax !=0 and @distance>=@distancemax

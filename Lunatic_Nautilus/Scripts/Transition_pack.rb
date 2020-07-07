@@ -138,7 +138,7 @@ class Transition
   #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   # * CONFIG BEGIN
   #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  BATTLE_EFFECT = [10]#[2,3,6,7,8,9] # randomly choose from any of those
+  BATTLE_EFFECT = [5]#[2,3,6,7,8,9] # randomly choose from any of those
   SHOP_EFFECT = 0
   NAME_EFFECT = nil # uses default effect set in $game_temp.transition_type
   MENU_EFFECT = -1
@@ -146,7 +146,7 @@ class Transition
   
   
   
-  Explosion_Sound = nil
+  Explosion_Sound = "explosion"
       Clink_Sound = nil
   #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   # * CONFIG END

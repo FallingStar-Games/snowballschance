@@ -37962,8 +37962,13 @@ root:
   switch_id: 1
   id: 107
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: Bupp voice
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - message.sound_audio = 'bupp'
+    indent: 0
+    code: 355
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
