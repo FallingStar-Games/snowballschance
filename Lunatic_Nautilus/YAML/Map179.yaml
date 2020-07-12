@@ -494,6 +494,16 @@ root: !ruby/object:RPG::Map
           code: 241
         - !ruby/object:RPG::EventCommand
           parameters:
+          - !ruby/object:Tone
+            red: 34.0
+            green: -17.0
+            blue: -17.0
+            gray: 136.0
+          - 0
+          indent: 1
+          code: 223
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 1
           - ''
           - 0
@@ -9198,9 +9208,14 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - I'm all done with that stuff.
+          - I'm all done with cleaning.
           indent: 0
           code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          indent: 0
+          code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - 105
@@ -10578,6 +10593,46 @@ root: !ruby/object:RPG::Map
           character_name: ''
           pattern: 0
           tile_id: 533
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 53
+          self_switch_valid: false
+          variable_id: 2
+          variable_valid: true
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
           direction: 2
           blend_type: 0
           character_hue: 0
