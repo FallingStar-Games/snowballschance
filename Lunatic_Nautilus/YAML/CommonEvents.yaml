@@ -5773,15 +5773,30 @@ root:
     code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 12
-    - Keys.press?($keyboard["strafe"])
+    - 0
+    - 44
+    - 0
     indent: 0
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 106
+    - 12
+    - Keys.press?($keyboard["strafe"])
     indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 106
+    indent: 2
     code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
@@ -34289,9 +34304,44 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\p[0]I don't have time to sit down!"
+    - 1
+    - 2
+    - 0
+    - 60
+    - 3
     indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]As much as I want to sit down, "
+    indent: 2
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - I don't wanna get snow on my pants.
+    indent: 2
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]I don't have time to sit down!"
+    indent: 2
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1

@@ -1324,6 +1324,13 @@ root: !ruby/object:RPG::Map
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 4
+          - 12
+          - 0
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 0
           - !ruby/object:RPG::MoveRoute
             list:
@@ -1334,9 +1341,63 @@ root: !ruby/object:RPG::Map
               - 6
               - 0
               code: 41
-            - &40 !ruby/object:RPG::MoveCommand
+            - !ruby/object:RPG::MoveCommand
               parameters: []
-              code: 2
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 1
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *39
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &40 !ruby/object:RPG::MoveCommand
+              parameters:
+              - busx2
+              - 0
+              - 6
+              - 2
+              code: 41
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 1
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *40
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - !ruby/object:RPG::MoveRoute
+            list:
             - &41 !ruby/object:RPG::MoveCommand
               parameters: []
               code: 2
@@ -1365,22 +1426,25 @@ root: !ruby/object:RPG::Map
               parameters: []
               code: 2
             - &50 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 2
+            - &51 !ruby/object:RPG::MoveCommand
               parameters:
               - 200
               code: 42
-            - &51 !ruby/object:RPG::MoveCommand
+            - &52 !ruby/object:RPG::MoveCommand
               parameters:
               - 4
               code: 15
-            - &52 !ruby/object:RPG::MoveCommand
+            - &53 !ruby/object:RPG::MoveCommand
               parameters:
               - 100
               code: 42
-            - &53 !ruby/object:RPG::MoveCommand
+            - &54 !ruby/object:RPG::MoveCommand
               parameters:
               - 4
               code: 15
-            - &54 !ruby/object:RPG::MoveCommand
+            - &55 !ruby/object:RPG::MoveCommand
               parameters:
               - 0
               code: 42
@@ -1391,16 +1455,6 @@ root: !ruby/object:RPG::Map
             repeat: false
           indent: 0
           code: 209
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - *39
-          indent: 0
-          code: 509
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - *40
-          indent: 0
-          code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *41
@@ -1469,6 +1523,11 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - *54
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *55
           indent: 0
           code: 509
         - !ruby/object:RPG::EventCommand
@@ -1598,40 +1657,37 @@ root: !ruby/object:RPG::Map
           - 22
           - !ruby/object:RPG::MoveRoute
             list:
-            - &55 !ruby/object:RPG::MoveCommand
+            - &56 !ruby/object:RPG::MoveCommand
               parameters:
               - 100
               code: 42
-            - &56 !ruby/object:RPG::MoveCommand
+            - &57 !ruby/object:RPG::MoveCommand
               parameters:
               - busx2
               - 0
               - 4
               - 2
               code: 41
-            - &57 !ruby/object:RPG::MoveCommand
+            - &58 !ruby/object:RPG::MoveCommand
               parameters:
               - 4
               code: 15
-            - &58 !ruby/object:RPG::MoveCommand
+            - &59 !ruby/object:RPG::MoveCommand
               parameters:
               - 200
               code: 42
-            - &59 !ruby/object:RPG::MoveCommand
+            - &60 !ruby/object:RPG::MoveCommand
               parameters:
               - 4
               code: 15
-            - &60 !ruby/object:RPG::MoveCommand
+            - &61 !ruby/object:RPG::MoveCommand
               parameters:
               - 255
               code: 42
-            - &61 !ruby/object:RPG::MoveCommand
+            - &62 !ruby/object:RPG::MoveCommand
               parameters:
               - 4
               code: 15
-            - &62 !ruby/object:RPG::MoveCommand
-              parameters: []
-              code: 3
             - &63 !ruby/object:RPG::MoveCommand
               parameters: []
               code: 3
@@ -1642,24 +1698,27 @@ root: !ruby/object:RPG::Map
               parameters: []
               code: 3
             - &66 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 3
+            - &67 !ruby/object:RPG::MoveCommand
               parameters:
               - busx2
               - 0
               - 2
               - 0
               code: 41
-            - &67 !ruby/object:RPG::MoveCommand
+            - &68 !ruby/object:RPG::MoveCommand
               parameters:
               - 4
               code: 15
-            - &68 !ruby/object:RPG::MoveCommand
+            - &69 !ruby/object:RPG::MoveCommand
               parameters:
               - busx2
               - 0
               - 2
               - 1
               code: 41
-            - &69 !ruby/object:RPG::MoveCommand
+            - &70 !ruby/object:RPG::MoveCommand
               parameters:
               - 4
               code: 15
@@ -1670,11 +1729,6 @@ root: !ruby/object:RPG::Map
             repeat: false
           indent: 0
           code: 209
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - *55
-          indent: 0
-          code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *56
@@ -1746,6 +1800,11 @@ root: !ruby/object:RPG::Map
           indent: 0
           code: 509
         - !ruby/object:RPG::EventCommand
+          parameters:
+          - *70
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
           code: 210
@@ -1772,10 +1831,17 @@ root: !ruby/object:RPG::Map
           code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 4
+          - 12
+          - 0
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 0
           - !ruby/object:RPG::MoveRoute
             list:
-            - &70 !ruby/object:RPG::MoveCommand
+            - &71 !ruby/object:RPG::MoveCommand
               parameters:
               - busx2
               - 0
@@ -1787,13 +1853,53 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
-          - *70
-          indent: 0
+          - *71
+          indent: 1
           code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &72 !ruby/object:RPG::MoveCommand
+              parameters:
+              - busx2
+              - 0
+              - 4
+              - 2
+              code: 41
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 1
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *72
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
         - !ruby/object:RPG::EventCommand
           parameters:
           - 0
@@ -1814,12 +1920,6 @@ root: !ruby/object:RPG::Map
           - 0
           - !ruby/object:RPG::MoveRoute
             list:
-            - &71 !ruby/object:RPG::MoveCommand
-              parameters: []
-              code: 3
-            - &72 !ruby/object:RPG::MoveCommand
-              parameters: []
-              code: 3
             - &73 !ruby/object:RPG::MoveCommand
               parameters: []
               code: 3
@@ -1839,22 +1939,28 @@ root: !ruby/object:RPG::Map
               parameters: []
               code: 3
             - &79 !ruby/object:RPG::MoveCommand
-              parameters:
-              - 200
-              code: 42
+              parameters: []
+              code: 3
             - &80 !ruby/object:RPG::MoveCommand
-              parameters:
-              - 4
-              code: 15
+              parameters: []
+              code: 3
             - &81 !ruby/object:RPG::MoveCommand
               parameters:
-              - 100
+              - 200
               code: 42
             - &82 !ruby/object:RPG::MoveCommand
               parameters:
               - 4
               code: 15
             - &83 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 100
+              code: 42
+            - &84 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 4
+              code: 15
+            - &85 !ruby/object:RPG::MoveCommand
               parameters:
               - 0
               code: 42
@@ -1865,16 +1971,6 @@ root: !ruby/object:RPG::Map
             repeat: false
           indent: 0
           code: 209
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - *71
-          indent: 0
-          code: 509
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - *72
-          indent: 0
-          code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *73
@@ -1928,6 +2024,16 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - *83
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *84
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *85
           indent: 0
           code: 509
         - !ruby/object:RPG::EventCommand

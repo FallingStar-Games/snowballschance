@@ -16,6 +16,11 @@ root: !ruby/object:RPG::Map
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
+          - message.skippable = false
+          indent: 0
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 2
           - 0
           indent: 0
@@ -998,6 +1003,11 @@ root: !ruby/object:RPG::Map
           - 20
           indent: 0
           code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - message.skippable = true
+          indent: 0
+          code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
           - "$game_temp.transition_type=0"
