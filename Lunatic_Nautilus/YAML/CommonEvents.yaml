@@ -5534,6 +5534,14 @@ root:
   name: circle transition 1
   list:
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 80
+      name: clickdown
+      pitch: 100
+    indent: 0
+    code: 250
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 221
@@ -5572,6 +5580,14 @@ root:
     indent: 0
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 80
+      name: clickup
+      pitch: 100
+    indent: 0
+    code: 250
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 221
@@ -5595,6 +5611,14 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: left circle transition 1
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 80
+      name: clickdown
+      pitch: 100
+    indent: 0
+    code: 250
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -5634,6 +5658,14 @@ root:
     indent: 0
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 80
+      name: clickup
+      pitch: 100
+    indent: 0
+    code: 250
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 221
@@ -5657,6 +5689,14 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: right circle transition 1
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 80
+      name: clickdown
+      pitch: 100
+    indent: 0
+    code: 250
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -5695,6 +5735,14 @@ root:
     - remember to turn off fading on the transfer!
     indent: 0
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 80
+      name: clickup
+      pitch: 100
+    indent: 0
+    code: 250
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -11342,7 +11390,7 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - "\\I[A16] Plain Dish"
+    - - "\\I[A16] Mash Meal"
       - "\\I[A18] Basic Dish"
       - "\\I[A25] Special Dish"
     - 0
@@ -11351,7 +11399,7 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
-    - "\\I[A16] Plain Dish"
+    - "\\I[A16] Mash Meal"
     indent: 0
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -11361,7 +11409,7 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Should I cook the Plain Dish?"
+    - "\\na[Coda]Should I cook the Mash Meal?"
     indent: 1
     code: 101
   - !ruby/object:RPG::EventCommand
