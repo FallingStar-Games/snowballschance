@@ -21,9 +21,18 @@ root: !ruby/object:RPG::Map
           code: 208
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 17
+          - 50
+          - blapk
+          - 0
+          - 0
+          - 0
+          - 0
+          - 100
+          - 100
+          - 255
+          - 0
           indent: 0
-          code: 117
+          code: 231
         - !ruby/object:RPG::EventCommand
           parameters:
           - 10
@@ -110,6 +119,56 @@ root: !ruby/object:RPG::Map
           - 'No'
           indent: 0
           code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 404
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Do you want to start from the beginning,
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - or do you want to start at the Intermission?
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - - From the beginning
+            - Skip to the intermission
+          - 1
+          indent: 0
+          code: 102
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - From the beginning
+          indent: 0
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - Skip to the intermission
+          indent: 0
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 103
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 115
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1

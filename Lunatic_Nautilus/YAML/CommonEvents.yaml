@@ -1,6 +1,6 @@
----
+--- !ruby/object:Hash
 root:
--
+- 
 - !ruby/object:RPG::CommonEvent
   name: melt snow
   list:
@@ -17331,37 +17331,54 @@ root:
     code: 104
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 'Results:'
+    - 1
+    - 8
+    - 0
+    - 3
+    - 0
     indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'Results:'
+    indent: 1
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
     - "~Friendship values~"
-    indent: 0
+    indent: 1
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - 'Frie''s Friendship Value: \v[33]'
-    indent: 0
+    indent: 1
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
     - 'Vern''s Friendship Value: \v[34]'
-    indent: 0
+    indent: 1
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - 'Topaz''s Friendship Value: \v[35]'
-    indent: 0
+    indent: 1
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - 'Personal Friendship Value: \v[36]'
-    indent: 0
+    indent: 1
     code: 401
   - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
     parameters:
-    - Level two complete!\.
+    - Intermission complete!\.
     indent: 0
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -17415,12 +17432,12 @@ root:
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Niki "lavendersiren" Card
+    - Nick "lavendersiren" Card
     indent: 0
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Cutscene Regisseur-
+    - Ethereal goddess-
     indent: 0
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -17955,7 +17972,7 @@ root:
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Everyone that played last year's demo
+    - Everyone that played the demo
     indent: 0
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -37454,11 +37471,6 @@ root:
     code: 242
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 17
-    indent: 0
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
     - 2
     - 1
     - 1
@@ -41361,8 +41373,101 @@ root:
   switch_id: 1
   id: 110
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: resume to ch3
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    indent: 0
+    code: 242
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 0
+    indent: 0
+    code: 129
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 1
+    - 1
+    indent: 0
+    code: 129
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    indent: 0
+    code: 135
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 8
+    - 1
+    indent: 0
+    code: 121
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 12
+    - 0
+    indent: 0
+    code: 121
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    - 24
+    - 0
+    indent: 0
+    code: 121
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 8
+    - 0
+    - 0
+    - 3
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - 2
+    - 0
+    - 0
+    - 17
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 171
+    - 8
+    - 7
+    - 2
+    - 1
+    indent: 0
+    code: 201
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:Tone
+      red: -136.0
+      green: -102.0
+      blue: 17.0
+      gray: 0.0
+    - 0
+    indent: 0
+    code: 223
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    indent: 0
+    code: 208
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 20
+    indent: 0
+    code: 106
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
