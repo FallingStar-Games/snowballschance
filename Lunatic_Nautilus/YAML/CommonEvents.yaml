@@ -1,6 +1,6 @@
---- !ruby/object:Hash
+---
 root:
-- 
+-
 - !ruby/object:RPG::CommonEvent
   name: melt snow
   list:
@@ -38785,39 +38785,44 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - "\\I[A16] Mash Meal"
-      - "\\I[A18] Basic Dish"
-      - "\\I[A25] Special Dish"
+    - Hmm...
+    indent: 0
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Mash Meal
+      - Ingredient Meal
+      - Premade Meal
     - 0
     indent: 0
     code: 102
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
-    - "\\I[A16] Mash Meal"
+    - Mash Meal
     indent: 0
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
-    indent: 1
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I cook the Mash Meal?"
+    - Mash Meal - Anybody can eat this!
     indent: 1
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - 'Yes'
-      - 'No'
+    - It's nobody's favorite, but nobody hates it!
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - I'll make this
+      - Nah, go back
     - 2
     indent: 1
     code: 102
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
-    - 'Yes'
+    - I'll make this
     indent: 1
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -38831,7 +38836,7 @@ root:
     code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
-    - mushrooms
+    - toppings
     indent: 2
     code: 119
   - !ruby/object:RPG::EventCommand
@@ -38841,7 +38846,7 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - 'No'
+    - Nah, go back
     indent: 1
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -38864,7 +38869,7 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - "\\I[A18] Basic Dish"
+    - Ingredient Meal
     indent: 0
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -38888,124 +38893,22 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - "\\I[I25] Spicy Dish"
-      - "\\I[I21] Meaty Dish"
-      - "\\I[I22] Fishy Dish"
-      - "\\I[I19] Worm Bake"
+    - What to make...
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Fresh Meat
+      - Fishy Dish
+      - Worm Bake
+      - Veggie Meal
     - 5
     indent: 1
     code: 102
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
-    - "\\I[I25] Spicy Dish"
-    indent: 1
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - Spicy
-    indent: 2
-    code: 118
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 37
-    indent: 2
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 8
-    - 25
-    indent: 2
-    code: 111
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I cook the Spicy Dish?"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 10
-    - 10
-    - 0
-    - 0
-    - 1
-    indent: 4
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - mushrooms
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - med dish
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 411
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]...I don't have any Chili Powder!"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - med dish
-    indent: 3
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 412
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - "\\I[I21] Meaty Dish"
+    - Fresh Meat
     indent: 1
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -39015,9 +38918,36 @@ root:
     code: 118
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
+    - 1
+    - 9
+    - 0
+    - 2
+    - 0
     indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 40
+    indent: 3
     code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Topaz]I am NOT eating animals!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - 8
@@ -39026,20 +38956,35 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Should I cook the Meaty Dish?"
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Fresh Meat - An ample recovery!
     indent: 3
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - 'Yes'
-      - 'No'
+    - Restores HP fully and adds +50%
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - to your Max HP for the next chapter!
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
     - 2
     indent: 3
     code: 102
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
-    - 'Yes'
+    - Cook it
     indent: 3
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -39048,12 +38993,12 @@ root:
     - 10
     - 0
     - 0
-    - 2
+    - 1
     indent: 4
     code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
-    - mushrooms
+    - toppings
     indent: 4
     code: 119
   - !ruby/object:RPG::EventCommand
@@ -39063,7 +39008,7 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - 'No'
+    - Don't cook it
     indent: 3
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -39089,7 +39034,7 @@ root:
     code: 411
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Wait, I don't have any Raw Meat!"
+    - "\\na[Coda]...I don't have any Fresh Meat!"
     indent: 3
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -39111,92 +39056,32 @@ root:
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
-    - "\\I[I22] Fishy Dish"
+    - 1
+    - Fishy Dish
     indent: 1
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Fish
+    - FISH MEAT
     indent: 2
     code: 118
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
-    indent: 2
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 8
-    - 22
+    - 1
+    - 9
+    - 0
+    - 2
+    - 0
     indent: 2
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Should I cook the Fishy Dish?"
+    - 40
     indent: 3
-    code: 101
+    code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 10
-    - 10
-    - 0
-    - 0
-    - 3
-    indent: 4
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - mushrooms
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - med dish
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 411
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]...I don't have any Raw Fish?"
+    - "\\na[Topaz]I am NOT eating animals!"
     indent: 3
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -39213,25 +39098,310 @@ root:
     indent: 2
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Okay Fish
+      - Great Fish
+    - 5
+    indent: 2
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Okay Fish
+    indent: 2
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 22
+    indent: 3
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Okay Fish - It'll suffice!
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - These are pretty easy to catch and will
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - make most non-vegans happy enough.
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
+    - 2
+    indent: 4
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Cook it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    - 10
+    - 0
+    - 0
+    - 2
+    indent: 5
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't cook it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]I don't have the fish I need..."
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Great Fish
+    indent: 2
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 51
+    indent: 3
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Great Fish - It's a great fish!
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Full HP recovery and impeccable taste
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - sure to satisfy any fish connoisseur!
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
+    - 2
+    indent: 4
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Cook it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    - 10
+    - 0
+    - 0
+    - 3
+    indent: 5
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't cook it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]I don't have the fish I need..."
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 403
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 404
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 2
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 3
-    - "\\I[I19] Worm Bake"
+    - 2
+    - Worm Bake
     indent: 1
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Worms
+    - WORM MEAT
     indent: 2
     code: 118
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
+    - 1
+    - 9
+    - 0
+    - 2
+    - 0
     indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 40
+    indent: 3
     code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Topaz]I am NOT eating animals!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - 8
@@ -39240,20 +39410,35 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Should I cook the Worm Bake?"
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Worm Bake - A temporic classic!
     indent: 3
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - 'Yes'
-      - 'No'
+    - Coda loves this, and maybe someone
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - else would appreciate the taste?
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
     - 2
     indent: 3
     code: 102
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
-    - 'Yes'
+    - Cook it
     indent: 3
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -39267,7 +39452,7 @@ root:
     code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
-    - mushrooms
+    - toppings
     indent: 4
     code: 119
   - !ruby/object:RPG::EventCommand
@@ -39277,7 +39462,7 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - 'No'
+    - Don't cook it
     indent: 3
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -39303,7 +39488,129 @@ root:
     code: 411
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Darn it, I don't have any Earthworms!"
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]I don't have any worms!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - Veggie Meal
+    indent: 1
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 23
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Veggie Meal - A hearty vegan delight!
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Topaz likes these a lot, but others
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - may not be so hot on it.
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
+    - 2
+    indent: 3
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Cook it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    - 10
+    - 0
+    - 0
+    - 5
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't cook it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]...We're out of veggies."
     indent: 3
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -39347,37 +39654,70 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 2
-    - "\\I[A25] Special Dish"
+    - Premade Meal
     indent: 0
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
+    - - Finn's Chips
+      - Kale Chips
+      - Calzone
+    - 5
     indent: 1
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 8
-    - 12
-    indent: 1
-    code: 111
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I cook the Special Dish?"
-    indent: 2
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 2
     code: 102
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
-    - 'Yes'
+    - Finn's Chips
+    indent: 1
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - FINN'S CHIPS
     indent: 2
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 14
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 43
+    - 0
+    - 3
+    - 1
+    indent: 3
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Finn's Chips - Makes you feel like you!
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Halves damage from falling into water,
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - salted straight from the great sea!
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
+    - 2
+    indent: 4
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Cook it
+    indent: 4
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
@@ -39385,58 +39725,416 @@ root:
     - 10
     - 0
     - 0
-    - 5
-    indent: 3
+    - 6
+    indent: 5
     code: 122
   - !ruby/object:RPG::EventCommand
-    parameters:
-    - no shroom
-    indent: 3
-    code: 119
-  - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 3
+    indent: 5
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - 'No'
-    indent: 2
+    - Don't cook it
+    indent: 4
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
-    - main cooking crap
-    indent: 3
+    - med dish
+    indent: 5
     code: 119
   - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 3
+    indent: 5
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 2
+    indent: 4
     code: 404
   - !ruby/object:RPG::EventCommand
     parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]This isn't enough chips for a meal!"
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]We don't have a bag of Finn's Chips!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Kale Chips
+    indent: 1
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - KALE CHIPS
+    indent: 2
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 31
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 44
+    - 0
+    - 3
+    - 1
+    indent: 3
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Kale Chips - An adventurous veggie snack!
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Lowers SP costs for the next chapter,
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - but not everyone is so hot on these.
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
+    - 2
+    indent: 4
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Cook it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    - 10
+    - 0
+    - 0
+    - 7
+    indent: 5
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't cook it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]This isn't enough chips for a meal!"
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]We don't have any Kale Chips!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - Calzone
+    indent: 1
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - CALZONE MEAT
+    indent: 2
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 9
+    - 0
+    - 2
+    - 0
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 40
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Topaz]I am NOT eating animals!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 12
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Calzone - A delectable meaty dish!
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Eating this will fill your HP and SP right up,
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - with a beautifully rich taste too!
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
+    - 2
+    indent: 3
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Cook it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    - 10
+    - 0
+    - 0
+    - 8
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't cook it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]I don't have-a the calzone!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
     indent: 2
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
-    code: 411
+    code: 403
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Wait, I don't have the "
-    indent: 2
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\c[6]Special Ingredient\\c[0] to make it with!"
-    indent: 2
-    code: 401
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - main cooking crap
+    - med dish
     indent: 2
     code: 119
   - !ruby/object:RPG::EventCommand
@@ -39446,7 +40144,7 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
-    code: 412
+    code: 404
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
@@ -39457,7 +40155,7 @@ root:
     code: 404
   - !ruby/object:RPG::EventCommand
     parameters:
-    - mushrooms
+    - toppings
     indent: 0
     code: 118
   - !ruby/object:RPG::EventCommand
@@ -39465,6 +40163,53 @@ root:
     - 37
     indent: 0
     code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Mushroom
+      - Berry
+      - Next Page
+    - 3
+    indent: 0
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Mushroom
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Berry
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - Next Page
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]Hm... What topping should I put on?"
+    indent: 0
+    code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
     - 8
@@ -39484,7 +40229,7 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Hm... should I add a mushroom?"
+    - "\\na[Coda]Hm... What topping should I put on?"
     indent: 2
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -39540,7 +40285,7 @@ root:
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
-    - mushrooms
+    - toppings
     indent: 4
     code: 119
   - !ruby/object:RPG::EventCommand
@@ -40099,6 +40844,11 @@ root:
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
+    - main cooking crap
+    indent: 0
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 0
     code: 117
@@ -40112,7 +40862,7 @@ root:
     - - Mash Meal
       - Ingredient Meal
       - Premade Meal
-    - 2
+    - 0
     indent: 0
     code: 102
   - !ruby/object:RPG::EventCommand
@@ -40275,14 +41025,24 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
+    - 44
     indent: 3
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Should I cook this meat?"
+    - Fresh Meat - An ample recovery!
     indent: 3
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Restores HP fully and adds +50%
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - to your Max HP for the next chapter!
+    indent: 3
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - - Cook it
@@ -40427,14 +41187,24 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
+    - 44
     indent: 4
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Should I cook this fish?"
+    - Okay Fish - It'll suffice!
     indent: 4
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - These are pretty easy to catch and will
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - make most non-vegans happy enough.
+    indent: 4
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - - Cook it
@@ -40534,14 +41304,24 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
+    - 44
     indent: 4
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Should I cook this fish?"
+    - Great Fish - It's a great fish!
     indent: 4
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Full HP recovery and impeccable taste
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - sure to satisfy any fish connoisseur!
+    indent: 4
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - - Cook it
@@ -40632,6 +41412,11 @@ root:
     indent: 2
     code: 403
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 3
     code: 0
@@ -40650,6 +41435,150 @@ root:
     indent: 1
     code: 402
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - WORM MEAT
+    indent: 2
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 9
+    - 0
+    - 2
+    - 0
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 40
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Topaz]I am NOT eating animals!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 19
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Worm Bake - A temporic classic!
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Coda loves this, and maybe someone
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - else would appreciate the taste?
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
+    - 2
+    indent: 3
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Cook it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    - 10
+    - 0
+    - 0
+    - 4
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't cook it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]I don't have any worms!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 2
     code: 0
@@ -40660,6 +41589,113 @@ root:
     indent: 1
     code: 402
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 23
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Veggie Meal - A hearty vegan delight!
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Topaz likes these a lot, but others
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - may not be so hot on it.
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
+    - 2
+    indent: 3
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Cook it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    - 10
+    - 0
+    - 0
+    - 5
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't cook it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]...We're out of veggies."
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 2
     code: 0
@@ -40667,6 +41703,11 @@ root:
     parameters: []
     indent: 1
     code: 403
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - main cooking crap
+    indent: 2
+    code: 119
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 2
@@ -40686,403 +41727,117 @@ root:
     indent: 0
     code: 402
   - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 1
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 0
-    code: 404
-  - !ruby/object:RPG::EventCommand
     parameters:
-    - - "\\I[A16] Mash Meal"
-      - "\\I[A18] Basic Dish"
-      - "\\I[A25] Special Dish"
-    - 0
-    indent: 0
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - "\\I[A16] Mash Meal"
-    indent: 0
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 37
-    indent: 1
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I cook the Mash Meal?"
-    indent: 1
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 1
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 1
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 10
-    - 10
-    - 0
-    - 0
-    - 0
-    indent: 2
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - toppings
-    indent: 2
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 1
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - main cooking crap
-    indent: 2
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 1
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 1
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - "\\I[A18] Basic Dish"
-    indent: 0
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 10
-    - 10
-    - 0
-    - 0
-    - -1
-    indent: 1
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - med dish
-    indent: 1
-    code: 118
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 44
-    indent: 1
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - "\\I[I25] Spicy Dish"
-      - "\\I[I21] Meaty Dish"
-      - "\\I[I22] Fishy Dish"
-      - "\\I[I19] Worm Bake"
+    - - Finn's Chips
+      - Kale Chips
+      - Calzone
     - 5
     indent: 1
     code: 102
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
-    - "\\I[I25] Spicy Dish"
+    - Finn's Chips
     indent: 1
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Spicy
+    - FINN'S CHIPS
     indent: 2
     code: 118
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
-    indent: 2
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
     - 8
-    - 25
+    - 14
     indent: 2
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Should I cook the Spicy Dish?"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 10
-    - 10
-    - 0
-    - 0
     - 1
-    indent: 4
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - toppings
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - med dish
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 411
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]...I don't have any Chili Powder!"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - med dish
-    indent: 3
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 412
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - "\\I[I21] Meaty Dish"
-    indent: 1
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - MEAT
-    indent: 2
-    code: 118
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 37
-    indent: 2
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 8
-    - 21
-    indent: 2
-    code: 111
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I cook the Meaty Dish?"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 10
-    - 10
-    - 0
-    - 0
-    - 2
-    indent: 4
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - mushrooms
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - med dish
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 411
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Wait, I don't have any Raw Meat!"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - med dish
-    indent: 3
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 412
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 2
-    - "\\I[I22] Fishy Dish"
-    indent: 1
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - Fish
-    indent: 2
-    code: 118
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 37
-    indent: 2
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 8
-    - 22
-    indent: 2
-    code: 111
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I cook the Fishy Dish?"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 10
-    - 10
-    - 0
+    - 43
     - 0
     - 3
-    indent: 4
-    code: 122
+    - 1
+    indent: 3
+    code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - mushrooms
+    - Finn's Chips - Makes you feel like you!
     indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Halves damage from falling into water,
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - salted straight from the great sea!
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
+    - 2
+    indent: 4
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Cook it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    - 10
+    - 0
+    - 0
+    - 6
+    indent: 5
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't cook it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 5
     code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 404
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 4
     code: 0
   - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
+    parameters: []
     indent: 3
-    code: 402
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]This isn't enough chips for a meal!"
+    indent: 4
+    code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
     - med dish
@@ -41095,7 +41850,12 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 3
-    code: 404
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 3
@@ -41106,7 +41866,12 @@ root:
     code: 411
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]...I don't have any Raw Fish?"
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]We don't have a bag of Finn's Chips!"
     indent: 3
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -41128,43 +41893,57 @@ root:
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 3
-    - "\\I[I19] Worm Bake"
+    - 1
+    - Kale Chips
     indent: 1
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Worms
+    - KALE CHIPS
     indent: 2
     code: 118
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
-    indent: 2
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
     - 8
-    - 19
+    - 31
     indent: 2
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Should I cook the Worm Bake?"
+    - 1
+    - 44
+    - 0
+    - 3
+    - 1
     indent: 3
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Kale Chips - An adventurous veggie snack!
+    indent: 4
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - 'Yes'
-      - 'No'
+    - Lowers SP costs for the next chapter,
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - but not everyone is so hot on these.
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
     - 2
-    indent: 3
+    indent: 4
     code: 102
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
-    - 'Yes'
-    indent: 3
+    - Cook it
+    indent: 4
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
@@ -41172,12 +41951,53 @@ root:
     - 10
     - 0
     - 0
-    - 4
-    indent: 4
+    - 7
+    indent: 5
     code: 122
   - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
     parameters:
-    - mushrooms
+    - 1
+    - Don't cook it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]This isn't enough chips for a meal!"
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
     indent: 4
     code: 119
   - !ruby/object:RPG::EventCommand
@@ -41185,9 +42005,148 @@ root:
     indent: 4
     code: 0
   - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]We don't have any Kale Chips!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - Calzone
+    indent: 1
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - CALZONE MEAT
+    indent: 2
+    code: 118
+  - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - 'No'
+    - 9
+    - 0
+    - 2
+    - 0
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 40
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Topaz]I am NOT eating animals!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - med dish
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 12
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Calzone - A delectable meaty dish!
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Eating this will fill your HP and SP right up,
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - with a beautifully rich taste too!
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Cook it
+      - Don't cook it
+    - 2
+    indent: 3
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Cook it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    - 10
+    - 0
+    - 0
+    - 8
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't cook it
     indent: 3
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -41213,7 +42172,12 @@ root:
     code: 411
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Darn it, I don't have any Earthworms!"
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]I don't have-a the calzone!"
     indent: 3
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -41239,7 +42203,7 @@ root:
     code: 403
   - !ruby/object:RPG::EventCommand
     parameters:
-    - main cooking crap
+    - med dish
     indent: 2
     code: 119
   - !ruby/object:RPG::EventCommand
@@ -41250,113 +42214,6 @@ root:
     parameters: []
     indent: 1
     code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 1
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 2
-    - "\\I[A25] Special Dish"
-    indent: 0
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 37
-    indent: 1
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 8
-    - 12
-    indent: 1
-    code: 111
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I cook the Special Dish?"
-    indent: 2
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 2
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 2
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 10
-    - 10
-    - 0
-    - 0
-    - 5
-    indent: 3
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - no shroom
-    indent: 3
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 2
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - main cooking crap
-    indent: 3
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 1
-    code: 411
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Wait, I don't have the "
-    indent: 2
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\c[6]Special Ingredient\\c[0] to make it with!"
-    indent: 2
-    code: 401
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - main cooking crap
-    indent: 2
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 1
-    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
