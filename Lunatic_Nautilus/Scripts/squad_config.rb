@@ -71,8 +71,8 @@ module Squad
   # rather than the classic caterpillar, single-file system.
   # 
     MOVE_STYLE      = 3   # Styles: 0=Default, 1=Party, 2=Class, 3=Distance
-    MOVE_ACTOR[2]   = 3   # (If move style is 3) Actor 7 may stay 6 tiles away
-    MOVE_ACTOR[3]   = 2   # (If move style is 3) Actor 7 may stay 6 tiles away
+    MOVE_ACTOR[2]   = 5   # (If move style is 3) Actor 7 may stay 6 tiles away
+    MOVE_ACTOR[3]   = 3   # (If move style is 3) Actor 7 may stay 6 tiles away
     MOVE_ACTOR[6]   = 1   # (If move style is 3) Actor 7 may stay 6 tiles away
     MOVE_ACTOR[4]   = 4 
     MOVE_ACTOR[5]   = 4 
