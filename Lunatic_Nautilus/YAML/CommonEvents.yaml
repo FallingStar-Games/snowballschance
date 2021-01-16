@@ -39659,6 +39659,15 @@ root:
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 11
+    - 11
+    - 0
+    - 0
+    - 0
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - - Finn's Chips
       - Kale Chips
       - Calzone
@@ -40165,336 +40174,269 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - Mushroom
-      - Berry
-      - Next Page
-    - 3
+    - "\\na[Coda]Hm... Should I put on a topping?"
     indent: 0
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Go for it
+      - Nah
+    - 2
+    indent: 0
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Go for it
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 1
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Mushroom
+      - Chili Powder
+      - Berry
+      - Pine Needles
+    - 5
+    indent: 1
     code: 102
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
     - Mushroom
-    indent: 0
+    indent: 1
     code: 402
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Green Mushroom
+      - Yellow Mushroom
+    - 5
+    indent: 2
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Green Mushroom
+    indent: 2
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 10
+    indent: 3
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Green Mushroom - Could be poisonous...
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - I don't know if this is harmful or not,
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - is it worth a try?
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Add it
+      - Don't add it
+    - 2
+    indent: 4
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Add it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 11
+    - 11
+    - 0
+    - 0
+    - 1
+    indent: 5
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - AURABOOST
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 1
+    indent: 5
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - Berry
-    indent: 0
+    - Don't add it
+    indent: 4
     code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 1
-    code: 0
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
-    - Next Page
-    indent: 0
-    code: 402
+    - toppings menu
+    indent: 5
+    code: 119
   - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 1
+    indent: 5
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 0
+    indent: 4
     code: 404
   - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 411
+  - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Hm... What topping should I put on?"
-    indent: 0
+    - 37
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]I don't have a green mushroom..."
+    indent: 4
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 4
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Yellow Mushroom
+    indent: 2
+    code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
     - 8
     - 26
-    indent: 0
+    indent: 3
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 8
-    - 10
-    indent: 1
-    code: 111
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - both shrooms
-    indent: 2
-    code: 108
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Hm... What topping should I put on?"
-    indent: 2
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - "\\I[I10] Green Mushroom"
-      - "\\I[I26] Yellow Mushroom"
-      - None
-    - 0
-    indent: 2
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - "\\I[I10] Green Mushroom"
-    indent: 2
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - Add Green Mushroom?
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 11
-    - 11
-    - 0
-    - 0
-    - 1
+    - 44
     indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Yellow Mushroom - An energizing fungus!
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Restores SP and halves SP costs for a day,
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - a pretty non-fungible change if you ask me!
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Add it
+      - Don't add it
+    - 2
+    indent: 4
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Add it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 11
+    - 11
+    - 0
+    - 0
+    - 2
+    indent: 5
     code: 122
   - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
     parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - toppings
-    indent: 4
+    - AURABOOST
+    indent: 5
     code: 119
   - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
+    indent: 5
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - "\\I[I26] Yellow Mushroom"
-    indent: 2
+    - Don't add it
+    indent: 4
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Should I add a Yellow Mushroom?"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 11
-    - 11
-    - 0
-    - 0
-    - 2
-    indent: 4
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - mushrooms
-    indent: 4
+    - toppings menu
+    indent: 5
     code: 119
   - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 4
+    indent: 5
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 3
+    indent: 4
     code: 404
   - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 2
-    - None
-    indent: 2
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I skip adding a mushroom?"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 11
-    - 11
-    - 0
-    - 0
-    - 0
-    indent: 4
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - mushrooms
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
     indent: 4
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 3
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 1
     code: 411
   - !ruby/object:RPG::EventCommand
     parameters:
-    - yellow, no green
-    indent: 2
-    code: 108
+    - 37
+    indent: 4
+    code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Hm... should I add a mushroom?"
-    indent: 2
+    - "\\na[Coda]I don't have a yellow mushroom..."
+    indent: 4
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - "\\I[I26] Yellow Mushroom"
-      - None
-    - 0
-    indent: 2
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - "\\I[I26] Yellow Mushroom"
-    indent: 2
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I add a Yellow Mushroom?"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 11
-    - 11
-    - 0
-    - 0
-    - 2
-    indent: 4
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - mushrooms
+    - toppings menu
     indent: 4
     code: 119
   - !ruby/object:RPG::EventCommand
@@ -40504,264 +40446,613 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 3
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - None
-    indent: 2
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I skip adding a mushroom?"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 11
-    - 11
-    - 0
-    - 0
-    - 0
-    indent: 4
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - mushrooms
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 1
     code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
-    indent: 1
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 0
-    code: 411
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 8
-    - 10
-    indent: 1
-    code: 111
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - Only Green
-    indent: 2
-    code: 108
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Hm... should I add a mushroom?"
-    indent: 2
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - "\\I[I10] Green Mushroom"
-      - None
-    - 0
-    indent: 2
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - "\\I[I10] Green Mushroom"
-    indent: 2
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I add a Green Mushroom?"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 11
-    - 11
-    - 0
-    - 0
-    - 1
-    indent: 4
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - mushrooms
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - None
-    indent: 2
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]Should I skip adding a mushroom?"
-    indent: 3
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - - 'Yes'
-      - 'No'
-    - 2
-    indent: 3
-    code: 102
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 0
-    - 'Yes'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 11
-    - 11
-    - 0
-    - 0
-    - 0
-    indent: 4
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1
-    - 'No'
-    indent: 3
-    code: 402
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - mushrooms
-    indent: 4
-    code: 119
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 4
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 3
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
     indent: 3
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 2
-    code: 404
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 2
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 1
-    code: 411
+    code: 403
   - !ruby/object:RPG::EventCommand
     parameters:
-    - No shrooms, skip
-    indent: 2
-    code: 108
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - no shroom
-    indent: 2
+    - toppings menu
+    indent: 3
     code: 118
   - !ruby/object:RPG::EventCommand
     parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Chili Powder
+    indent: 1
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 25
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Chili Powder - This'll heat you right up!
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Gives you resistance to the cold, and is
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - sure to spice up your day!
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Add it
+      - Don't add it
+    - 2
+    indent: 3
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Add it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 11
+    - 11
+    - 0
+    - 0
+    - 3
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - AURABOOST
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't add it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]I don't have any chili powder!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - Berry
+    indent: 1
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Tri-Leaf Berry
+      - Quad-Leaf Berry
+    - 5
+    indent: 2
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Tri-Leaf Berry
+    indent: 2
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 38
+    indent: 3
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Tri-Leaf Berry - Friendship Fruit!
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Gives you friendship with whoever
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - eats it, it's sure to please anyone!
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Add it
+      - Don't add it
+    - 2
+    indent: 4
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Add it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 11
+    - 11
+    - 0
+    - 0
+    - 4
+    indent: 5
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - AURABOOST
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't add it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]...I don't have any tri-leaf berries."
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 4
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Quad-Leaf Berry
+    indent: 2
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 37
+    indent: 3
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Quad-Leaf Berry - Forgiveness Fruit!
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Lessens the amount of friendship you lose
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - if things go awry with whoever eats it.
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Add it
+      - Don't add it
+    - 2
+    indent: 4
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Add it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 11
+    - 11
+    - 0
+    - 0
+    - 5
+    indent: 5
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - AURABOOST
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't add it
+    indent: 4
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 5
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]...I don't have a quad-leaf berry."
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 403
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 3
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - Pine Needles
+    indent: 1
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 13
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 44
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Pine Needles - Spiky Survival!
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Halves damage from spikes, traps, etc.
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Also prevents sore throat. (Is that necessary?)
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Add it
+      - Don't add it
+    - 2
+    indent: 3
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Add it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 11
+    - 11
+    - 0
+    - 0
+    - 6
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - AURABOOST
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Don't add it
+    indent: 3
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 4
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]I don't have any pine needles!"
+    indent: 3
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings menu
+    indent: 3
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
     indent: 2
     code: 0
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
-    code: 412
+    code: 403
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - toppings
+    indent: 2
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Nah
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 11
+    - 11
+    - 0
+    - 0
+    - 0
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - AURABOOST
+    indent: 1
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - AURABOOST
+    indent: 0
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 45
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Coda]I hope this is good..."
+    indent: 1
+    code: 101
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
