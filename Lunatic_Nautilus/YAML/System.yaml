@@ -1,7 +1,7 @@
----
+--- !ruby/object:Hash
 root: !ruby/object:RPG::System
   variables:
-  -
+  - 
   - sitting counter
   - progress
   - temp like amount
@@ -15,10 +15,10 @@ root: !ruby/object:RPG::System
   - topping
   - food value
   - Choice 1
-  - maximum squares per day
+  - actor id thing
   - ally x
   - ally y
-  - new ship map id
+  - base meal database
   - button press
   - special event
   - day of the week
@@ -115,7 +115,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: winner
     pitch: 100
-  start_map_id: 21
+  start_map_id: 3
   shop_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: buying
@@ -129,7 +129,7 @@ root: !ruby/object:RPG::System
     sp: SP
     skill: Skill
     int: INT
-    armor2: Headgear
+    armor2: Topping
     equip: Equip
     hp: HP
     pdef: PDEF
@@ -139,11 +139,11 @@ root: !ruby/object:RPG::System
     atk: ATK
     item: Item
     dex: DEX
-    armor4: Other
-    weapon: Tool
+    armor4: Auracharge
+    weapon: Identity
     guard: Defend
   switches:
-  -
+  - 
   - willing to listen to voice acting
   - death sequence
   - frie froze it once
@@ -245,7 +245,7 @@ root: !ruby/object:RPG::System
   - Piercing
   - Slashing
   - Bludgeoning
-  start_y: 0
+  start_y: 6
   battler_hue: 0
   load_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -304,4 +304,4 @@ root: !ruby/object:RPG::System
     name: saved
     pitch: 100
   battle_transition: battletransition
-  start_x: 0
+  start_x: 19

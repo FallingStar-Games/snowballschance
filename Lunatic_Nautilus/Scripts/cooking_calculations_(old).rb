@@ -2,18 +2,10 @@
 #the number returned is an armor entry in the database.
 # by Theo and lavendersiren
 
-# https://docs.google.com/spreadsheets/d/19u9X0Dl11u5VOvVp4rr1xWDUScVVrAe5vPsyfMcDWaE/edit?usp=sharing
-# use this spreadsheet as a reference!!
-
-# note: everything is a mess here. Use the old one in GBJ for reference.
-# snack system still needs to use this!
-# When it comes to calculating values, you're on your own
-# current cooking system is all common events and scriptlets now so it hardly even needs this
-
 class Cookcalc
-#under new system, this may only wind up being used for the snack system
+
   ResultHash = {
-  #topping first, ingredient second
+  #mushroom first, ingredient second
   #plain
   [0,0] => 16,
   [0,1] => 20,
@@ -33,8 +25,6 @@ class Cookcalc
   [2,2] => 23,
   [2,3] => 24,
   [2,4] => 27,
-
-
   #snacks
   [4,5] => 40, #fourleaf compote
   [5,5] => 39, #threeleaf compote
@@ -47,76 +37,27 @@ class Cookcalc
   }
   
     FoodPrefhash = {
-  #Actor first, meal second, topping third, auracharge fourth
+  #Actor first, meal second
   #2,3,4,6,12
-  #likes 3 leaf, but not 4 leaf
   #Frie
-  [2,16,0,0] => 4, #mash meal
-  [2,17,0,0] => 3, #meaty meal
-  [2,18,0,0] => 1, #veggie stirfry
-  [2,19,0,0] => 0, #fishy dish
-  [2,20,0,0] => 0, #Great fishy dish
-  [2,21,0,0] => 2, #worm bake
-  #green shroom
-  [2,16,1,0] => 0, #mash meal
-  [2,17,1,0] => 0, #meaty meal
-  [2,18,1,0] => 0, #veggie stirfry
-  [2,19,1,0] => 0, #fishy dish
-  [2,20,1,0] => 0, #Great fishy dish
-  [2,21,1,0] => 0, #worm bake
-  #yellow shroom
-  [2,16,2,0] => 4, #mash meal
-  [2,17,2,0] => 3, #meaty meal
-  [2,18,2,0] => 1, #veggie stirfry
-  [2,19,2,0] => 0, #fishy dish
-  [2,20,2,0] => 0, #Great fishy dish
-  [2,21,2,0] => 2, #worm bake
-  #spicy
-  [2,16,3,0] => 4, #mash meal
-  [2,17,3,0] => 3, #meaty meal
-  [2,18,3,0] => 1, #veggie stirfry
-  [2,19,3,0] => 0, #fishy dish
-  [2,20,3,0] => 0, #Great fishy dish
-  [2,21,3,0] => 2, #worm bake  
-  #3 leaf
-  [2,16,4,0] => 4, #mash meal
-  [2,17,4,0] => 3, #meaty meal
-  [2,18,4,0] => 1, #veggie stirfry
-  [2,19,4,0] => 0, #fishy dish
-  [2,20,4,0] => 0, #Great fishy dish
-  [2,21,4,0] => 2, #worm bake  
-  #4 leaf
-  [2,16,5,0] => 4, #mash meal
-  [2,17,5,0] => 3, #meaty meal
-  [2,18,5,0] => 1, #veggie stirfry
-  [2,19,5,0] => 0, #fishy dish
-  [2,20,5,0] => 0, #Great fishy dish
-  [2,21,5,0] => 2, #worm bake  
-  #pine needle
-  [2,16,6,0] => 4, #mash meal
-  [2,17,6,0] => 3, #meaty meal
-  [2,18,6,0] => 1, #veggie stirfry
-  [2,19,6,0] => 0, #fishy dish
-  [2,20,6,0] => 1, #Great fishy dish
-  [2,21,6,0] => 2, #worm bake  
-# good luck also filling this out for very single auracharge rip in pieces
-
-  [2,25,0,0] => 2, #calzone
-  [2,34,0,0] => 2, #Finn chipmeal
-  [2,35,0,0] => 2, #Kale chipmeal
+  [2,16] => 4,
+  [2,17] => 3,
+  [2,18] => 1,
+  [2,19] => 0,
+  [2,20] => 1,
+  [2,21] => 2,
   #curious about worms
-  [2,23] => 3, #meaty plus OUTDATED
-  [2,24] => 0, #fishy plus OUTDATED
-  [2,26] => 1, #hot vegan OUTDATED
-  [2,27] => 1, #worm plus OUTDATED
+  [2,23] => 3,
+  [2,24] => 0,
+  [2,25] => 2,
+  [2,26] => 1,
+  [2,27] => 1,
   #fucking 0, are you serious?
   [2,29] => 0,
   [2,30] => 0,
   [2,31] => 0,
   [2,32] => 0,
   [2,33] => 0,
-
-  #others have not had new sections added yet
   
   #Vern
   [3,16] => 1,
@@ -255,46 +196,29 @@ end #end of snack
   $game_party.gain_armor(Cookcalc.armornum, 1)
   #remove ingre and remove shroom
   #convert ingre back to its item
-  #it's a number from 0-8
+  #it's a number from 0-4
 
 if @ingre == 0
   #plain
 elsif @ingre== 1
-  $game_party.lose_item(21, 1) #meat
+  $game_party.lose_item(25, 1) #spicy
 elsif @ingre== 2
-  $game_party.lose_item(22, 1) #ok fish
+  $game_party.lose_item(21, 1) #meat
 elsif @ingre== 3
-  $game_party.lose_item(51, 1) #great fish
+  $game_party.lose_item(22, 1) #fish
 elsif @ingre== 4
   $game_party.lose_item(19, 1) #worm
 elsif @ingre== 5
-  $game_party.lose_item(23, 1) #veggies
-  
-# Note: chips are weird since they're stored in variables. 
-# the thing checks if there's at least 3 snack servings first anyways.
-elsif @ingre== 6
-  $game_variables[43]-=3 #finn's chips
-elsif @ingre== 7
-  $game_variables[44]-=3 #kale chips
-elsif @ingre== 8
   $game_party.lose_item(12, 1) #calzone
 else
   p "what the hell did you put in your ingredience?"
   end
   
-  #remove topping
+  #remove shroom
   if @shroom == 1
   $game_party.lose_item(10, 1) #poison
 elsif @shroom== 2
   $game_party.lose_item(26, 1) #yellow
-elsif @shroom== 3
-  $game_party.lose_item(25, 1) #chili powder
-elsif @shroom== 4
-  $game_party.lose_item(38, 1) #tri-leaf
-elsif @shroom== 5
-  $game_party.lose_item(37, 1) #quad-leaf
-elsif @shroom== 6
-  $game_party.lose_item(13, 1) #needleleleles
 else
   #do nothing
   end
@@ -367,13 +291,11 @@ end
 
     actor=$data_actors[@bbb].id
     meal= $game_actors[@bbb].armor1_id
-    topping= $game_actors[@bbb].armor2_id
-    
-    auracharge== $game_actors[@bbb].armor4_id
     
     
     
-    return FoodPrefhash[[actor,meal,topping,auracharge]] #edit, kinda iffy tho
+    
+    return FoodPrefhash[[actor,meal]]
 end
 
 
