@@ -368,12 +368,12 @@ end
     meal= $game_actors[@bbb].armor1_id
     topping= $game_actors[@bbb].armor2_id
     
-    auracharge== $game_actors[@bbb].armor4_id
+    auracharge= $game_actors[@bbb].armor4_id
     
     
     
     #return FoodPrefhash[[actor,meal,topping,auracharge]] #edit, kinda iffy tho
-    return FoodPrefhash[[meal]] #another edit, even iffier
+    return FoodPrefhash[[meal]] #another edit, even iffier :mspa:
 end
 
 
