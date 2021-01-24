@@ -3004,6 +3004,26 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
+          - "$game_system.regroup_timer =nil"
+          indent: 0
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - p "aaa"
+          indent: 0
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_party.set_positiong"
+          indent: 0
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "(3, 20, 20)"
+          indent: 0
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - "\\p[7]\\na[Coda]...Got it!"
           indent: 0
           code: 101
@@ -3250,6 +3270,11 @@ root: !ruby/object:RPG::Map
           - 115
           indent: 0
           code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_system.regroup_range = 7"
+          indent: 0
+          code: 355
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0

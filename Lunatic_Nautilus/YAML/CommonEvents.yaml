@@ -1,6 +1,6 @@
----
+--- !ruby/object:Hash
 root:
--
+- 
 - !ruby/object:RPG::CommonEvent
   name: melt snow
   list:
@@ -6724,24 +6724,121 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_variables[15]="
+    - 0
+    - 48
+    - 0
     indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 7
+    - 7
+    - 0
+    - 7
+    - 0
+    indent: 2
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 7
+    - 0
+    - 168
+    - 0
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[15]="
+    indent: 3
     code: 355
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_system.allies[1].x"
-    indent: 1
+    - "$game_map.events[3].x"
+    indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - "$game_variables[16]="
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_map.events[3].y"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[15]="
+    indent: 3
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_map.events[4].x"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[16]="
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_map.events[4].y"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
     indent: 1
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[15]="
+    indent: 2
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_system.allies[1].x"
+    indent: 2
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[16]="
+    indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - "$game_system.allies[1].y"
-    indent: 1
+    indent: 2
     code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
@@ -6799,24 +6896,121 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_variables[15]="
+    - 0
+    - 48
+    - 0
     indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 7
+    - 7
+    - 0
+    - 7
+    - 0
+    indent: 2
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 7
+    - 0
+    - 168
+    - 0
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[15]="
+    indent: 3
     code: 355
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_system.allies[2].x"
-    indent: 1
+    - "$game_map.events[4].x"
+    indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - "$game_variables[16]="
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_map.events[4].y"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[15]="
+    indent: 3
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_map.events[5].x"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[16]="
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_map.events[5].y"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
     indent: 1
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[15]="
+    indent: 2
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_system.allies[2].x"
+    indent: 2
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[16]="
+    indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - "$game_system.allies[2].y"
-    indent: 1
+    indent: 2
     code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
@@ -6874,24 +7068,121 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_variables[15]="
+    - 0
+    - 48
+    - 0
     indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 7
+    - 7
+    - 0
+    - 7
+    - 0
+    indent: 2
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 7
+    - 0
+    - 168
+    - 0
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[15]="
+    indent: 3
     code: 355
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_system.allies[3].x"
-    indent: 1
+    - "$game_map.events[2].x"
+    indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - "$game_variables[16]="
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_map.events[2].y"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[15]="
+    indent: 3
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_map.events[6].x"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[16]="
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_map.events[6].y"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
     indent: 1
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[15]="
+    indent: 2
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_system.allies[3].x"
+    indent: 2
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[16]="
+    indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - "$game_system.allies[3].y"
-    indent: 1
+    indent: 2
     code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
@@ -39664,6 +39955,11 @@ root:
     code: 118
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 44
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 11
     - 11
     - 0
@@ -40202,6 +40498,11 @@ root:
     code: 118
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 44
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - - "\\I[I10] Mushroom"
       - "\\I[I25] Chili Powder"
       - "\\I[I37] Berry"
@@ -40217,15 +40518,15 @@ root:
     code: 402
   - !ruby/object:RPG::EventCommand
     parameters:
-    - - Green Mushroom
-      - Yellow Mushroom
+    - - "\\I[I10] Green Mushroom"
+      - "\\I[I26] Yellow Mushroom"
     - 5
     indent: 2
     code: 102
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
-    - Green Mushroom
+    - "\\I[I10] Green Mushroom"
     indent: 2
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -40342,7 +40643,7 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - Yellow Mushroom
+    - "\\I[I26] Yellow Mushroom"
     indent: 2
     code: 402
   - !ruby/object:RPG::EventCommand
@@ -43500,6 +43801,13 @@ root:
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 48
+    - 48
+    - 0
+    indent: 0
+    code: 121
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 9
     - 9
     - 0
@@ -43569,6 +43877,13 @@ root:
     indent: 2
     code: 312
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 48
+    - 48
+    - 1
+    indent: 2
+    code: 121
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 2
     code: 115
@@ -43596,7 +43911,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 43
+    - 27
     indent: 3
     code: 117
   - !ruby/object:RPG::EventCommand
@@ -43610,7 +43925,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Arctos]RRRAAAAAGGHH!!"
+    - "\\p[1]\\na[Arctos]RRRAAAAAGGHH!!"
     indent: 4
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -43632,7 +43947,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Arctos]....Rargh."
+    - "\\p[1]\\na[Arctos]....Rargh."
     indent: 5
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -43654,7 +43969,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Arctos]...."
+    - "\\p[1]\\na[Arctos]...."
     indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -43676,7 +43991,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Arctos]*munch munch*"
+    - "\\p[1]\\na[Arctos]*munch munch*"
     indent: 7
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -43698,7 +44013,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Arctos]OMNOMNOM"
+    - "\\p[1]\\na[Arctos]OMNOMNOM"
     indent: 8
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -43768,7 +44083,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 4
     code: 117
   - !ruby/object:RPG::EventCommand
@@ -43787,7 +44102,7 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]...Mm. You're a good cook, Coda."
+    - "\\p[1]\\na[Frie]...Mm. You're a good cook, Coda."
     indent: 5
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -43797,17 +44112,17 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]...Is the Mash Meal that good?"
+    - "\\p[0]\\na[Coda]...Is the Mash Meal that good?"
     indent: 5
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 5
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]I appreciate how you made it."
+    - "\\p[1]\\na[Frie]I appreciate how you made it."
     indent: 5
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -43827,7 +44142,7 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Huh, well I'll be sure to make it the"
+    - "\\p[0]\\na[Coda]Huh, well I'll be sure to make it the"
     indent: 5
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -43925,7 +44240,7 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]...Uh. You're not supposed to have"
+    - "\\p[1]\\na[Frie]...Uh. You're not supposed to have"
     indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44014,7 +44329,7 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]...Mgh."
+    - "\\p[1]\\na[Frie]...Mgh."
     indent: 7
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44024,17 +44339,17 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Don't like the veggie stir-fry?"
+    - "\\p[0]\\na[Coda]Don't like the veggie stir-fry?"
     indent: 7
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 40
+    - 24
     indent: 7
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Topaz]For heavens' sake,"
+    - "\\p[1]\\na[Topaz]For heavens' sake,"
     indent: 7
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44049,12 +44364,12 @@ root:
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 7
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]I know! I just..."
+    - "\\p[1]\\na[Frie]I know! I just..."
     indent: 7
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44152,7 +44467,7 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]...Eugh."
+    - "\\p[1]\\na[Frie]...Eugh."
     indent: 8
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44162,17 +44477,17 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Vern]Um, you gonna eat that fish?"
+    - "\\p[0]\\na[Coda]Um, you gonna eat that fish?"
     indent: 8
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 8
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]I don't like fish."
+    - "\\p[1]\\na[Frie]I don't like fish."
     indent: 8
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44265,32 +44580,32 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 26
+    indent: 9
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Frie]...Hm."
+    indent: 9
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 9
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]\\na[Coda]You like it?"
+    indent: 9
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 39
     indent: 9
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]...Hm."
-    indent: 9
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 38
-    indent: 9
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Vern]You like it?"
-    indent: 9
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 39
-    indent: 9
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Frie]I normally don't like fish, but"
+    - "\\p[1]\\na[Frie]I normally don't like fish, but"
     indent: 9
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44305,7 +44620,7 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda](Yes! I got it right!)"
+    - "\\p[0]\\na[Coda](Yes! I got it right!)"
     indent: 9
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44407,17 +44722,17 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 11
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]..."
+    - "\\p[1]\\na[Frie]..."
     indent: 11
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]I'm gonna try it."
+    - "\\p[1]\\na[Frie]I'm gonna try it."
     indent: 11
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44427,17 +44742,17 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]:D!"
+    - "\\p[0]\\na[Coda]>:D !"
     indent: 11
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 11
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]...Huh, better than I expected."
+    - "\\p[1]\\na[Frie]...Huh, better than I expected."
     indent: 11
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44452,7 +44767,7 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Glad you like it!"
+    - "\\p[0]\\na[Coda]Glad you like it!"
     indent: 11
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44505,12 +44820,12 @@ root:
     code: 411
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 11
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Aaagh."
+    - "\\p[1]\\na[Frie]Aaagh."
     indent: 11
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44522,7 +44837,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]These worms are so grimy"
+    - "\\p[1]\\na[Frie]These worms are so grimy"
     indent: 12
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44542,17 +44857,17 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Darn it! I thought you'd like them!"
+    - "\\p[0]\\na[Coda]Darn it! I thought you'd like them!"
     indent: 12
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 40
+    - 24
     indent: 12
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Topaz]They're part of the temporic"
+    - "\\p[1]\\na[Topaz]They're part of the temporic"
     indent: 12
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44575,7 +44890,7 @@ root:
     code: 411
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Worms... Messy. Grimy. Gross."
+    - "\\p[1]\\na[Frie]Worms... Messy. Grimy. Gross."
     indent: 12
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44585,17 +44900,17 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Darn it! I thought you'd like them!"
+    - "\\p[0]\\na[Coda]Darn it! I thought you'd like them!"
     indent: 12
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 12
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Why... Why would I..."
+    - "\\p[1]\\na[Frie]Why... Why would I..."
     indent: 12
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44608,7 +44923,7 @@ root:
     code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 11
     code: 117
   - !ruby/object:RPG::EventCommand
@@ -44633,7 +44948,7 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda](Ugh... I messed up.)"
+    - "\\p[0]\\na[Coda](Ugh... I messed up.)"
     indent: 11
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44708,12 +45023,12 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 11
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Mmm!"
+    - "\\p[1]\\na[Frie]Mmm!"
     indent: 11
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44728,12 +45043,12 @@ root:
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 11
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]I always love a good calzone."
+    - "\\p[1]\\na[Frie]I always love a good calzone."
     indent: 11
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44826,32 +45141,32 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 12
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Hmph, Finn's Chips? Really?"
+    - "\\p[1]\\na[Frie]Hmph, Finn's Chips? Really?"
     indent: 12
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 38
+    - 25
     indent: 12
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Vern]Don't like 'em?"
+    - "\\p[1]\\na[Vern]Don't like 'em?"
     indent: 12
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 12
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Don't like Finn. His whole thing's"
+    - "\\p[1]\\na[Frie]Don't like Finn. His whole thing's"
     indent: 12
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44866,7 +45181,7 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda](Hey, some of us need fairytales!)"
+    - "\\p[0]\\na[Coda](Hey, some of us need fairytales!)"
     indent: 12
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44949,7 +45264,7 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda](I wonder what Frie thinks of the"
+    - "\\p[0]\\na[Coda](I wonder what Frie thinks of the"
     indent: 13
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44959,12 +45274,12 @@ root:
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 13
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]...You know, I am surprised by"
+    - "\\p[1]\\na[Frie]...You know, I am surprised by"
     indent: 13
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -44974,52 +45289,57 @@ root:
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 40
+    - 24
     indent: 13
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Topaz]I'm never wrong, am I?"
+    - "\\p[1]\\na[Topaz]I'm never wrong, am I?"
     indent: 13
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 13
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Eh heh heh.\\|"
+    - "\\p[1]\\na[Frie]Eh heh heh.\\|"
     indent: 13
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Ahahahahaha.
+    - Ahahahahaha.\.
     indent: 13
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "*cackling*"
+    - HAHAHAHAHA!
     indent: 13
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 38
+    - 25
     indent: 13
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Vern]You... kinda had that one coming, Pazzy."
+    - "\\p[1]\\na[Vern]You... kinda had that one coming, "
     indent: 13
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 40
+    - Pazzy.
+    indent: 13
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
     indent: 13
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Topaz]Hush, you."
+    - "\\p[1]\\na[Topaz]Hush, you."
     indent: 13
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -45187,7 +45507,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 38
+    - 25
     indent: 5
     code: 117
   - !ruby/object:RPG::EventCommand
@@ -45206,7 +45526,7 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Vern]Anyway, this Mash is pretty alright."
+    - "\\p[1]\\na[Vern]Anyway, this Mash is pretty alright."
     indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -45216,27 +45536,27 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Enough to survive the night?"
+    - "\\p[0]\\na[Coda]Enough to survive the night?"
     indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 38
+    - 25
     indent: 6
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Vern]Enough for me to sleep tight!"
+    - "\\p[1]\\na[Vern]Enough for me to sleep tight!"
     indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 26
     indent: 6
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Enough, this is so damn trite."
+    - "\\p[1]\\na[Frie]Enough, this is so damn trite."
     indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -45246,13 +45566,13 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda](At least I know I did it right.)"
+    - "\\p[0]\\na[Coda](At least I know I did it right.)"
     indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - 33
+    - 34
     - 0
     - 10
     - 3
@@ -45260,7 +45580,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
     - 3
@@ -45277,7 +45597,7 @@ root:
     code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
     - 10
@@ -45308,7 +45628,7 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Vern]This is really good, but you're"
+    - "\\p[1]\\na[Vern]This is really good, but you're"
     indent: 7
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -45318,7 +45638,7 @@ root:
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 18
     indent: 7
@@ -45486,6 +45806,11 @@ root:
     parameters: []
     indent: 7
     code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'Note: replace the stuff below with vern stuff'
+    indent: 8
+    code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
@@ -47811,6 +48136,13 @@ root:
     parameters: []
     indent: 6
     code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 48
+    - 48
+    - 1
+    indent: 7
+    code: 121
   - !ruby/object:RPG::EventCommand
     parameters:
     - it's impossible to get here

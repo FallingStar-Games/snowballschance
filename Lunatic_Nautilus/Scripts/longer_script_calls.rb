@@ -10,6 +10,7 @@
 #  This interpreter runs event commands. This class is used within the
 #  Game_System class and the Game_Event class.
 #==============================================================================
+
 class Interpreter
   #-------------------------------------------------------------------
   # * Constant
