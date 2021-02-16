@@ -322,6 +322,16 @@ class Game_Character
    if terrain_tag(@last_x[1],@last_y[1]) != FP_TAG
      return
    end
+   # Jaiden's patch
+   # Don't draw footprints for this character if it is invisible
+   # Squad member check first
+   if defined?(Game_Ally) && self.is_a?(Game_Ally)
+     return if self.transparent == true
+   end
+   if self.opacity == 0
+     return
+   end
+   
    fp_index = nil
    # left
    if @x > @last_x[1]
