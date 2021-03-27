@@ -1,6 +1,6 @@
---- !ruby/object:Hash
+---
 root:
-- 
+-
 - !ruby/object:RPG::CommonEvent
   name: melt snow
   list:
@@ -46461,37 +46461,17 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 25
     indent: 5
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]...Hm."
+    - "\\p[1]\\na[Vern]Mmm, Coda! This is a really great fish!"
     indent: 5
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 38
-    indent: 5
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Vern]You like it?"
-    indent: 5
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 39
-    indent: 5
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Frie]I normally don't like fish, but"
-    indent: 5
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - this is a pleasant surprise.
+    - You're one heck of a good cook!
     indent: 5
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -46501,7 +46481,32 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda](Yes! I got it right!)"
+    - "\\p[0]\\na[Coda]You're one heck of a"
+    indent: 5
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - good fisherman, Vern!
+    indent: 5
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 25
+    indent: 5
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Vern]Aww, thanks!"
+    indent: 5
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    indent: 5
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Frie]Heh, here's to teamwork. *clink*"
     indent: 5
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -46511,34 +46516,34 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Your friendship value with Frie
+    - Your friendship value with Vern
     indent: 5
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - has risen by 2!
+    - has risen by 4!
     indent: 5
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 33
-    - 33
+    - 34
+    - 34
     - 1
     - 0
-    - 2
+    - 4
     indent: 5
     code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
-    - 16
+    - 17
     indent: 5
     code: 313
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - 33
+    - 34
     - 0
     - 10
     - 3
@@ -46546,7 +46551,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
     - 15
@@ -46563,13 +46568,38 @@ root:
     code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
     - 75
     - false
     indent: 5
     code: 311
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 5
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "// move this to after all the food power "
+    indent: 5
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - events are done
+    indent: 5
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]...Did you just make a clinking"
+    indent: 5
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - noise with your mouth?
+    indent: 5
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 5
