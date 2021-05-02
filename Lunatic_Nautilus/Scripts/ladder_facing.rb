@@ -8,7 +8,7 @@ module Ladder
   #Terrain tags using as ladder tags
   LADDER_TERRAINS = [5]
   #Maps using ladder tags
-  LADDER_MAPS = [1,18,25,30,78,87,20,165]
+  LADDER_MAPS = [1,18,25,30,54,78,87,20,165]
 end
  
 #==============================================================================
