@@ -645,21 +645,6 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - 12
-          - 0
-          - 0
-          - 1
-          indent: 1
-          code: 128
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 12
-          - 2
-          - 12
-          indent: 1
-          code: 319
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 12
           - 3
           - 6
           indent: 1
@@ -673,14 +658,49 @@ root: !ruby/object:RPG::Map
           code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 1
+          - 8
+          - 0
+          - 3
+          - 0
+          indent: 1
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:Tone
+            red: -136.0
+            green: -102.0
+            blue: 17.0
+            gray: 0.0
+          - 0
+          indent: 2
+          code: 223
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - !ruby/object:Tone
             red: 0.0
             green: 0.0
             blue: 0.0
             gray: 0.0
           - 10
-          indent: 1
+          indent: 2
           code: 223
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 412
         - !ruby/object:RPG::EventCommand
           parameters:
           - 10
@@ -3207,6 +3227,11 @@ root: !ruby/object:RPG::Map
           - 3
           indent: 0
           code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - new_page("finnpage")
+          indent: 0
+          code: 355
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
