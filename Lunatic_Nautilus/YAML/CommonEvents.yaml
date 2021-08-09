@@ -12975,7 +12975,7 @@ root:
   switch_id: 1
   id: 32
 - !ruby/object:RPG::CommonEvent
-  name: food power
+  name: food power (old)
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
@@ -40679,12 +40679,7 @@ root:
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Restores SP and halves SP costs for a day,
-    indent: 4
-    code: 401
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - a pretty non-fungible change if you ask me!
+    - Restores SP and halves SP costs for a day.
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -41207,7 +41202,7 @@ root:
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Also prevents sore throat. (Is that necessary?)
+    - Also prevents sore throat somehow.
     indent: 3
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -41362,6 +41357,16 @@ root:
     indent: 1
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - ''
+    indent: 1
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - put aura boosts here
+    indent: 1
+    code: 408
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
     code: 0
@@ -41502,7 +41507,7 @@ root:
   switch_id: 1
   id: 109
 - !ruby/object:RPG::CommonEvent
-  name: 'test '
+  name: test  (unusued)
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
@@ -44312,7 +44317,7 @@ root:
   switch_id: 1
   id: 115
 - !ruby/object:RPG::CommonEvent
-  name: "???"
+  name: "??? (unused)"
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
@@ -46391,7 +46396,17 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]...Eugh."
+    - 25
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Vern]Hmm... pretty decent fish."
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\na[Vern]Not the best, but still good."
     indent: 4
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -46401,19 +46416,24 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Vern]Um, you gonna eat that fish?"
+    - "\\p[0]\\na[Coda]Cooked it the best I could."
     indent: 4
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 25
     indent: 4
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]I don't like fish."
+    - "\\na[Vern]And you did great. "
     indent: 4
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Maybe next time I'll get lucky with my catches.
+    indent: 4
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - 36
@@ -46421,34 +46441,34 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Your friendship value with Frie...
+    - Your friendship value with Vern
     indent: 4
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Has changed, somehow.
+    - has risen by 3!
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 33
-    - 33
+    - 34
+    - 34
     - 1
     - 0
-    - 0
+    - 3
     indent: 4
     code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
-    - 15
+    - 17
     indent: 4
     code: 313
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - 33
+    - 34
     - 0
     - 10
     - 3
@@ -46456,10 +46476,10 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
-    - 20
+    - 15
     - false
     indent: 5
     code: 311
@@ -46473,10 +46493,10 @@ root:
     code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
-    - 75
+    - 50
     - false
     indent: 4
     code: 311
@@ -46667,193 +46687,83 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 1
-    - 33
-    - 0
-    - 10
-    - 3
+    - 25
     indent: 6
-    code: 111
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 39
-    indent: 7
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]..."
-    indent: 7
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Frie]I'm gonna try it."
-    indent: 7
+    - "\\p[1]\\na[Vern]Is this, worms?"
+    indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
     - 37
-    indent: 7
+    indent: 6
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]:D!"
-    indent: 7
+    - "\\na[Coda]Yep!"
+    indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
-    indent: 7
+    - 25
+    indent: 6
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]...Huh, better than I expected."
-    indent: 7
+    - "\\p[1]\\na[Vern]Sorry Coda, but I don't have "
+    indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Not my favorite, but...
-    indent: 7
+    - it in me to eat worms.
+    indent: 6
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - 37
-    indent: 7
+    indent: 6
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda]Glad you like it!"
-    indent: 7
+    - "\\na[Coda]..."
+    indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
     - 36
-    indent: 7
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - Your friendship value with Frie
-    indent: 7
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - has risen by 3!
-    indent: 7
-    code: 401
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 33
-    - 33
-    - 1
-    - 0
-    - 3
-    indent: 7
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 2
-    - 0
-    - 16
-    indent: 7
-    code: 313
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 2
-    - 0
-    - 0
-    - 50
-    - false
-    indent: 7
-    code: 311
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 7
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
     indent: 6
-    code: 411
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 39
-    indent: 7
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Aaagh."
-    indent: 7
+    - Your friendship value with Vern
+    indent: 6
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
-    indent: 7
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Frie]Look, Coda, I'll just take the Mash Meal"
-    indent: 7
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - for now. We'd need to be much better
-    indent: 7
+    - has lowered by 1...
+    indent: 6
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - friends for me to trust you on this.
-    indent: 7
-    code: 401
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 37
-    indent: 7
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda](Ugh... I messed up.)"
-    indent: 7
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 36
-    indent: 7
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - Your friendship value with Frie...
-    indent: 7
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - Has changed, somehow.
-    indent: 7
-    code: 401
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 33
-    - 33
+    - 34
+    - 34
     - 2
     - 0
     - 1
-    indent: 7
+    indent: 6
     code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 14
-    indent: 7
+    indent: 6
     code: 313
   - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 7
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 6
-    code: 412
-  - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
     - 10
@@ -46884,32 +46794,12 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 25
     indent: 7
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Mmm!"
-    indent: 7
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 37
-    indent: 7
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Coda]You like it?"
-    indent: 7
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 39
-    indent: 7
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Frie]I always love a good calzone."
+    - "\\p[1]\\na[Vern]I'm loving thish calzone!"
     indent: 7
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -46919,26 +46809,26 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Your friendship value with Frie
+    - Your friendship value with Vern
     indent: 7
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - has increased by 2!
+    - has increased by 3!
     indent: 7
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 33
-    - 33
+    - 34
+    - 34
     - 1
     - 0
-    - 2
+    - 3
     indent: 7
     code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 17
     indent: 7
@@ -46946,7 +46836,7 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - 33
+    - 34
     - 0
     - 10
     - 3
@@ -46954,10 +46844,10 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
-    - 50
+    - 10
     - false
     indent: 8
     code: 311
@@ -46971,10 +46861,10 @@ root:
     code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
-    - 10
+    - 50
     - false
     indent: 7
     code: 311
@@ -47002,61 +46892,46 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
+    - 25
     indent: 8
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Frie]Hmph, Finn's Chips? Really?"
+    - "\\p[1]\\na[Vern]Chips wouldn't exactly be my first "
     indent: 8
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 38
-    indent: 8
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Vern]Don't like 'em?"
-    indent: 8
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 39
-    indent: 8
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Frie]Don't like Finn. His whole thing's"
-    indent: 8
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - a bit too fairytale beautiful for my liking.
+    - choice for dinner, but it tastes alright at least.
     indent: 8
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
+    - 36
     indent: 8
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda](Hey, some of us need fairytales!)"
+    - Your friendship value with Vern
     indent: 8
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 33
-    - 33
+    - has increased by 1!
+    indent: 8
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 34
+    - 34
     - 1
     - 0
-    - 0
+    - 1
     indent: 8
     code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 15
     indent: 8
@@ -47064,7 +46939,7 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
-    - 33
+    - 34
     - 0
     - 10
     - 3
@@ -47072,10 +46947,10 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
-    - 50
+    - 10
     - false
     indent: 9
     code: 311
@@ -47089,10 +46964,10 @@ root:
     code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 2
+    - 3
     - 0
     - 0
-    - 15
+    - 30
     - false
     indent: 8
     code: 311
@@ -47120,84 +46995,29 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 37
+    - 25
     indent: 9
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\na[Coda](I wonder what Frie thinks of the"
+    - "\\p[1]\\na[Vern]I'm really wishing you got me "
     indent: 9
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Kale Chips...)
+    - 'something with meat instead of kale chips. '
     indent: 9
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 39
-    indent: 9
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Frie]...You know, I am surprised by"
+    - "\\p[1]\\na[Vern]It is edible, but it doesn't "
     indent: 9
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - how much I actually like these.
+    - even taste filling.
     indent: 9
     code: 401
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 40
-    indent: 9
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Topaz]I'm never wrong, am I?"
-    indent: 9
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 39
-    indent: 9
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Frie]Eh heh heh.\\|"
-    indent: 9
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - Ahahahahaha.
-    indent: 9
-    code: 401
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "*cackling*"
-    indent: 9
-    code: 401
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 38
-    indent: 9
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Vern]You... kinda had that one coming, Pazzy."
-    indent: 9
-    code: 101
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 40
-    indent: 9
-    code: 117
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "\\na[Topaz]Hush."
-    indent: 9
-    code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
     - 36
@@ -47205,62 +47025,27 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Your friendship value with Frie
+    - Your friendship value with Vern
     indent: 9
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - has increased by 2!
+    - hasn't changed.
     indent: 9
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 33
-    - 33
-    - 1
+    - 3
     - 0
-    - 2
-    indent: 9
-    code: 122
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 2
-    - 0
-    - 16
+    - 15
     indent: 9
     code: 313
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 1
-    - 33
+    - 3
+    - 0
     - 0
     - 10
-    - 3
-    indent: 9
-    code: 111
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 2
-    - 0
-    - 0
-    - 50
-    - false
-    indent: 10
-    code: 311
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 10
-    code: 0
-  - !ruby/object:RPG::EventCommand
-    parameters: []
-    indent: 9
-    code: 412
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 2
-    - 0
-    - 0
-    - 25
     - false
     indent: 9
     code: 311
@@ -47773,6 +47558,91 @@ root:
     indent: 4
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - fish
+    indent: 4
+    code: 118
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]You expect me to eat this fish? "
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'Did I not make it clear that I do not eat '
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - the corpses of dead animals?
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]\\na[Coda]It's fish though."
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]Fish are living creatures too!"
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 14
+    indent: 4
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 4
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Your friendship value with Topaz
+    indent: 4
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - has dropped by 2!
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 35
+    - 35
+    - 2
+    - 0
+    - 2
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 10
+    - false
+    indent: 4
+    code: 311
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 4
     code: 0
@@ -47794,6 +47664,11 @@ root:
     - Great Fishy Dish
     indent: 5
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - fish
+    indent: 5
+    code: 119
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 5
@@ -47817,6 +47692,71 @@ root:
     indent: 6
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 6
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]Worms? WORMS?! "
+    indent: 6
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - You expect me to eat WORMS?!
+    indent: 6
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]How dare you attempt to "
+    indent: 6
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - feed me such a dish!
+    indent: 6
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 14
+    indent: 6
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 6
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Your friendship value with Topaz
+    indent: 6
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - has dropped by 2!
+    indent: 6
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 35
+    - 35
+    - 2
+    - 0
+    - 2
+    indent: 6
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 10
+    - false
+    indent: 6
+    code: 311
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 6
     code: 0
@@ -47838,6 +47778,62 @@ root:
     - Calzone
     indent: 7
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 7
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]This calzone..."
+    indent: 7
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]I was almost prepared to enjoy it, "
+    indent: 7
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'but seeing as it contains pepperoni, '
+    indent: 7
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - I cannot allow myself to continue consuming it.
+    indent: 7
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 15
+    indent: 7
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 7
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Your friendship value with Topaz
+    indent: 7
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - hasn't changed.
+    indent: 7
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 15
+    - false
+    indent: 7
+    code: 311
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 7
@@ -47861,6 +47857,92 @@ root:
     indent: 8
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 8
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]Hm... this seems adiquate. "
+    indent: 8
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'Perhaps better for a snack, but satisfying '
+    indent: 8
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - nonetheless.
+    indent: 8
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 15
+    indent: 8
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 8
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Your friendship value with Topaz
+    indent: 8
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - has risen by 1!
+    indent: 8
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 35
+    - 35
+    - 1
+    - 0
+    - 1
+    indent: 8
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 35
+    - 0
+    - 10
+    - 3
+    indent: 8
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 15
+    - false
+    indent: 9
+    code: 311
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 9
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 8
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 10
+    - false
+    indent: 8
+    code: 311
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 8
     code: 0
@@ -47882,6 +47964,97 @@ root:
     - Kale Chips
     indent: 9
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 9
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]It takes a discerning palette to truly "
+    indent: 9
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - appriciate the delicate complexity of these chips.
+    indent: 9
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]It is fortunate that I am one "
+    indent: 9
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - with such a gift to appriciate it.
+    indent: 9
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 15
+    indent: 9
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 9
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Your friendship value with Topaz
+    indent: 9
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - has risen by 2!
+    indent: 9
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 35
+    - 35
+    - 1
+    - 0
+    - 2
+    indent: 9
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 35
+    - 0
+    - 10
+    - 3
+    indent: 9
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 15
+    - false
+    indent: 10
+    code: 311
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 10
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 9
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 15
+    - false
+    indent: 9
+    code: 311
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 9

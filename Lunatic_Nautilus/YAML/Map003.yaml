@@ -735,7 +735,7 @@ root: !ruby/object:RPG::Map
           code: 125
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 40
+          - 37
           - 0
           - 0
           - 7
@@ -743,7 +743,7 @@ root: !ruby/object:RPG::Map
           code: 126
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 39
+          - 38
           - 0
           - 0
           - 12
@@ -751,7 +751,7 @@ root: !ruby/object:RPG::Map
           code: 126
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 41
+          - 22
           - 0
           - 0
           - 7
@@ -767,7 +767,7 @@ root: !ruby/object:RPG::Map
           code: 126
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 42
+          - 31
           - 0
           - 0
           - 2
@@ -775,7 +775,7 @@ root: !ruby/object:RPG::Map
           code: 126
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 43
+          - 19
           - 0
           - 0
           - 5
@@ -783,7 +783,7 @@ root: !ruby/object:RPG::Map
           code: 126
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 44
+          - 23
           - 0
           - 0
           - 1
@@ -3006,7 +3006,12 @@ root: !ruby/object:RPG::Map
           parameters:
           - "$game_system.regroup_timer =nil"
           indent: 0
-          code: 355
+          code: 108
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - doesn't woirk
+          indent: 0
+          code: 408
         - !ruby/object:RPG::EventCommand
           parameters:
           - p "aaa"
@@ -3014,14 +3019,9 @@ root: !ruby/object:RPG::Map
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "$game_party.set_positiong"
+          - "$game_party.set_positiong(3, 20, 20)"
           indent: 0
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "(3, 20, 20)"
-          indent: 0
-          code: 655
+          code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[7]\\na[Coda]...Got it!"

@@ -34,7 +34,8 @@ class Cookcalc
   [2,3] => 24,
   [2,4] => 27,
 
-
+#-------------------------------------------------
+# ---------------- this ---------------
   #snacks
   [4,5] => 40, #fourleaf compote
   [5,5] => 39, #threeleaf compote
@@ -56,145 +57,10 @@ class Cookcalc
   [19] => 3, #fishy dish
   [20] => 4, #Great fishy dish
   [21] => 5, #worm bake
-  ##green shroom
-  #[2,16,1,0] => 0, #mash meal
-  #[2,17,1,0] => 0, #meaty meal
-  #[2,18,1,0] => 0, #veggie stirfry
-  #[2,19,1,0] => 0, #fishy dish
-  #[2,20,1,0] => 0, #Great fishy dish
-  #[2,21,1,0] => 0, #worm bake
-  ##yellow shroom
-  #[2,16,2,0] => 4, #mash meal
-  #[2,17,2,0] => 3, #meaty meal
-  #[2,18,2,0] => 1, #veggie stirfry
-  #[2,19,2,0] => 0, #fishy dish
-  #[2,20,2,0] => 0, #Great fishy dish
-  #[2,21,2,0] => 2, #worm bake
-  ##spicy
-  #[2,16,3,0] => 4, #mash meal
-  #[2,17,3,0] => 3, #meaty meal
-  #[2,18,3,0] => 1, #veggie stirfry
-  #[2,19,3,0] => 0, #fishy dish
-  #[2,20,3,0] => 0, #Great fishy dish
-  #[2,21,3,0] => 2, #worm bake  
-  ##3 leaf
-  #[2,16,4,0] => 4, #mash meal
-  #[2,17,4,0] => 3, #meaty meal
-  #[2,18,4,0] => 1, #veggie stirfry
-  #[2,19,4,0] => 0, #fishy dish
-  #[2,20,4,0] => 0, #Great fishy dish
-  #[2,21,4,0] => 2, #worm bake  
-  ##4 leaf
-  #[2,16,5,0] => 4, #mash meal
-  #[2,17,5,0] => 3, #meaty meal
-  #[2,18,5,0] => 1, #veggie stirfry
-  #[2,19,5,0] => 0, #fishy dish
-  #[2,20,5,0] => 0, #Great fishy dish
-  #[2,21,5,0] => 2, #worm bake  
-  ##pine needle
-  #[2,16,6,0] => 4, #mash meal
-  #[2,17,6,0] => 3, #meaty meal
-  #[2,18,6,0] => 1, #veggie stirfry
-  #[2,19,6,0] => 0, #fishy dish
-  #[2,20,6,0] => 1, #Great fishy dish
-  #[2,21,6,0] => 2, #worm bake  
-# #good luck also filling this out for very single auracharge rip in pieces
 
   [25] => 6, #calzone
   [34] => 7, #Finn chipmeal
   [35] => 8, #Kale chipmeal
-  ##curious about worms
-  #[2,23] => 3, #meaty plus OUTDATED
-  #[2,24] => 0, #fishy plus OUTDATED
-  #[2,26] => 1, #hot vegan OUTDATED
-  #[2,27] => 1, #worm plus OUTDATED
-  ##fucking 0, are you serious?
-  #[2,29] => 0,
-  #[2,30] => 0,
-  #[2,31] => 0,
-  #[2,32] => 0,
-  #[2,33] => 0,
-
-  #others have not had new sections added yet
-  
-  ##Vern
-  #[3,16] => 1,
-  #[3,17] => 3,
-  #[3,18] => 2,
-  #[3,19] => 3,
-  #[3,20] => 1,
-  #[3,21] => 0, #worm
-  
-  #[3,23] => 4,
-  #[3,24] => 4,
-  #[3,25] => 4,
-  #[3,26] => 2,
-  #[3,27] => 0, #worm plus
-  
-  #[3,29] => 0,
-  #[3,30] => 0,
-  #[3,31] => 0,
-  #[3,32] => 0,
-  #[3,33] => 0,  
-
-  ##Arctos 
-  #[4,16] => 1,
-  #[4,17] => 3,
-  #[4,18] => 2,
-  #[4,19] => 3,
-  #[4,20] => 1,
-  #[4,21] => 2, #worm
-  
-  #[4,23] => 4,
-  #[4,24] => 4,
-  #[4,25] => 4,
-  #[4,26] => 2,
-  #[4,27] => 2, #worm plus
-  
-  #[4,29] => 0,
-  #[4,30] => 0,
-  #[4,31] => 0,
-  #[4,32] => 0,
-  #[4,33] => 0,  
-  
-  ##Topaz
-  #[6,16] => 1,
-  #[6,17] => 0,
-  #[6,18] => 2,
-  #[6,19] => 0,
-  #[6,20] => 3,
-  #[6,21] => 0, #worm
-  
-  #[6,23] => 0,
-  #[6,24] => 0,
-  #[6,25] => 0,
-  #[6,26] => 4,
-  #[6,27] => 0, #worm plus
-  
-  #[6,29] => 0,
-  #[6,30] => 0,
-  #[6,31] => 0,
-  #[6,32] => 0,
-  #[6,33] => 0, 
-  ##Coda
-  #[12,16] => 1,
-  #[12,17] => 2,
-  #[12,18] => 2,
-  #[12,19] => 2,
-  #[12,20] => 2,
-  #[12,21] => 3, #worm
-  
-  #[12,23] => 4,
-  #[12,24] => 4,
- # [12,25] => 3,
-  #[12,26] => 4,
-  #[12,27] => 4, #worm plus
-  
-  #[12,29] => 0,
-  #[12,30] => 0,
-  #[12,31] => 0,
-  #[12,32] => 0,
-  #[12,33] => 0 
   }
   
   def self.armornum
