@@ -1,6 +1,6 @@
----
+--- !ruby/object:Hash
 root:
--
+- 
 - !ruby/object:RPG::CommonEvent
   name: melt snow
   list:
@@ -43587,6 +43587,11 @@ root:
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
+    - random number is the armor ID
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 1
     - 11
     - 0
@@ -43838,6 +43843,48 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 11
+    - 0
+    - 7
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 13
+    - 0
+    - 0
+    - 1
+    indent: 1
+    code: 128
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    - 24
+    - 0
+    - 0
+    - 14
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 13
+    - 1
+    - 0
+    - 1
+    indent: 1
+    code: 126
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -43943,6 +43990,16 @@ root:
     parameters: []
     indent: 1
     code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - slam the custom food id into this variable,
+    indent: 2
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - which is updated every turn it seems
+    indent: 2
+    code: 408
   - !ruby/object:RPG::EventCommand
     parameters:
     - "$game_variables[3]=Cookcalc.multi"

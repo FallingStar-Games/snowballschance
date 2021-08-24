@@ -98,7 +98,7 @@ elsif @ingre== 9 #pine tea
   else
   p "what the hell did you put in your ingredience?"
   end
- 
+p "gimme ur components"   
   #remove component
   if @shroom == 1
   $game_party.lose_item(10, 1) #poison
@@ -121,7 +121,7 @@ end #end of snack
   #remove ingre and remove shroom
   #convert ingre back to its item
   #it's a number from 0-8
-
+p "is this armor method even used?"  
 if @ingre == 0
   #plain
 elsif @ingre== 1
@@ -146,7 +146,7 @@ elsif @ingre== 8
 else
   p "what the hell did you put in your ingredience?"
   end
-  
+p "toppings"  
   #remove topping
   if @shroom == 1
   $game_party.lose_item(10, 1) #poison
@@ -198,8 +198,8 @@ $game_party.lose_item(27, 1) #meal kit is always used
 end
 #----------------------------------
   def self.multi
+    #somehow this is actually being used in the new system!
 #this returns a number to be used to determine a thing, between 0 and 4
-
 #this thing is returning nil?
 
   if $game_variables[9]<=0
@@ -223,13 +223,17 @@ end
   else
     p "ur a bitch"
   end
+  p "party members amount is " + $game_variables[9] + " now."
   end
   end
   end
   end
   
   end
-
+#current actor is the one determined by bbb up there
+#meal refers to whats in bbb's armor1 slot
+#topping refers to what's in bbb's armor2 slot
+#auracharge refers to what's in bbb's armor4 slot
     actor=$data_actors[@bbb].id
     meal= $game_actors[@bbb].armor1_id
     topping= $game_actors[@bbb].armor2_id
@@ -239,7 +243,10 @@ end
     
     
     #return FoodPrefhash[[actor,meal,topping,auracharge]] #edit, kinda iffy tho
-    return FoodPrefhash[[meal]] #another edit, even iffier :mspa:
+    
+    #gives the meal in the foodpref hash, this is used in foodpower2
+    return FoodPrefhash[[meal]]
+    
 end
 
 
