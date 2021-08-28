@@ -98,7 +98,7 @@ elsif @ingre== 9 #pine tea
   else
   p "what the hell did you put in your ingredience?"
   end
-p "gimme ur components"   
+#p "gimme ur components"   
   #remove component
   if @shroom == 1
   $game_party.lose_item(10, 1) #poison
