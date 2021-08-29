@@ -111,6 +111,16 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 37
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]\\na[Coda](Hm, do we got enough sticks...)"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 23
           - 23
           - 0
@@ -127,16 +137,6 @@ root: !ruby/object:RPG::Map
           - 1
           indent: 0
           code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 37
-          indent: 1
-          code: 117
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\p[0]\\na[Coda](Hm, do we got enough sticks...)"
-          indent: 1
-          code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[0]\\na[Coda](...Phew, we do.)"
@@ -160,9 +160,14 @@ root: !ruby/object:RPG::Map
           code: 411
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[0]\\na[Coda]I'll be back in a bit."
+          - "\\p[0]\\na[Coda]...I need to go grab some sticks."
           indent: 1
           code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - I'll be back in a bit.
+          indent: 1
+          code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
           - -1

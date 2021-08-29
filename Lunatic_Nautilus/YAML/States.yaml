@@ -1,6 +1,6 @@
---- !ruby/object:Hash
+---
 root:
-- 
+-
 - !ruby/object:RPG::State
   hit_rate: 100
   hold_turn: 0
@@ -370,18 +370,18 @@ root:
   hit_rate: 100
   hold_turn: 5
   eva: 0
-  name: Focus
+  name: Focused
   zero_hp: false
   atk_rate: 150
   minus_state_set: []
   str_rate: 100
-  battle_only: true
+  battle_only: false
   slip_damage: false
-  rating: 3
+  rating: 5
   nonresistance: true
   int_rate: 100
   plus_state_set: []
-  maxsp_rate: 200
+  maxsp_rate: 150
   shock_release_prob: 10
   cant_evade: false
   mdef_rate: 100
@@ -556,6 +556,93 @@ root:
   maxhp_rate: 200
   auto_release_prob: 0
   id: 18
+  pdef_rate: 100
+  cant_get_exp: false
+  dex_rate: 100
+  animation_id: 0
+- !ruby/object:RPG::State
+  hit_rate: 100
+  hold_turn: 0
+  eva: 0
+  name: Spicy
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
+  str_rate: 100
+  battle_only: true
+  slip_damage: false
+  rating: 5
+  nonresistance: true
+  int_rate: 100
+  plus_state_set: []
+  maxsp_rate: 100
+  shock_release_prob: 0
+  cant_evade: false
+  mdef_rate: 100
+  restriction: 0
+  agi_rate: 100
+  guard_element_set: []
+  maxhp_rate: 100
+  auto_release_prob: 0
+  id: 19
+  pdef_rate: 100
+  cant_get_exp: false
+  dex_rate: 100
+  animation_id: 0
+- !ruby/object:RPG::State
+  hit_rate: 100
+  hold_turn: 0
+  eva: 0
+  name: Friendly
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
+  str_rate: 100
+  battle_only: true
+  slip_damage: false
+  rating: 5
+  nonresistance: true
+  int_rate: 100
+  plus_state_set: []
+  maxsp_rate: 100
+  shock_release_prob: 0
+  cant_evade: false
+  mdef_rate: 100
+  restriction: 0
+  agi_rate: 100
+  guard_element_set: []
+  maxhp_rate: 100
+  auto_release_prob: 0
+  id: 20
+  pdef_rate: 100
+  cant_get_exp: false
+  dex_rate: 100
+  animation_id: 0
+- !ruby/object:RPG::State
+  hit_rate: 100
+  hold_turn: 0
+  eva: 0
+  name: Forgiving
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
+  str_rate: 100
+  battle_only: true
+  slip_damage: false
+  rating: 5
+  nonresistance: true
+  int_rate: 100
+  plus_state_set: []
+  maxsp_rate: 100
+  shock_release_prob: 0
+  cant_evade: false
+  mdef_rate: 100
+  restriction: 0
+  agi_rate: 100
+  guard_element_set: []
+  maxhp_rate: 100
+  auto_release_prob: 0
+  id: 21
   pdef_rate: 100
   cant_get_exp: false
   dex_rate: 100

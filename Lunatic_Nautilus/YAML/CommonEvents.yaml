@@ -1,6 +1,6 @@
---- !ruby/object:Hash
+---
 root:
-- 
+-
 - !ruby/object:RPG::CommonEvent
   name: melt snow
   list:
@@ -2839,8 +2839,39 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
+    - 8
+    - 0
+    - 0
+    - 1
     indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - "$game_system.menu_disabled"
+    indent: 3
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    indent: 4
     code: 135
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 2
@@ -2913,9 +2944,23 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 0
+    - 12
+    - "!$game_system.menu_disabled"
     indent: 5
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    indent: 6
     code: 135
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 6
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - -1
@@ -46162,6 +46207,45 @@ root:
     indent: 1
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Frie]Coda, never put these mushrooms "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - in my food ever again.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'You are almost certain your friendship value '
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - with Frie has decreased from this.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 33
+    - 33
+    - 2
+    - 0
+    - 2
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
     code: 0
@@ -46182,6 +46266,48 @@ root:
     - do you think I LIKE fire??
     indent: 1
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Frie]I will add, this dish is too spicy."
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Your friendship value with Frie...
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Has changed, somehow.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 33
+    - 33
+    - 2
+    - 0
+    - 1
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - 0
+    - 0
+    - 2
+    indent: 1
+    code: 312
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
@@ -46204,6 +46330,36 @@ root:
     indent: 1
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Frie]I had to move the berries to the side, "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - but they're pretty good at least.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - 0
+    - 20
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - 0
+    - 0
+    - 7
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
     code: 0
@@ -46224,6 +46380,50 @@ root:
     - i don't like mushrooms
     indent: 1
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Frie]I don't like mushrooms. "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'I don''t like mushrooms touching '
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - my food either.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Your friendship value with Frie...
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Has changed, somehow.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 33
+    - 33
+    - 2
+    - 0
+    - 1
+    indent: 1
+    code: 122
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
@@ -46246,6 +46446,34 @@ root:
     indent: 1
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Frie]Not only did I need to move all the "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'berries to the side, but they had too many '
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - seeds in them.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - 0
+    - 0
+    - 2
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
     code: 0
@@ -46266,6 +46494,29 @@ root:
     - you better not expect me to eat this
     indent: 1
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Frie]I may be used to the wilderness, "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - but I'd rather not have pine needles on my plate.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - 0
+    - 0
+    - 1
+    indent: 1
+    code: 312
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
@@ -47378,6 +47629,45 @@ root:
     indent: 1
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 25
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Vern]Also, I found some poisonous "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - mushrooms in my dish. I don't like that.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Your friendship value with Vern
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - has lowered by 1...
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 34
+    - 34
+    - 2
+    - 0
+    - 1
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
     code: 0
@@ -47398,6 +47688,31 @@ root:
     - its alright
     indent: 1
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 25
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Vern]I like that hint of spiciness in there."
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 0
+    - 0
+    - 10
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 0
+    - 19
+    indent: 1
+    code: 313
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
@@ -47420,6 +47735,36 @@ root:
     indent: 1
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 25
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Vern]I'm surprised how good this berry "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - sauce is with the rest of it.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 0
+    - 0
+    - 10
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 0
+    - 20
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
     code: 0
@@ -47440,6 +47785,36 @@ root:
     - i like mushrooms
     indent: 1
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 25
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Vern]You picked some good "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - mushrooms, Coda! They're delicious!
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 0
+    - 13
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 0
+    - 0
+    - 11
+    indent: 1
+    code: 312
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
@@ -47462,6 +47837,36 @@ root:
     indent: 1
     code: 108
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 25
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Vern]Oof, I think I got some seeds "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - stuck in my teeth.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 0
+    - 0
+    - 7
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 0
+    - 21
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
     code: 0
@@ -47482,6 +47887,29 @@ root:
     - kinda nice
     indent: 1
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 25
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Vern]The pine needles on the plate make it "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - look fancy, but I'm sure not eating them.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 0
+    - 0
+    - 5
+    indent: 1
+    code: 312
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
@@ -48497,6 +48925,314 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - topping tiem
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 6
+    - 4
+    - 8
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - im not eating that
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]GAH!"
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - These mushrooms don't taste right!
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Your friendship value with Topaz
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - has lowered by 1...
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 35
+    - 35
+    - 2
+    - 0
+    - 1
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 6
+    - 4
+    - 10
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]I will say, there is nothing "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'I love more than a spicy dish which '
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - tests the palette.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 15
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 19
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 6
+    - 4
+    - 11
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - three is good
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]A refined flavor from these berries..."
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - I am impressed!
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 10
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 20
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 6
+    - 4
+    - 9
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - i like mushrooms
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]These mushrooms are fried "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - quite exquisitely! An absolute treat, I must say.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 13
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 10
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 6
+    - 4
+    - 12
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - nice
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]An excellent choice in berries."
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 11
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 21
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 3
+    - 4
+    - 13
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - kinda nice
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Topaz]The pine needle garnish is a darling "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - little touch. It truly elevates the presentation.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 0
+    - 5
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -49211,6 +49947,284 @@ root:
     parameters: []
     indent: 1
     code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - topping tiem
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 12
+    - 4
+    - 8
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - i fucking hate poison
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]\\na[Coda](I think I poisoned myself...)"
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 14
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 12
+    - 4
+    - 10
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]\\na[Coda]Nice and spicy..."
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 0
+    - 10
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 19
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 12
+    - 4
+    - 11
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - three is good
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]\\na[Coda]I think the berry sauce turned "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - out pretty well!
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 20
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 0
+    - 10
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 12
+    - 4
+    - 9
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]\\na[Coda]These mushrooms are so "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - much better fried instead of boiled.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 13
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 0
+    - 15
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 12
+    - 4
+    - 12
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]\\na[Coda]This berry sauce could have been "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - better, but honestly? That's perfectly fine.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 21
+    indent: 1
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 0
+    - 7
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 12
+    - 4
+    - 13
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 37
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]\\na[Coda](The pine needles almost make "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'this dish look like it was cooked by a '
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - professional!)
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 0
+    - 0
+    - 5
+    indent: 1
+    code: 312
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 1
+    - 9
+    indent: 1
+    code: 313
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
