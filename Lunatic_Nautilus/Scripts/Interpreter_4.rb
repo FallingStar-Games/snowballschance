@@ -157,6 +157,36 @@ class Interpreter
           $game_variables[i] %= value
         end
       end
+      
+#EDIT: absolute bullshit friendship value manipulation
+
+      if i == 33 #frie's friendship
+        #if frie has friendly state, then add one to value
+        if $game_actors[2].state?(20) || $game_actors[2].state?(21)
+          p $game_variables[33]
+        $game_variables[33]+=1
+        p $game_variables[33]
+          end
+      end
+      if i == 34 #vern's friendship
+        #if vern has friendly state, then add one to value
+        if $game_actors[3].state?(20) || $game_actors[3].state?(21)
+        $game_variables[34]+=1
+          end
+      end
+      if i == 35 #topaz's friendship
+        #if vern has friendly state, then add one to value
+        if $game_actors[6].state?(20) || $game_actors[6].state?(21)
+        $game_variables[35]+=1
+          end      
+      end
+      if i == 36 #coda's friendship
+        #if vern has friendly state, then add one to value
+        if $game_actors[12].state?(20) || $game_actors[12].state?(21)
+        $game_variables[36]+=1
+          end        
+        end
+#---------------------------------------------------
       # Maximum limit check
       if $game_variables[i] > 99999999
         $game_variables[i] = 99999999

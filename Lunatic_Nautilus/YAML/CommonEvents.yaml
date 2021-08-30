@@ -1,6 +1,6 @@
----
+--- !ruby/object:Hash
 root:
--
+- 
 - !ruby/object:RPG::CommonEvent
   name: melt snow
   list:
@@ -50463,8 +50463,205 @@ root:
   switch_id: 1
   id: 121
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: Vern slam
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &556 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 37
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: false
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *556
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 210
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - move vern to your location
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - why doesn't this work with proper timing
+    indent: 0
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - all I want is Unlimited Jumping Power...
+    indent: 0
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - ex= $game_system.allies[2].x - $game_player.x
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - why=$game_system.allies[2].y - $game_player.y
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "#$game_system.allies[2].jump(-ex,-why)"
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_system.allies[2].x=$game_player.x"
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_system.allies[2].y=$game_player.y"
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_system.allies[2].turn_toward_event(event_id)"
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &557 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 38
+      - &558 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 9
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: true
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *557
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *558
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 2
+    indent: 0
+    code: 207
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 255.0
+    - 10
+    indent: 0
+    code: 224
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &559 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 25
+      - &560 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 13
+      - &561 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 13
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: true
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *559
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *560
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *561
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 210
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 5
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - MOVEROUTE_Actor(3)
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &562 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 38
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: false
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *562
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 210
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - END_MOVEROUTE_Actor(3)
+    indent: 0
+    code: 355
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
