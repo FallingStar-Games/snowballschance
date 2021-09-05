@@ -1,6 +1,6 @@
---- !ruby/object:Hash
+---
 root:
-- 
+-
 - !ruby/object:RPG::CommonEvent
   name: melt snow
   list:
@@ -51034,9 +51034,6 @@ root:
       - &557 !ruby/object:RPG::MoveCommand
         parameters: []
         code: 38
-      - &558 !ruby/object:RPG::MoveCommand
-        parameters: []
-        code: 9
       - !ruby/object:RPG::MoveCommand
         parameters: []
         code: 0
@@ -51047,11 +51044,6 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - *557
-    indent: 0
-    code: 509
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - *558
     indent: 0
     code: 509
   - !ruby/object:RPG::EventCommand
@@ -51080,15 +51072,19 @@ root:
     - 0
     - !ruby/object:RPG::MoveRoute
       list:
-      - &559 !ruby/object:RPG::MoveCommand
+      - &558 !ruby/object:RPG::MoveCommand
         parameters: []
         code: 25
+      - &559 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 13
       - &560 !ruby/object:RPG::MoveCommand
         parameters: []
         code: 13
       - &561 !ruby/object:RPG::MoveCommand
-        parameters: []
-        code: 13
+        parameters:
+        - "$Gamos.check"
+        code: 45
       - !ruby/object:RPG::MoveCommand
         parameters: []
         code: 0
@@ -51096,6 +51092,11 @@ root:
       repeat: false
     indent: 0
     code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *558
+    indent: 0
+    code: 509
   - !ruby/object:RPG::EventCommand
     parameters:
     - *559
@@ -51154,6 +51155,26 @@ root:
     - END_MOVEROUTE_Actor(3)
     indent: 0
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &563 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 38
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: true
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *563
+    indent: 0
+    code: 509
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
