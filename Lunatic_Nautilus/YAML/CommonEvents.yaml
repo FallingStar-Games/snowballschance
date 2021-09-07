@@ -1,6 +1,6 @@
----
+--- !ruby/object:Hash
 root:
--
+- 
 - !ruby/object:RPG::CommonEvent
   name: melt snow
   list:
@@ -5988,22 +5988,47 @@ root:
     code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 0
-    - 44
-    - 0
+    - 12
+    - Keys.press?($keyboard["strafe"])
     indent: 0
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 12
-    - Keys.press?($keyboard["strafe"])
+    - 8
+    - 9
     indent: 1
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 106
+    - 9
+    - 1
+    - 0
+    - 1
+    indent: 2
+    code: 126
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 124
     indent: 2
     code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'You don''t have any snow '
+    indent: 2
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - to hit targets with!
+    indent: 2
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 2
@@ -51319,8 +51344,247 @@ root:
   switch_id: 1
   id: 123
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: Topaz hit
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &564 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 37
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: false
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *564
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 210
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - move topaz to your location
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 80
+      name: boingthing
+      pitch: 100
+    indent: 0
+    code: 250
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_system.allies[1].x= $game_player.x"
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_system.allies[1].y= $game_player.y"
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_system.allies[1].turn_toward_event(event_id)"
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &565 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 38
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: true
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *565
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - -1
+    - 2
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - 2
+    indent: 1
+    code: 207
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - -1
+    - 4
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - 59
+    indent: 1
+    code: 207
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - -1
+    - 6
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - 6
+    indent: 1
+    code: 207
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - -1
+    - 8
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - 24
+    indent: 1
+    code: 207
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$Shooty.check"
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 255.0
+    - 10
+    indent: 0
+    code: 224
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 210
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 5
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - MOVEROUTE_Actor(2)
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &566 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 38
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: false
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *566
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 210
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - END_MOVEROUTE_Actor(2)
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &567 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 38
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: true
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *567
+    indent: 0
+    code: 509
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
