@@ -14396,10 +14396,38 @@ root:
     flash_scope: 0
     se: !ruby/object:RPG::AudioFile
       volume: 80
-      name: phooii
-      pitch: 90
+      name: boingthing
+      pitch: 50
     flash_duration: 5
     frame: 0
+  - !ruby/object:RPG::Animation::Timing
+    flash_color: !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 255.0
+    condition: 0
+    flash_scope: 0
+    se: !ruby/object:RPG::AudioFile
+      volume: 80
+      name: boingthing
+      pitch: 70
+    flash_duration: 5
+    frame: 1
+  - !ruby/object:RPG::Animation::Timing
+    flash_color: !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 255.0
+    condition: 0
+    flash_scope: 0
+    se: !ruby/object:RPG::AudioFile
+      volume: 80
+      name: boingthing
+      pitch: 90
+    flash_duration: 5
+    frame: 2
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: haha
@@ -18917,59 +18945,671 @@ root:
     flash_scope: 2
     se: !ruby/object:RPG::AudioFile
       volume: 80
-      name: explosion
-      pitch: 150
+      name: fuzzbeep
+      pitch: 100
     flash_duration: 3
     frame: 7
-  animation_hue: 0
+  animation_hue: 110
 - !ruby/object:RPG::Animation
-  name: ''
-  animation_name: ''
+  name: shoot 6
+  animation_name: basicstuffx2
   frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 3
+      - 65528
+      - 65528
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 2
+      - 65528
+      - 65528
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 1
+      - 65528
+      - 65528
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 65528
+      - 65528
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 24
+      - 65528
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 80
+      - 65528
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 112
+      - 65528
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 224
+      - 65528
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 304
+      - 65528
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
   - !ruby/object:RPG::Animation::Frame
     cell_max: 0
     cell_data: !ruby/object:Table
-      dim: 1
+      dim: 2
       zsize: 1
-      ysize: 1
+      ysize: 8
       xsize: 0
       data: []
-  frame_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  frame_max: 14
   position: 1
   id: 60
-  timings: []
-  animation_hue: 0
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    flash_color: !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 255.0
+    condition: 0
+    flash_scope: 0
+    se: !ruby/object:RPG::AudioFile
+      volume: 80
+      name: chowhhhe
+      pitch: 150
+    flash_duration: 5
+    frame: 0
+  - !ruby/object:RPG::Animation::Timing
+    flash_color: !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 204.0
+    condition: 1
+    flash_scope: 2
+    se: !ruby/object:RPG::AudioFile
+      volume: 80
+      name: fuzzbeep
+      pitch: 100
+    flash_duration: 3
+    frame: 7
+  animation_hue: 110
 - !ruby/object:RPG::Animation
-  name: ''
-  animation_name: ''
+  name: shoot 2
+  animation_name: basicstuffx2
   frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 3
+      - 65520
+      - 8
+      - 100
+      - 90
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 2
+      - 65520
+      - 8
+      - 100
+      - 90
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 1
+      - 65520
+      - 8
+      - 100
+      - 90
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 65520
+      - 8
+      - 100
+      - 90
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 65528
+      - 32
+      - 100
+      - 90
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 65528
+      - 80
+      - 100
+      - 90
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 65528
+      - 112
+      - 100
+      - 90
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 65528
+      - 160
+      - 100
+      - 90
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 65528
+      - 160
+      - 100
+      - 90
+      - 1
+      - 50
+      - 1
   - !ruby/object:RPG::Animation::Frame
     cell_max: 0
     cell_data: !ruby/object:Table
-      dim: 1
+      dim: 2
       zsize: 1
-      ysize: 1
+      ysize: 8
       xsize: 0
       data: []
-  frame_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  frame_max: 14
   position: 1
   id: 61
-  timings: []
-  animation_hue: 0
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    flash_color: !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 255.0
+    condition: 0
+    flash_scope: 0
+    se: !ruby/object:RPG::AudioFile
+      volume: 80
+      name: chowhhhe
+      pitch: 150
+    flash_duration: 5
+    frame: 0
+  - !ruby/object:RPG::Animation::Timing
+    flash_color: !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 204.0
+    condition: 1
+    flash_scope: 2
+    se: !ruby/object:RPG::AudioFile
+      volume: 80
+      name: fuzzbeep
+      pitch: 100
+    flash_duration: 3
+    frame: 7
+  animation_hue: 110
 - !ruby/object:RPG::Animation
-  name: ''
-  animation_name: ''
+  name: shoot 8
+  animation_name: basicstuffx2
   frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 3
+      - 8
+      - 16
+      - 100
+      - 270
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 2
+      - 8
+      - 16
+      - 100
+      - 270
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 1
+      - 8
+      - 16
+      - 100
+      - 270
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 8
+      - 16
+      - 100
+      - 270
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 65528
+      - 65504
+      - 100
+      - 270
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 65528
+      - 65456
+      - 100
+      - 270
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 65528
+      - 65424
+      - 100
+      - 270
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 65528
+      - 65376
+      - 100
+      - 270
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 65528
+      - 65376
+      - 100
+      - 270
+      - 1
+      - 50
+      - 1
   - !ruby/object:RPG::Animation::Frame
     cell_max: 0
     cell_data: !ruby/object:Table
-      dim: 1
+      dim: 2
       zsize: 1
-      ysize: 1
+      ysize: 8
       xsize: 0
       data: []
-  frame_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 0
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 0
+      data: []
+  frame_max: 14
   position: 1
   id: 62
-  timings: []
-  animation_hue: 0
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    flash_color: !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 255.0
+    condition: 0
+    flash_scope: 0
+    se: !ruby/object:RPG::AudioFile
+      volume: 80
+      name: chowhhhe
+      pitch: 150
+    flash_duration: 5
+    frame: 0
+  - !ruby/object:RPG::Animation::Timing
+    flash_color: !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 204.0
+    condition: 1
+    flash_scope: 2
+    se: !ruby/object:RPG::AudioFile
+      volume: 80
+      name: fuzzbeep
+      pitch: 100
+    flash_duration: 3
+    frame: 7
+  animation_hue: 110

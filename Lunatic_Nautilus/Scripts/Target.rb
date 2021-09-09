@@ -35,4 +35,9 @@ class Target
   def been_hit(value)
     $game_self_switches[[$game_map.map_id, @event.id, "A"]] = value
   end
+  
+  def is_hit?
+    $game_self_switches[[$game_map.map_id, @event.id, "A"]]
+  end
+  
 end
