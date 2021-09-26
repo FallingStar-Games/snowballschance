@@ -34,6 +34,7 @@ def initialize
 super(-16, 400, 680, 150)
 self.contents = Bitmap.new(width-32, height-32)
 self.opacity = 0
+self.z= 9999
 self.contents.font.size = $defaultfontsize
 self.contents.font.name = $defaultfonttype
 @actors = []
