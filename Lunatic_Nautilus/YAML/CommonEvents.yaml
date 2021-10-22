@@ -51729,8 +51729,13 @@ root:
   switch_id: 1
   id: 125
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: Mom voice
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - message.sound_audio = 'mom'
+    indent: 0
+    code: 355
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
