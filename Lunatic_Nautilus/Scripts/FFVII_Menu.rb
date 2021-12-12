@@ -30,7 +30,8 @@ class Scene_Menu
      s2 = $data_system.words.skill
      s3 = $data_system.words.equip
      
-    if $game_variables[2]< 8
+    if $game_variables[2]< 10 
+      #8 is when oatmeal is eaten. 10 is after kale chip event
      s4 = "???"
    else
      s4 = "Snackmaking" #"Status"
@@ -65,7 +66,7 @@ class Scene_Menu
     @command_window.disable_item(5)
   end
   #if progress is lower than a certain level, disable snackmaking
-     if $game_variables[2]< 8
+     if $game_variables[2]< 10
      @command_window.disable_item(3)
    end
      # Make play time window

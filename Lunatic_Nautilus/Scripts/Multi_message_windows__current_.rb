@@ -267,7 +267,7 @@ class Game_Message
     # pause for delay number of frames if this is true, toggle with \A in Text
     @auto_comma_pause = true
     # inserts this number of frames to ,!.? characters, nil for off    
-    @auto_comma_delay = 5
+    @auto_comma_delay = 6
     # Skip Commas, Exclamation Points, Periods, and Question Marks when Skipped
     @comma_skip_delay = true
 
