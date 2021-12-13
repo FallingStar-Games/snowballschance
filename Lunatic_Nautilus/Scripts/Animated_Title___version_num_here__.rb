@@ -119,7 +119,7 @@ class Scene_Title
   # only one. 
   
   
-  TEXT = ["Demo 2.9.2", 8, 460, "BPixelDouble", 18]
+  TEXT = ["Demo 2.9.3", 8, 460, "BPixelDouble", 18]
   # ['STRING', X, Y, FONTNAME, FONTSIZE]
   # Have text be displayed on the images such as the version number, etc.
    TEXT_COLOR = Color.new(50, 62, 77, 255)
