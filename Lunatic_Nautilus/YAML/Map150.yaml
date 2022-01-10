@@ -1,10 +1,10 @@
----
+--- !ruby/object:Hash
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
     name: percussionloop
     pitch: 100
-  events:
+  events: !ruby/object:Hash
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -133,14 +133,71 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 0
+          - 61
+          - 0
+          indent: 1
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - new
+          indent: 2
+          code: 108
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:Tone
+            red: -68.0
+            green: -17.0
+            blue: 34.0
+            gray: 0.0
+          - 0
+          indent: 2
+          code: 223
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - midnight
+          - 1
+          - 0
+          - 320
+          - 240
+          - 200
+          - 200
+          - 255
+          - 0
+          indent: 2
+          code: 231
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - old
+          indent: 2
+          code: 108
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - !ruby/object:Tone
             red: -136.0
             green: -102.0
             blue: 17.0
             gray: 0.0
           - 0
-          indent: 1
+          indent: 2
           code: 223
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 412
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1

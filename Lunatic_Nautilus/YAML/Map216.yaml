@@ -1,10 +1,10 @@
----
+--- !ruby/object:Hash
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
     name: ''
     pitch: 100
-  events:
+  events: !ruby/object:Hash
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -126,6 +126,44 @@ root: !ruby/object:RPG::Map
           - 1
           indent: 0
           code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 3
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 3
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:Tone
+            red: -68.0
+            green: -17.0
+            blue: 34.0
+            gray: 0.0
+          - 0
+          indent: 0
+          code: 223
         - !ruby/object:RPG::EventCommand
           parameters:
           - 5
@@ -398,6 +436,13 @@ root: !ruby/object:RPG::Map
           - 22
           indent: 0
           code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 61
+          - 61
+          - 0
+          indent: 0
+          code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
           - !ruby/object:RPG::AudioFile
