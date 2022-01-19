@@ -52123,8 +52123,53 @@ root:
   switch_id: 1
   id: 126
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: power punch menu
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - MOVEROUTE_Actor(3)
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &569 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 25
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: false
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *569
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - END_MOVEROUTE_Actor(3)
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 25
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Vern]Just point out the block and "
+    indent: 0
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - I'll knock its block off!
+    indent: 0
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
