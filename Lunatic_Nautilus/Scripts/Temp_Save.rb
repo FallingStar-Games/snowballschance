@@ -96,7 +96,7 @@ class Scene_File
   #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   TEMP_SAVE_NAME = 'Snapshots/Memories.rxdata'
   DISABLE_PROMPT = false
-  TEMP_LOAD_TEXT = 'Quick load complete. Press Enter to continue.'
+  TEMP_LOAD_TEXT = 'Quick load complete. Press Action key to continue.'
   TEMP_SAVE_TEXT = 'Do you want to quick save?'
   #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   # CONFIG END

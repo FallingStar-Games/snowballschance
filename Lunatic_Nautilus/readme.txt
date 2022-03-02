@@ -7,7 +7,7 @@ Doubleclick the Game.exe to run the game. That's the orange ball gear thing.
 
 ---Controls---
 Directional keys: Standard movement
-PG Down/PG Up: Turn while moving
+Q/W: Turn while moving
 Action key: Examine, Talk to others
 A key: Toggle HUD
 S key: Collect water/??? water
