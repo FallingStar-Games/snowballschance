@@ -225,11 +225,6 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 128
-          indent: 0
-          code: 117
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 0
           - 236
           - 2
@@ -238,6 +233,38 @@ root: !ruby/object:RPG::Map
           - 1
           indent: 0
           code: 201
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 128
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 15
+          indent: 0
+          code: 235
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 62
+          - 0
+          - 5
+          - 1
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_map.replace_tile(5,7,-1,true)"
+          indent: 1
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
         - !ruby/object:RPG::EventCommand
           parameters:
           - 18
