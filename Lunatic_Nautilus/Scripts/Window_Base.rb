@@ -43,11 +43,11 @@ class Window_Base < Window
     when 1
       return Color.new(0, 0, 159, 255) #dark blue
     when 2
-      return Color.new(200, 240, 240, 255) #light blue
+      return Color.new(186, 202, 254, 255) #bacafe blue
     when 3
       return Color.new(51, 73, 128, 255) #green
     when 4
-      return Color.new(255, 193, 193, 255) #NOT cyan, now pink
+      return Color.new(255, 193, 193, 255) #pink
     when 5
       return Color.new(0, 0, 0, 255) #black
     when 6

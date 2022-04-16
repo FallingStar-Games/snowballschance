@@ -169,7 +169,7 @@ root: !ruby/object:RPG::Map
         through: true
       name: Target1
       y: 5
-      x: 3
+      x: 9
       id: 5
     16: !ruby/object:RPG::Event
       pages:
@@ -209,7 +209,7 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: kidcoda_bedx2
+          character_name: ''
           pattern: 0
           tile_id: 0
           direction: 4
@@ -218,7 +218,7 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: EV016
+      name: noworm
       y: 1
       x: 11
       id: 16
@@ -260,7 +260,7 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: kidcoda_bedx2
+          character_name: ''
           pattern: 0
           tile_id: 0
           direction: 4
@@ -269,7 +269,7 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: EV011
+      name: noworm
       y: 10
       x: 12
       id: 11
@@ -439,6 +439,57 @@ root: !ruby/object:RPG::Map
       y: 0
       x: 18
       id: 6
+    17: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 60
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: true
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 4
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: noworm
+      y: 3
+      x: 17
+      id: 17
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -901,7 +952,7 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: kidcoda_bedx2
+          character_name: ''
           pattern: 0
           tile_id: 0
           direction: 4
@@ -910,7 +961,7 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: EV012
+      name: noworm
       y: 10
       x: 11
       id: 12
@@ -920,13 +971,72 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 0
+          - 64
+          indent: 0
+          code: 207
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 36
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\iFour crystals floating"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'They protect the Compass Rose. '
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Snowballs are the key...
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'Do you accept this challenge, knowing you '
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - will have only one minute to complete it?
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "(This can be attempted as long as you can stand)"
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - - Commence the challenge!
+            - I need to prepare first.
+          - 2
+          indent: 0
+          code: 102
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - Commence the challenge!
+          indent: 0
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - !ruby/object:Color
             red: 255.0
             green: 255.0
             blue: 255.0
             alpha: 255.0
           - 10
-          indent: 0
+          indent: 1
           code: 224
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -934,14 +1044,14 @@ root: !ruby/object:RPG::Map
             volume: 80
             name: saved
             pitch: 100
-          indent: 0
+          indent: 1
           code: 250
         - !ruby/object:RPG::EventCommand
           parameters:
           - 57
           - 57
           - 0
-          indent: 0
+          indent: 1
           code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -950,8 +1060,26 @@ root: !ruby/object:RPG::Map
           - 0
           - 0
           - 60
-          indent: 0
+          indent: 1
           code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - I need to prepare first.
+          indent: 0
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 404
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -981,27 +1109,97 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: sparklex2
+          character_name: kidcoda_bedx2
           pattern: 0
           tile_id: 0
-          direction: 4
+          direction: 6
           blend_type: 0
           character_hue: 0
-        walk_anime: true
+        walk_anime: false
         move_speed: 3
         through: false
       - !ruby/object:RPG::Event::Page
         list:
         - !ruby/object:RPG::EventCommand
+          parameters:
+          - 36
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Time waits for no one.
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
           code: 0
         move_type: 0
-        direction_fix: false
+        direction_fix: true
         condition: !ruby/object:RPG::Event::Page::Condition
           switch2_valid: false
           self_switch_ch: A
           switch1_id: 57
+          switch1_valid: true
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: true
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: kidcoda_bedx2
+          pattern: 0
+          tile_id: 0
+          direction: 6
+          blend_type: 0
+          character_hue: 270
+        walk_anime: false
+        move_speed: 3
+        through: false
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 36
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\iSouthern cave awaits"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Water for the precious rose
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - To find what you seek...
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: true
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 44
           switch1_valid: true
           variable_value: 0
           self_switch_valid: false
@@ -1021,13 +1219,13 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: ''
+          character_name: kidcoda_bedx2
           pattern: 0
           tile_id: 0
-          direction: 2
+          direction: 6
           blend_type: 0
-          character_hue: 0
-        walk_anime: true
+          character_hue: 320
+        walk_anime: false
         move_speed: 3
         through: false
       name: EV007
@@ -1067,6 +1265,72 @@ root: !ruby/object:RPG::Map
           - Do not delete the last line or the game will freeze
           indent: 0
           code: 108
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - A
+          - 1
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 26
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[1]\\na[Frie]Ugh... don't tell me we have to navigate "
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - this mess to get to the Compass Rose...
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 25
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[13]\\na[Vern]Well, there's a crystal over there. "
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'Maybe unlocking it with the key will '
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - unlock the rose too?
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 37
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]\\na[Coda]Only one way to find out."
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - A
+          - 0
+          indent: 1
+          code: 123
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -1151,7 +1415,7 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: kidcoda_bedx2
+          character_name: ''
           pattern: 0
           tile_id: 0
           direction: 4
@@ -1160,7 +1424,7 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: EV013
+      name: noworm
       y: 12
       x: 12
       id: 13
@@ -1553,8 +1817,8 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: true
       name: Target3
-      y: 12
-      x: 2
+      y: 13
+      x: 7
       id: 3
     14: !ruby/object:RPG::Event
       pages:
@@ -1594,7 +1858,7 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: kidcoda_bedx2
+          character_name: ''
           pattern: 0
           tile_id: 0
           direction: 4
@@ -1603,7 +1867,7 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: EV014
+      name: noworm
       y: 12
       x: 11
       id: 14
@@ -1613,27 +1877,24 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - There's a rose here.
+          - 36
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\iYour skill is proven."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - Pick it up?
+          - The Compass Rose is yours now.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - - 'Yes'
-            - 'No'
-          - 2
+          - Beware of the thorns...
           indent: 0
-          code: 102
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 0
-          - 'Yes'
-          indent: 0
-          code: 402
+          code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
           - !ruby/object:Color
@@ -1642,7 +1903,7 @@ root: !ruby/object:RPG::Map
             blue: 255.0
             alpha: 136.0
           - 10
-          indent: 1
+          indent: 0
           code: 224
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -1650,38 +1911,25 @@ root: !ruby/object:RPG::Map
           - 0
           - 0
           - 1
-          indent: 1
+          indent: 0
           code: 126
         - !ruby/object:RPG::EventCommand
           parameters:
           - A
           - 0
-          indent: 1
+          indent: 0
           code: 123
         - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
           parameters:
-          - 1
-          - 'No'
+          - new_page("roseget")
           indent: 0
-          code: 402
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 404
+          code: 355
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
           code: 0
         move_type: 0
-        direction_fix: false
+        direction_fix: true
         condition: !ruby/object:RPG::Event::Page::Condition
           switch2_valid: false
           self_switch_ch: A
@@ -1711,7 +1959,7 @@ root: !ruby/object:RPG::Map
           direction: 2
           blend_type: 0
           character_hue: 0
-        walk_anime: true
+        walk_anime: false
         move_speed: 3
         through: false
       - !ruby/object:RPG::Event::Page
@@ -1922,7 +2170,7 @@ root: !ruby/object:RPG::Map
         through: true
       name: Target2
       y: 8
-      x: 4
+      x: 9
       id: 4
     15: !ruby/object:RPG::Event
       pages:
@@ -2012,7 +2260,7 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: kidcoda_bedx2
+          character_name: ''
           pattern: 0
           tile_id: 0
           direction: 4
@@ -2108,7 +2356,7 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: kidcoda_bedx2
+          character_name: ''
           pattern: 0
           tile_id: 0
           direction: 4
@@ -2117,7 +2365,7 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: EV010
+      name: noworm
       y: 8
       x: 12
       id: 10
@@ -2809,9 +3057,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 506
-    - 507
-    - 508
+    - 0
+    - 0
+    - 0
     - 448
     - 0
     - 0
@@ -2829,9 +3077,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 609
-    - 514
-    - 515
-    - 516
+    - 422
+    - 423
+    - 0
     - 456
     - 0
     - 0
@@ -3005,7 +3253,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 609
+    - 0
     - 0
     - 0
     - 667

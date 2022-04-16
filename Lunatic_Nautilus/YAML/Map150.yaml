@@ -1,10 +1,10 @@
---- !ruby/object:Hash
+---
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
     name: percussionloop
     pitch: 100
-  events: !ruby/object:Hash
+  events:
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -206,6 +206,13 @@ root: !ruby/object:RPG::Map
           parameters: []
           indent: 0
           code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 63
+          - 63
+          - 1
+          indent: 0
+          code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
           - 3
@@ -606,53 +613,11 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 12
+          - 63
+          - 63
           - 0
-          - 28
           indent: 0
-          code: 318
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 12
-          - 0
-          - 29
-          indent: 0
-          code: 318
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 12
-          - 0
-          - 30
-          indent: 0
-          code: 318
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 3
-          - 0
-          - 7
-          indent: 0
-          code: 318
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 3
-          - 0
-          - 8
-          indent: 0
-          code: 318
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 3
-          - 0
-          - 9
-          indent: 0
-          code: 318
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 3
-          - 0
-          - 10
-          indent: 0
-          code: 318
+          code: 121
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0

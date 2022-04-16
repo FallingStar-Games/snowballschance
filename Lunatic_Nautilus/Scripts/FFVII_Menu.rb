@@ -66,8 +66,8 @@ class Scene_Menu
     @command_window.disable_item(5)
   end
   #if progress is lower than a certain level, disable snackmaking
-  #also disables if in the save room (map 150)
-     if $game_variables[2]< 10 or $game_variables[7]==150
+  #also disables if in the save room (checked by switch 63)
+     if $game_variables[2]< 10 or $game_switches[63]==true
      @command_window.disable_item(3)
    end
      # Make play time window
