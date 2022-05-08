@@ -29,4 +29,10 @@ class Destination
   def y()
     return @event.y
   end
+    #---------------------------------------------------------------
+  # Sets the local switch A on the stored event to 'value'
+  #---------------------------------------------------------------
+  def reached_destination(value)
+    $game_self_switches[[$game_map.map_id, @event.id, "A"]] = value
+  end
 end

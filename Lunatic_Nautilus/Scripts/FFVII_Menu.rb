@@ -176,8 +176,8 @@ class Scene_Menu
            @command_window.active = false
            @status_window.active = true
            @status_window.index = 0
-        when 3   # status
-          if $game_party.actors[0] != $game_actors[12] || $game_variables[2]< 6
+        when 3   # status snackmaking??
+          if $game_party.actors[0] != $game_actors[12] || $game_variables[2]< 10 || $game_switches[63]==true
             # Play buzzer SE
            $game_system.se_play($data_system.buzzer_se)
            
