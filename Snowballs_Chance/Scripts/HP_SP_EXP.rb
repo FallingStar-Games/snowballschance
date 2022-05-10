@@ -57,7 +57,7 @@ class Window_Base < Window
   def draw_actor_hp(actor, x, y, width = 144)
     # Draw "HP" text string
     self.contents.font.color = system_color
-    self.contents.draw_text(x, y, 32, 32, $data_system.words.hp)
+    #self.contents.draw_text(x, y, 32, 32, $data_system.words.hp)
     # Calculate if there is draw space for MaxHP
     if width - 32 >= 108
       hp_x = x + width - 108
@@ -91,7 +91,7 @@ class Window_Base < Window
   def draw_actor_sp(actor, x, y, width = 144)
     # Draw "SP" text string
     self.contents.font.color = system_color
-    self.contents.draw_text(x, y, 32, 32, $data_system.words.sp)
+    #self.contents.draw_text(x, y, 32, 32, $data_system.words.sp)
     # Calculate if there is draw space for MaxHP
     if width - 32 >= 108
       sp_x = x + width - 108

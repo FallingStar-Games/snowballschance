@@ -70,13 +70,17 @@ self.contents.clear
 self.contents.font.color = normal_color
 bitmap = RPG::Cache.picture("hudback")
 self.contents.blt(0, 0, bitmap, Rect.new(0, 0, 640, 108))
-x = 32
-  for i in 0...[4,@actors.size].min
+x = 1#32
+  for i in 0...[5,@actors.size].min #[4,@actors.size].min
     y = 6
-    draw_actor_name(@actors[i], x+58, -4)
-    draw_actor_hp  (@actors[i], x, 15,width = 144)
+    draw_actor_name(@actors[i], x+58, -4) 
+    draw_actor_hp  (@actors[i], x, 15,width = 144) #144
     draw_actor_sp  (@actors[i], x, 35, width = 144)
+    if @actors.size == 5
+    x += 124
+  else
     x += 150
+    end
   end
 #anything else you want to draw
 
@@ -103,7 +107,7 @@ end
   refresh #then start drawing
   return
   end
-  for i in 0...[4,@actors.size].min
+  for i in 0...[5,@actors.size].min
     if @old_hp[i] != @actors[i].hp or
     @old_sp[i] != @actors[i].sp or
     @old_exp[i] != @actors[i].now_exp or

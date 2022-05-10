@@ -632,14 +632,20 @@ root:
     - 3
     - 3
 - !ruby/object:RPG::Class
-  name: Ronin
+  name: Survivalist
   armor_set:
+  - 4
+  - 8
   - 9
-  - 10
   - 11
   - 12
+  - 13
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
   - 21
-  - 22
   - 23
   - 24
   - 25
@@ -650,12 +656,25 @@ root:
   - 30
   - 31
   - 32
-  learnings: []
+  - 33
+  learnings:
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 65
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 66
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 67
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 68
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 69
   weapon_set:
-  - 29
-  - 30
-  - 31
-  - 32
+  - 10
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -684,7 +703,7 @@ root:
     - 3
     - 3
     - 3
-  position: 2
+  position: 1
   id: 8
   element_ranks: !ruby/object:Table
     dim: 1

@@ -76,5 +76,6 @@ module Squad
     MOVE_ACTOR[6]   = 2   # (If move style is 3) Actor 7 may stay 6 tiles away
     MOVE_ACTOR[4]   = 4 
     MOVE_ACTOR[5]   = 4 
+    MOVE_ACTOR[8]   = 4 
   
 end
