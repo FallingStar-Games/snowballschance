@@ -3815,7 +3815,7 @@ root:
       - &66 !ruby/object:RPG::MoveCommand
         parameters:
         - frie_slidingx2
-        - 60
+        - 70
         - 2
         - 0
         code: 41
@@ -3824,15 +3824,15 @@ root:
         code: 12
       - &68 !ruby/object:RPG::MoveCommand
         parameters:
-        - dwightcharx2
-        - 60
+        - werewolfx2
+        - 0
         - 2
         - 0
         code: 41
       - !ruby/object:RPG::MoveCommand
         parameters: []
         code: 0
-      skippable: true
+      skippable: false
       repeat: false
     indent: 6
     code: 209
@@ -7388,6 +7388,26 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 'message.sound_audio = ''arctos'' '
+    indent: 1
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 8
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'message.sound_audio = ''bip'' '
     indent: 1
     code: 355
   - !ruby/object:RPG::EventCommand
@@ -52705,7 +52725,7 @@ root:
   switch_id: 1
   id: 129
 - !ruby/object:RPG::CommonEvent
-  name: map 81 event
+  name: icespike intro
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
@@ -52907,8 +52927,13 @@ root:
   switch_id: 1
   id: 130
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: Ranger voice
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - message.sound_audio = 'bip'
+    indent: 0
+    code: 355
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
