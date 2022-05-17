@@ -177,7 +177,7 @@ class Game_Character
   #--------------------------------------------------------------------------
   # * Move at Random
   #--------------------------------------------------------------------------
-  def move_random
+  def move_random 
     case rand(4)
     when 0  # Move down
       move_down(false)

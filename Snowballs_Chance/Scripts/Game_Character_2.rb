@@ -51,7 +51,7 @@ class Game_Character
       return
     end
     # If stop count exceeds a certain value (computed from move frequency)
-    if @stop_count > (40 - @move_frequency * 2) * (6 - @move_frequency)
+    if @stop_count > (40 - @move_frequency * 2) * (6 - @move_frequency) or @move_frequency == 6
       # Branch by move type
       case @move_type
       when 1  # Random

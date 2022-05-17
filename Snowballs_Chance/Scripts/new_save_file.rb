@@ -67,9 +67,9 @@ class Window_SaveFile < Window_Base
       
       # level number (variable 8)
       self.contents.font.color = system_color
-      self.contents.draw_text(4, 166, 120, 32, "Level")
-      self.contents.font.color = normal_color
-      self.contents.draw_text(50, 166, 48, 32, @game_variables[8].to_s)
+      self.contents.draw_text(4, 166, 120, 32, "Level "+@game_variables[8].to_s)
+      #self.contents.font.color = normal_color
+      #self.contents.draw_text(50, 166, 48, 32, @game_variables[8].to_s)
       
       # level name
       self.contents.font.color = normal_color

@@ -2982,6 +2982,25 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - 12
+    - "$game_system.menu_disabled"
+    indent: 5
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    indent: 6
+    code: 135
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 6
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
     - "$game_player.moving?"
     indent: 5
     code: 111
@@ -3004,6 +3023,50 @@ root:
     - 6
     indent: 5
     code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 24
+    - 0
+    - 0
+    - 0
+    indent: 5
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - "$game_system.menu_disabled"
+    indent: 6
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    indent: 7
+    code: 135
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 7
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 6
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 6
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 5
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 5
@@ -51312,7 +51375,7 @@ root:
     - 3
     - 1
     - 0
-    - 2
+    - 1
     indent: 0
     code: 312
   - !ruby/object:RPG::EventCommand
@@ -51645,6 +51708,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -51898,9 +51966,23 @@ root:
     code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$Shooty.check"
+    - 12
+    - "$Shooty"
     indent: 3
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$Shooty.check"
+    indent: 4
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 4
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - !ruby/object:Color
