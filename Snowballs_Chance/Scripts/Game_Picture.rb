@@ -19,7 +19,7 @@ class Game_Picture
   attr_reader   :opacity                  # opacity level
   attr_reader   :blend_type               # blend method
   attr_reader   :tone                     # color tone
-  attr_reader   :angle                    # rotation angle
+  attr_accessor :angle                    # rotation angle
   #--------------------------------------------------------------------------
   # * Object Initialization
   #     number : picture number
