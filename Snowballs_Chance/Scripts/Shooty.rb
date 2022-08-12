@@ -60,6 +60,7 @@ class Shooty
     #--------------------------------------------------------------
     # Goes through the targets.
     #--------------------------------------------------------------
+    #p "let's check this"
       for j in 1..$game_variables[@variable]
         target = @targets[j]
         #p @counter
@@ -73,7 +74,7 @@ class Shooty
           if target.y > $game_player.y && target.x == $game_player.x && !target.is_hit?
                 target.been_hit(true)
                 @counter = @counter + 1
-                #p "hit"
+                #p "hit 2"
             end
 			  end #done
 	      when 4 
@@ -81,7 +82,7 @@ class Shooty
           if target.x < $game_player.x && target.y == $game_player.y && !target.is_hit?
                 target.been_hit(true)
                 @counter = @counter + 1
-                #p "hit"
+                #p "hit 4"
             end
         end #done
 	      when 6  
@@ -89,7 +90,7 @@ class Shooty
           if target.x > $game_player.x && target.y == $game_player.y && !target.is_hit?
                 target.been_hit(true)
                 @counter = @counter + 1
-                #p "hit"
+                #p "hit 6"
             end
         end #done
 	      when 8  
@@ -97,7 +98,7 @@ class Shooty
           if target.y < $game_player.y && target.x == $game_player.x && !target.is_hit?
                 target.been_hit(true)
                 @counter = @counter + 1
-                #p "hit"
+                #p "hit 8"
             end
         end
 	    end #case done

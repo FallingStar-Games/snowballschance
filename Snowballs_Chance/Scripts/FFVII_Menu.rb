@@ -330,7 +330,15 @@ class Window_GoldTime < Window_Base
        self.contents.draw_text(4, 65, 120-cx-2, 32, $game_party.gold.to_s, 2)
      self.contents.font.color = system_color
      self.contents.draw_text(124-cx, 65, cx, 32, $data_system.words.gold, 2)
-  end
+     
+    #cx = 100#contents.text_size(@game_variables[27].to_s).width #($data_system.words.gold).width
+     #self.contents.font.color = normal_color
+    #self.contents.draw_text(4, 65, 120-cx-2, 32, "Diary entries", 2)#$game_party.gold.to_s, 2)
+     #self.contents.font.color = system_color
+     #self.contents.draw_text(124-cx, 65, cx, 32, @game_variables[27].to_s, 2)#$data_system.words.gold, 2)
+  
+  
+     end
   #--------------------------------------------------------------------------
   # * Frame Update
   #--------------------------------------------------------------------------
