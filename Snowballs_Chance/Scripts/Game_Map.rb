@@ -302,7 +302,7 @@ class Game_Map
         tile_id = data[x, y, i]
         if tile_id == nil
           return 0
-        elsif @terrain_tags[tile_id] > 0
+        elsif @terrain_tags[tile_id] != nil && @terrain_tags[tile_id] > 0 #elsif @terrain_tags[tile_id] > 0
           return @terrain_tags[tile_id]
         end
       end
