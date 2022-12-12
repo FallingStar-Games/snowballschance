@@ -10523,10 +10523,10 @@ root:
       - 8
       - 65349
       - 36
-      - 100
+      - 120
       - 0
       - 0
-      - 255
+      - 200
       - 1
   - !ruby/object:RPG::Animation::Frame
     cell_max: 1
@@ -10537,29 +10537,45 @@ root:
       xsize: 1
       data:
       - 8
-      - 65365
-      - 52
-      - 100
+      - 65376
+      - 40
+      - 160
       - 0
       - 0
-      - 255
+      - 150
       - 1
   - !ruby/object:RPG::Animation::Frame
-    cell_max: 0
+    cell_max: 1
     cell_data: !ruby/object:Table
       dim: 2
       zsize: 1
       ysize: 8
-      xsize: 0
-      data: []
+      xsize: 1
+      data:
+      - 8
+      - 65424
+      - 24
+      - 190
+      - 0
+      - 0
+      - 100
+      - 1
   - !ruby/object:RPG::Animation::Frame
-    cell_max: 0
+    cell_max: 1
     cell_data: !ruby/object:Table
       dim: 2
       zsize: 1
       ysize: 8
-      xsize: 0
-      data: []
+      xsize: 1
+      data:
+      - 8
+      - 65440
+      - 40
+      - 222
+      - 0
+      - 0
+      - 50
+      - 1
   - !ruby/object:RPG::Animation::Frame
     cell_max: 0
     cell_data: !ruby/object:Table
@@ -20370,7 +20386,7 @@ root:
     frame: 14
   animation_hue: 270
 - !ruby/object:RPG::Animation
-  name: circle out
+  name: circle out blue
   animation_name: healsparkleanix2
   frames:
   - !ruby/object:RPG::Animation::Frame
@@ -20539,7 +20555,7 @@ root:
   timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
-  name: circle out 2
+  name: circle out red
   animation_name: healsparkleanix2
   frames:
   - !ruby/object:RPG::Animation::Frame
@@ -20708,36 +20724,340 @@ root:
   timings: []
   animation_hue: 150
 - !ruby/object:RPG::Animation
-  name: ''
-  animation_name: ''
+  name: circle out green
+  animation_name: healsparkleanix2
   frames:
   - !ruby/object:RPG::Animation::Frame
-    cell_max: 0
+    cell_max: 1
     cell_data: !ruby/object:Table
-      dim: 1
+      dim: 2
       zsize: 1
-      ysize: 1
-      xsize: 0
-      data: []
-  frame_max: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 20
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 40
+      - 0
+      - 0
+      - 226
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 60
+      - 0
+      - 0
+      - 198
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 80
+      - 0
+      - 0
+      - 170
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 141
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 120
+      - 0
+      - 0
+      - 113
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 140
+      - 0
+      - 0
+      - 85
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 160
+      - 0
+      - 0
+      - 56
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 180
+      - 0
+      - 0
+      - 28
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 200
+      - 0
+      - 0
+      - 0
+      - 1
+  frame_max: 10
   position: 1
   id: 67
   timings: []
-  animation_hue: 0
+  animation_hue: 290
 - !ruby/object:RPG::Animation
-  name: ''
-  animation_name: ''
+  name: circle out pink
+  animation_name: healsparkleanix2
   frames:
   - !ruby/object:RPG::Animation::Frame
-    cell_max: 0
+    cell_max: 1
     cell_data: !ruby/object:Table
-      dim: 1
+      dim: 2
       zsize: 1
-      ysize: 1
-      xsize: 0
-      data: []
-  frame_max: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 20
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 40
+      - 0
+      - 0
+      - 226
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 60
+      - 0
+      - 0
+      - 198
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 80
+      - 0
+      - 0
+      - 170
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 141
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 120
+      - 0
+      - 0
+      - 113
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 140
+      - 0
+      - 0
+      - 85
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 160
+      - 0
+      - 0
+      - 56
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 180
+      - 0
+      - 0
+      - 28
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 200
+      - 0
+      - 0
+      - 0
+      - 1
+  frame_max: 10
   position: 1
   id: 68
   timings: []
-  animation_hue: 0
+  animation_hue: 110
