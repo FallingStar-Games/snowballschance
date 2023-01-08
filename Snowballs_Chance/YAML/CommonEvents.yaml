@@ -53864,7 +53864,7 @@ root:
     code: 411
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "/iUse the compass rose"
+    - "/IUse the compass rose"
     indent: 1
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -53897,8 +53897,69 @@ root:
   switch_id: 1
   id: 134
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: later crystals
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 8
+    - 56
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 69
+    indent: 1
+    code: 207
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    indent: 1
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 64
+    - 64
+    - 1
+    - 0
+    - 1
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "/IUse the compass rose"
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Purified with water
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - the passageway's key...
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 115
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -53907,8 +53968,124 @@ root:
   switch_id: 1
   id: 135
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: spikes THREE coda
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 5
+    - 5
+    indent: 0
+    code: 225
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:Color
+      red: 153.0
+      green: 204.0
+      blue: 238.0
+      alpha: 170.0
+    - 5
+    indent: 0
+    code: 224
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &590 !ruby/object:RPG::MoveCommand
+        parameters:
+        - "@animation_id = 52"
+        code: 45
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: false
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *590
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 1
+    - 5
+    - 12
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 1
+    - 0
+    - 5
+    - true
+    indent: 1
+    code: 311
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - 1
+    - 0
+    - 10
+    - true
+    indent: 1
+    code: 311
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    - 26
+    - 0
+    indent: 0
+    code: 121
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 64
+    - 64
+    - 0
+    - 0
+    - 0
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 5
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 80
+      name: buzzalarm
+      pitch: 100
+    indent: 0
+    code: 250
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
