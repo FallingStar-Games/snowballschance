@@ -102,7 +102,7 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[0]\\na[Coda]...I promise. \\|"
+          - "\\p[0]\\na[Coda]...I promise. \\.\\.\\."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -284,6 +284,9 @@ root: !ruby/object:RPG::Map
             list:
             - &1 !ruby/object:RPG::MoveCommand
               parameters: []
+              code: 36
+            - &2 !ruby/object:RPG::MoveCommand
+              parameters: []
               code: 4
             - !ruby/object:RPG::MoveCommand
               parameters: []
@@ -295,6 +298,11 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - *1
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *2
           indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
