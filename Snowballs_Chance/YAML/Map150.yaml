@@ -172,7 +172,7 @@ root: !ruby/object:RPG::Map
           - !ruby/object:RPG::AudioFile
             volume: 100
             name: rangertheme
-            pitch: 100
+            pitch: 90
           indent: 3
           code: 241
         - !ruby/object:RPG::EventCommand
@@ -243,8 +243,43 @@ root: !ruby/object:RPG::Map
           code: 411
         - !ruby/object:RPG::EventCommand
           parameters:
-          - old
+          - 1
+          - 62
+          - 0
+          - 18
+          - 0
           indent: 2
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 100
+            name: rangertheme
+            pitch: 90
+          indent: 3
+          code: 241
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:Tone
+            red: -136.0
+            green: -102.0
+            blue: 17.0
+            gray: 0.0
+          - 0
+          indent: 3
+          code: 223
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - old
+          indent: 3
           code: 108
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -254,7 +289,7 @@ root: !ruby/object:RPG::Map
             blue: 17.0
             gray: 0.0
           - 0
-          indent: 2
+          indent: 3
           code: 223
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -262,8 +297,16 @@ root: !ruby/object:RPG::Map
             volume: 100
             name: midnightforest
             pitch: 100
-          indent: 2
+          indent: 3
           code: 241
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 412
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 2
