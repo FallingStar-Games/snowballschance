@@ -399,6 +399,15 @@ root: !ruby/object:RPG::Map
       - !ruby/object:RPG::Event::Page
         list:
         - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 247
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          indent: 0
+          code: 246
+        - !ruby/object:RPG::EventCommand
           parameters:
           - -1
           - !ruby/object:RPG::MoveRoute
@@ -820,7 +829,7 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[7]\\na[Ranger]...There they are."
+          - "\\p[7]\\na[Ranger]...There they are.\\|"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
