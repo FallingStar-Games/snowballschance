@@ -187,7 +187,9 @@ $game_party.lose_item(27, 1) #meal kit is always used
   else
     p "ur a bitch"
   end
-  end
+  
+end
+
   end
   end
   end
@@ -205,27 +207,29 @@ end
   if $game_variables[9]<=0
     p "ur a bitche"
     #it's also calling me a bitche
-  else
-     if $game_variables[9]==1
+    else
+  if $game_variables[9]==1 #if we're at the last one cooking stuff
     @bbb= 12 #coda 
-  else
+    else
   if $game_variables[9]==2
     @bbb= 6 #topaz
-  else
+    else
   if $game_variables[9]==3
     @bbb= 3 #vern
-  else
+    else
   if $game_variables[9]==4
     @bbb= 2 #frie
-  else
+    else
   if $game_variables[9]==5
     @bbb= 4 #arctos
-  else
+    else
     p "ur a bitch"
   end
   p "party members amount is " + $game_variables[9] + " now."
-  end
-  end
+end
+
+end
+
   end
   end
   
