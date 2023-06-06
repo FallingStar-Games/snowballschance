@@ -243,7 +243,7 @@ end
     topping= $game_actors[@bbb].armor2_id
     
     auracharge= $game_actors[@bbb].armor4_id
-    p "is this even used"
+    #p "is this even used" #yes it is
     
     
     #return FoodPrefhash[[actor,meal,topping,auracharge]] #edit, kinda iffy tho
