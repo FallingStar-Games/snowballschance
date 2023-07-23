@@ -1307,7 +1307,17 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 60
+          - 30
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[14]\\na[Lauren]'Oren, take me home."
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 30
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -1630,6 +1640,11 @@ root: !ruby/object:RPG::Map
             pitch: 100
           indent: 0
           code: 245
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - new_page("totheend")
+          indent: 0
+          code: 355
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
