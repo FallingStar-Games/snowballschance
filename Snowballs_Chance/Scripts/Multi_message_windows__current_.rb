@@ -830,8 +830,10 @@ if (/\\[Nn][Aa][Mm][Ee]\[(.+?)\]/.match(@text)) != nil
 
       # insert delays for commas, periods, questions and exclamations
       @text.gsub!(/, /) { ", \015" }    # Comma with One Space
-      @text.gsub!(/!  /) { "!  \015" }  # Exclamation Point with Two Spaces
-      @text.gsub!(/\?  /) { "?  \015" } # Question Mark with Two Spaces
+      @text.gsub!(/! /) { "! \015" }  # Exclamation Point with One Space
+      @text.gsub!(/\? /) { "? \015" } # Question Mark with One Space
+      @text.gsub!(/\./) { ".\015" } # Period with No Space
+      @text.gsub!(/\. /) { ". \015" } # Period with One Space
       @text.gsub!(/\.  /) { ".  \015" } # Period with Two Spaces
       @text.gsub!(/\\[.]/) { "\015" }    # the \. command
       

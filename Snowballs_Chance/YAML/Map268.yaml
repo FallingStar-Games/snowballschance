@@ -2,9 +2,55 @@
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: daysreflection
+    name: daysreflection2
     pitch: 100
   events:
+    5: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 24
+          self_switch_valid: false
+          variable_id: 2
+          variable_valid: true
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 591
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: EV005
+      y: 7
+      x: 7
+      id: 5
     6: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -439,26 +485,9 @@ root: !ruby/object:RPG::Map
           code: 111
         - !ruby/object:RPG::EventCommand
           parameters:
-          - !ruby/object:Tone
-            red: -255.0
-            green: -255.0
-            blue: -255.0
-            gray: 0.0
-          - 10
+          - 17
           indent: 2
-          code: 223
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 10
-          indent: 2
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 20
-          - 20
-          - 0
-          indent: 2
-          code: 121
+          code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
           - 12
@@ -483,17 +512,17 @@ root: !ruby/object:RPG::Map
           code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
-          - !ruby/object:Tone
-            red: 0.0
-            green: 0.0
-            blue: 0.0
-            gray: 0.0
-          - 10
+          - 5
           indent: 2
-          code: 223
+          code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 10
+          - 18
+          indent: 2
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
           indent: 2
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -521,7 +550,7 @@ root: !ruby/object:RPG::Map
             list:
             - &1 !ruby/object:RPG::MoveCommand
               parameters: []
-              code: 16
+              code: 17
             - !ruby/object:RPG::MoveCommand
               parameters: []
               code: 0
@@ -536,14 +565,14 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[0]\\na[Coda]Yaaawwnnn...\\."
+          - 5
           indent: 1
-          code: 101
+          code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
-          - Goodnight, everyone!
+          - "\\p[0]\\na[Coda]...Goodnight Lauren."
           indent: 1
-          code: 401
+          code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - 20
@@ -554,6 +583,16 @@ root: !ruby/object:RPG::Map
           - 17
           indent: 1
           code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 76
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\na[...Lauren??]...Goodnight Coda."
+          indent: 1
+          code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - 20
@@ -718,19 +757,9 @@ root: !ruby/object:RPG::Map
           code: 402
         - !ruby/object:RPG::EventCommand
           parameters:
-          - !ruby/object:Tone
-            red: -255.0
-            green: -255.0
-            blue: -255.0
-            gray: 0.0
-          - 10
+          - 17
           indent: 1
-          code: 223
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 10
-          indent: 1
-          code: 106
+          code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
           - 20
@@ -762,17 +791,17 @@ root: !ruby/object:RPG::Map
           code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
-          - !ruby/object:Tone
-            red: 0.0
-            green: 0.0
-            blue: 0.0
-            gray: 0.0
-          - 10
+          - 5
           indent: 1
-          code: 223
+          code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 10
+          - 18
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
           indent: 1
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -835,6 +864,11 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 36
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - Take off Jacket?
           indent: 0
           code: 101
@@ -853,26 +887,9 @@ root: !ruby/object:RPG::Map
           code: 402
         - !ruby/object:RPG::EventCommand
           parameters:
-          - !ruby/object:Tone
-            red: -255.0
-            green: -255.0
-            blue: -255.0
-            gray: 0.0
-          - 10
+          - 17
           indent: 1
-          code: 223
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 10
-          indent: 1
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 20
-          - 20
-          - 0
-          indent: 1
-          code: 121
+          code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
           - 12
@@ -890,14 +907,6 @@ root: !ruby/object:RPG::Map
           code: 128
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 12
-          - 1
-          - 0
-          - 1
-          indent: 1
-          code: 128
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 8
           - 8
           - 1
@@ -905,17 +914,17 @@ root: !ruby/object:RPG::Map
           code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
-          - !ruby/object:Tone
-            red: 0.0
-            green: 0.0
-            blue: 0.0
-            gray: 0.0
-          - 10
+          - 5
           indent: 1
-          code: 223
+          code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 10
+          - 18
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
           indent: 1
           code: 106
         - !ruby/object:RPG::EventCommand
