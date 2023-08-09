@@ -31,7 +31,7 @@ class Sprite
   def initialize(viewport=nil)
     @wave_amp = 0
     @wave_length = 72
-    @wave_speed = 720
+    @wave_speed = 520
     @wave_phase = 0.25
     default_initialize(viewport)
     @temp_bitmap = nil

@@ -2915,6 +2915,34 @@ root: !ruby/object:RPG::Map
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 100
+            name: ceremony
+            pitch: 100
+          indent: 0
+          code: 241
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 50
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Your days have come to an end...
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\d[160]\\!"
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 50
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 50
           - 20
           - 0
@@ -2929,27 +2957,9 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 20
+          - 60
           indent: 0
           code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - !ruby/object:RPG::AudioFile
-            volume: 100
-            name: ceremony
-            pitch: 100
-          indent: 0
-          code: 241
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - Your days have come to an end...
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\d[60]\\!"
-          indent: 0
-          code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
           - "...and your grain shall now fall to "
@@ -2962,7 +2972,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\d[60]\\!"
+          - "\\d[160]\\!"
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -3003,6 +3013,11 @@ root: !ruby/object:RPG::Map
           code: 250
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 50
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - May Winter guide you down...
           indent: 0
           code: 101
@@ -3017,10 +3032,10 @@ root: !ruby/object:RPG::Map
           - 20
           - 0
           - 0
-          - -400
+          - -420
           - 0
-          - 100
-          - 100
+          - 150
+          - 150
           - 255
           - 1
           indent: 0
@@ -3068,7 +3083,7 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 50
+          - 60
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -3114,13 +3129,13 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 100
+          - 200
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - 1
-          - 200
+          - 300
           - 0
           - 0
           - 0
@@ -3133,7 +3148,7 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 250
+          - 350
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -3153,7 +3168,7 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - 50
-          - 50
+          - 60
           - 0
           - 0
           - 0
@@ -3176,7 +3191,7 @@ root: !ruby/object:RPG::Map
           code: 242
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 60
+          - 70
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
