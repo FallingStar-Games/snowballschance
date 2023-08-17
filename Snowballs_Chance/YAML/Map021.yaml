@@ -129,46 +129,61 @@ root: !ruby/object:RPG::Map
           code: 404
         - !ruby/object:RPG::EventCommand
           parameters:
-          - Do you want to start from the beginning,
+          - 2
+          - A
+          - 0
           indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Do you want to start from the beginning,
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - or do you want to start at the Intermission?
-          indent: 0
+          indent: 1
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
           - - From the beginning
             - Skip to the intermission
           - 1
-          indent: 0
+          indent: 1
           code: 102
         - !ruby/object:RPG::EventCommand
           parameters:
           - 0
           - From the beginning
-          indent: 0
+          indent: 1
           code: 402
         - !ruby/object:RPG::EventCommand
           parameters: []
-          indent: 1
+          indent: 2
           code: 0
         - !ruby/object:RPG::EventCommand
           parameters:
           - 1
           - Skip to the intermission
-          indent: 0
+          indent: 1
           code: 402
         - !ruby/object:RPG::EventCommand
           parameters:
           - 103
-          indent: 1
+          indent: 2
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters: []
-          indent: 1
+          indent: 2
           code: 115
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 404
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
@@ -176,7 +191,7 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
-          code: 404
+          code: 412
         - !ruby/object:RPG::EventCommand
           parameters:
           - health choices
