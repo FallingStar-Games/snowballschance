@@ -191,6 +191,7 @@ class Scene_Menu
            @status_window.index = 0
 =end
            # exit back to map
+           
            $scene = Scene_Map.new
            $game_temp.common_event_id = 53
            end

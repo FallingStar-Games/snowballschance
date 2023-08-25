@@ -29,14 +29,28 @@ class Sprite
     wave_effect_ini(viewport)
     @temp_bitmap = nil
   end
-
+  
   alias wave_effect_upd update unless $@
   def update
+    # Failsafe for unwanted situations
+    @wave_amp = 0 if @wave_amp == nil
+    @wave_length = 72 if @wave_length == nil
+    @wave_speed = 720 if @wave_speed == nil
+    @wave_phase = 0.25 if @wave_phase == nil
     # the wave effect only works if wave_amp
     # propertie is a number more than zero
     wave_effect if @wave_amp > 0
     wave_effect_upd
   end
+=begin
+  alias wave_effect_upd update unless $@
+  def update
+    # the wave effect only works if wave_amp
+    # propertie is a number more than zero
+    wave_effect if @wave_amp !=nil && @wave_amp > 0
+    wave_effect_upd
+  end
+=end
 
   # Return the width of image, because when use
   # obj.bitmap.width the value will be more than

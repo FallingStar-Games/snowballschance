@@ -739,6 +739,11 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 2
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 18
           indent: 0
           code: 117
@@ -2700,11 +2705,6 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - new_page("jumpy")
-          indent: 1
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 37
           indent: 1
           code: 117
@@ -3390,6 +3390,11 @@ root: !ruby/object:RPG::Map
           - false
           indent: 2
           code: 311
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - new_page("jumpy")
+          indent: 2
+          code: 355
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 2
