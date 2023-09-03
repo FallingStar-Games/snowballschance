@@ -1,4 +1,4 @@
--- A Snowball's Chance - Intermission demo 3.0.1 --
+-- A Snowball's Chance - Intermission demo 3.0.4 --
 
 Install BPixelDouble and CodaHandwritingP before starting the game!
 Otherwise you'll have to deal with comic sans.

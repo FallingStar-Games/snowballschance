@@ -1,10 +1,10 @@
---- !ruby/object:Hash
+---
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
     name: cozio2
     pitch: 100
-  events: !ruby/object:Hash
+  events:
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -667,17 +667,12 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - '\p[0]\na[Coda](My house... My "mom''s" house, to be '
+          - "\\p[0]\\na[Coda](I don't need anything "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'more specific. '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - I don't need anything from home right now.)
+          - from home right now.)
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
