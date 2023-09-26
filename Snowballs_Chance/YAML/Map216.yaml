@@ -295,7 +295,7 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[0]\\na[Coda]...\\|"
+          - "\\p[0]\\na[Coda]...\\."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -413,12 +413,17 @@ root: !ruby/object:RPG::Map
           code: 123
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 100
+          - 19
           indent: 0
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 19
+          - 2
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 100
           indent: 0
           code: 117
         - !ruby/object:RPG::EventCommand
@@ -433,23 +438,28 @@ root: !ruby/object:RPG::Map
           code: 201
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 61
+          - 61
+          - 0
+          indent: 0
+          code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 16
+          - 16
+          - 0
+          indent: 0
+          code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 22
           indent: 0
           code: 117
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 61
-          - 61
-          - 0
-          indent: 0
-          code: 121
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 16
-          - 16
-          - 0
-          indent: 0
-          code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
           - !ruby/object:RPG::AudioFile

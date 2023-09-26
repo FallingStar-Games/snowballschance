@@ -1304,6 +1304,39 @@ root: !ruby/object:RPG::Map
           code: 225
         - !ruby/object:RPG::EventCommand
           parameters:
+          - !ruby/object:Color
+            red: 255.0
+            green: 204.0
+            blue: 238.0
+            alpha: 255.0
+          - 10
+          indent: 0
+          code: 224
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: saved
+            pitch: 85
+          indent: 0
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 36
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Challenge clear!
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - The way forward is opened!
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - A
           - 0
           indent: 0
@@ -3383,7 +3416,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 609
+    - 0
     - 0
     - 0
     - 0
@@ -3490,7 +3523,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 609
+    - 0
     - 0
     - 0
     - 0

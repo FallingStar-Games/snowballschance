@@ -7697,7 +7697,7 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 'message.sound_audio = ''bip'' '
+    - 'message.sound_audio = ''ranger'' '
     indent: 1
     code: 355
   - !ruby/object:RPG::EventCommand
@@ -20149,6 +20149,13 @@ root:
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 36
     indent: 0
     code: 117
@@ -20987,6 +20994,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -21103,6 +21115,44 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 7
+    - 7
+    - 0
+    - 7
+    - 0
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - "$game_variables[7]==248 || $game_variables[7]==249 || $game_variables[7]==251
+      || $game_variables[7]==253"
+    indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - caaaaveback
+    - 0
+    - 0
+    - 0
+    - 0
+    - 100
+    - 100
+    - 255
+    - 0
+    indent: 2
+    code: 231
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 1
     - superglowy
     - 0
@@ -21113,8 +21163,16 @@ root:
     - 100
     - 255
     - 0
-    indent: 1
+    indent: 2
     code: 231
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 1
@@ -21281,9 +21339,23 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 22
+    indent: 2
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - Make a fish fry?
     indent: 2
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] okay fish in your bag)"
+    indent: 2
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - - 'Yes'
@@ -21438,9 +21510,23 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 19
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - Boil a Worm?
     indent: 4
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] worms in your bag)"
+    indent: 4
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - - 'Yes'
@@ -21571,9 +21657,28 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 13
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - Boil some Pine Tea?
     indent: 4
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings of "
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - pine needles in your bag)
+    indent: 4
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - - 'Yes'
@@ -21729,9 +21834,37 @@ root:
     code: 118
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 10
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 68
+    - 68
+    - 0
+    - 3
+    - 26
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - What mushroom will you add?
     indent: 0
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] green mushrooms)"
+    indent: 0
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You also have \\v[68] yellow mushrooms)"
+    indent: 0
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - 8
@@ -21992,9 +22125,37 @@ root:
     code: 118
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 37
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 68
+    - 68
+    - 0
+    - 3
+    - 38
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - What berry will you add?
     indent: 0
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] quad-leaf berries)"
+    indent: 0
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You also have \\v[68] tri-leaf berries)"
+    indent: 0
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - - "\\I[I37] Quad-leaf Berry"
@@ -27390,6 +27551,13 @@ root:
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 36
     indent: 0
     code: 117
@@ -28328,6 +28496,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -29130,6 +29303,13 @@ root:
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 36
     indent: 0
     code: 117
@@ -29587,6 +29767,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -29596,6 +29781,13 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: Eat teh worm
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
   - !ruby/object:RPG::EventCommand
     parameters:
     - 36
@@ -29953,6 +30145,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -29962,6 +30159,13 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: 3 leaf
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
   - !ruby/object:RPG::EventCommand
     parameters:
     - 36
@@ -30743,6 +30947,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -30752,6 +30961,13 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: 4 leaf
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
   - !ruby/object:RPG::EventCommand
     parameters:
     - 36
@@ -31433,6 +31649,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -31442,6 +31663,13 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: boiled shroom NICE
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
   - !ruby/object:RPG::EventCommand
     parameters:
     - 36
@@ -32169,6 +32397,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -32178,6 +32411,13 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: boiled shroom poison
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
   - !ruby/object:RPG::EventCommand
     parameters:
     - 36
@@ -32533,6 +32773,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -32542,6 +32787,13 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: raw shroom poison
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
   - !ruby/object:RPG::EventCommand
     parameters:
     - 36
@@ -32897,6 +33149,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -33011,6 +33268,13 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: double boiled shroom
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
   - !ruby/object:RPG::EventCommand
     parameters:
     - 36
@@ -33792,6 +34056,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -34339,6 +34608,13 @@ root:
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 16
+    - 16
+    - 0
+    indent: 0
+    code: 121
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 36
     indent: 0
     code: 117
@@ -34806,6 +35082,11 @@ root:
     indent: 0
     code: 412
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - 128
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -34815,6 +35096,11 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: update spoons
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'Note: make this cover the other statuses too'
+    indent: 0
+    code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
     - 23
@@ -37659,6 +37945,26 @@ root:
     indent: 0
     code: 655
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - iterator starts at 15
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - while its smaller or equal to 37
+    indent: 0
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - get rid of teh armor in the iterator
+    indent: 0
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - and go up one
+    indent: 0
+    code: 408
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
@@ -40323,6 +40629,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 21
+    indent: 3
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 3
     code: 117
@@ -40338,7 +40653,12 @@ root:
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - to your Max HP for the next chapter!
+    - to your Max HP for the next day!
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 3
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -40485,6 +40805,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 22
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 4
     code: 117
@@ -40501,6 +40830,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - make most non-vegans happy enough.
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -40602,6 +40936,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 51
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 4
     code: 117
@@ -40618,6 +40961,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - sure to satisfy any fish connoisseur!
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -40777,6 +41125,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 19
+    indent: 3
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 3
     code: 117
@@ -40793,6 +41150,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - else would appreciate the taste?
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 3
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -40894,6 +41256,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 23
+    indent: 3
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 3
     code: 117
@@ -40910,6 +41281,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - may not be so hot on it.
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 3
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -41079,6 +41455,24 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 1
+    - 43
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 18
+    - 18
+    - 4
+    - 0
+    - 3
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - "\\I[I14] Finn's Chips - Makes you feel like you!"
     indent: 4
     code: 101
@@ -41089,7 +41483,12 @@ root:
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
-    - salted straight from the great sea!
+    - salted straight from the Aurelian sea!
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -41236,17 +41635,40 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 1
+    - 44
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 18
+    - 18
+    - 4
+    - 0
+    - 3
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - "\\I[I31] Kale Chips - An adventurous veggie snack!"
     indent: 4
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - Lowers SP costs for the next chapter,
+    - Lowers SP costs for the next day,
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
     parameters:
     - but not everyone is so hot on these.
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -41416,6 +41838,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 12
+    indent: 3
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 3
     code: 117
@@ -41432,6 +41863,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - with a beautifully rich taste too!
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 3
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -41613,6 +42049,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 10
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 4
     code: 117
@@ -41629,6 +42074,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - is it worth a try?
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -41730,6 +42180,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 26
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 4
     code: 117
@@ -41741,6 +42200,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - Restores SP and halves SP costs for a day.
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -41863,6 +42327,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 25
+    indent: 3
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 3
     code: 117
@@ -41879,6 +42352,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - sure to spice up your day!
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 3
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -41993,6 +42471,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 38
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 4
     code: 117
@@ -42009,6 +42496,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - eats it, it's sure to please anyone!
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -42110,6 +42602,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 37
+    indent: 4
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 4
     code: 117
@@ -42126,6 +42627,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - if things go awry with whoever eats it.
+    indent: 4
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -42248,6 +42754,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 13
+    indent: 3
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 44
     indent: 3
     code: 117
@@ -42264,6 +42779,11 @@ root:
   - !ruby/object:RPG::EventCommand
     parameters:
     - Also prevents sore throat somehow.
+    indent: 3
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(You have \\v[18] servings to work with)"
     indent: 3
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -44716,6 +45236,32 @@ root:
     - random number is the armor ID
     indent: 0
     code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 11
+    - 0
+    - 0
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    - 24
+    - 0
+    - 0
+    - 0
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - 1
@@ -56843,6 +57389,11 @@ root:
     code: 411
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 36
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - "\\IUse the compass rose"
     indent: 1
     code: 101
@@ -56912,6 +57463,11 @@ root:
     parameters: []
     indent: 0
     code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 1
+    code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
     - "\\iUse the compass rose"
@@ -57383,8 +57939,33 @@ root:
   switch_id: 1
   id: 138
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: force regroup
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - aaa =1
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - while aaa < 18
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_party.set_positiong(aaa, $game_player.x, $game_player.y)"
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - aaa+=1
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - end
+    indent: 0
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
