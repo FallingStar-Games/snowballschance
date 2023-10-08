@@ -57974,8 +57974,176 @@ root:
   switch_id: 1
   id: 139
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: awoo
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 23
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Probably not the best time for that.
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 115
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - MOVEROUTE_Actor(8)
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &628 !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 16
+      - &629 !ruby/object:RPG::MoveCommand
+        parameters:
+        - 2
+        code: 15
+      - &630 !ruby/object:RPG::MoveCommand
+        parameters:
+        - rangersp1x2
+        - 0
+        - 6
+        - 0
+        code: 41
+      - &631 !ruby/object:RPG::MoveCommand
+        parameters:
+        - 2
+        code: 15
+      - &632 !ruby/object:RPG::MoveCommand
+        parameters:
+        - rangersp1x2
+        - 0
+        - 6
+        - 1
+        code: 41
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: false
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *628
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *629
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *630
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *631
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *632
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 210
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 131
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 80
+      name: Wolf-howls-alexanderorangefreesounds
+      pitch: 100
+    indent: 0
+    code: 250
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[9]\\na[Ranger]Awooooooooooooooooooo!!!!"
+    indent: 0
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 20
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &633 !ruby/object:RPG::MoveCommand
+        parameters:
+        - rangersp1x2
+        - 0
+        - 6
+        - 0
+        code: 41
+      - &634 !ruby/object:RPG::MoveCommand
+        parameters:
+        - 2
+        code: 15
+      - &635 !ruby/object:RPG::MoveCommand
+        parameters:
+        - werewolfx2
+        - 0
+        - 2
+        - 0
+        code: 41
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: false
+      repeat: false
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *633
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *634
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *635
+    indent: 0
+    code: 509
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -57984,8 +58152,22 @@ root:
   switch_id: 1
   id: 140
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: axecutter placeholder
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Probably not the best time for that.
+    indent: 0
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 115
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
