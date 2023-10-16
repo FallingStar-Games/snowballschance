@@ -55195,6 +55195,15 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 18
+    - 18
+    - 0
+    - 3
+    - 9
+    indent: 3
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 36
     indent: 3
     code: 117
@@ -55213,7 +55222,7 @@ root:
     code: 101
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "[Costs 2 SP]"
+    - "[Costs 2 SP, \\v[18] snow remaining]"
     indent: 4
     code: 401
   - !ruby/object:RPG::EventCommand
@@ -58176,8 +58185,13 @@ root:
   switch_id: 1
   id: 141
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: Echoy voice
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - message.sound_audio = 'echoy'
+    indent: 0
+    code: 355
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
