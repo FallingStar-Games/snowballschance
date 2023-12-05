@@ -465,11 +465,6 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "(this will roll the credits!)"
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - - 'Yes'
             - 'No'
           - 2
@@ -617,23 +612,30 @@ root: !ruby/object:RPG::Map
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 2
+          - A
           - 0
           indent: 1
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          indent: 2
           code: 208
         - !ruby/object:RPG::EventCommand
           parameters:
           - 41
-          indent: 1
+          indent: 2
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
           - end stuff here
-          indent: 1
+          indent: 2
           code: 108
         - !ruby/object:RPG::EventCommand
           parameters:
           - 42
-          indent: 1
+          indent: 2
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -643,7 +645,7 @@ root: !ruby/object:RPG::Map
           - 0
           - 0
           - 1
-          indent: 1
+          indent: 2
           code: 201
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -653,8 +655,89 @@ root: !ruby/object:RPG::Map
             blue: -255.0
             gray: 0.0
           - 1
-          indent: 1
+          indent: 2
           code: 223
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 20
+          indent: 1
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &2 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 3
+              code: 29
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 1
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *2
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 12
+          - kidcodax2
+          - 0
+          - ''
+          - 0
+          indent: 1
+          code: 322
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 20
+          - 20
+          - 1
+          indent: 1
+          code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 143
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Looks like we've made it to Cozio.
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 269
+          - 15
+          - 8
+          - 6
+          - 1
+          indent: 1
+          code: 201
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 0
+          indent: 1
+          code: 206
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 18
+          indent: 1
+          code: 117
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
