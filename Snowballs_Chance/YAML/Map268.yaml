@@ -729,10 +729,16 @@ root: !ruby/object:RPG::Map
           code: 201
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 1
+          - cloudshadows
           - 0
+          - 64
           - 0
+          - 200
+          - 3
+          - 3
           indent: 1
-          code: 206
+          code: 204
         - !ruby/object:RPG::EventCommand
           parameters:
           - 18
@@ -1102,7 +1108,7 @@ root: !ruby/object:RPG::Map
     volume: 80
     name: ''
     pitch: 100
-  autoplay_bgm: true
+  autoplay_bgm: false
   data: !ruby/object:Table
     dim: 3
     zsize: 3
