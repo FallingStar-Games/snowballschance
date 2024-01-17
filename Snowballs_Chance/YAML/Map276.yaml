@@ -5,6 +5,170 @@ root: !ruby/object:RPG::Map
     name: ''
     pitch: 100
   events:
+    5: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 56
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 3
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 15
+          switch1_valid: true
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - 8
+            code: 15
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - icegrowx2
+            - 0
+            - 4
+            - 1
+            code: 41
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - 3
+            code: 15
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - icegrowx2
+            - 0
+            - 4
+            - 2
+            code: 41
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - 3
+            code: 15
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - icegrowx2
+            - 0
+            - 4
+            - 3
+            code: 41
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: false
+        trigger: 4
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: icegrowx2
+          pattern: 0
+          tile_id: 0
+          direction: 4
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: true
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 15
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: true
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: spikes
+      y: 5
+      x: 19
+      id: 5
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -36,6 +200,11 @@ root: !ruby/object:RPG::Map
           code: 122
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 1
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 6
           - -1
           - 8
@@ -65,7 +234,7 @@ root: !ruby/object:RPG::Map
           - 7
           - 0
           - 0
-          - 202
+          - 275
           indent: 2
           code: 122
         - !ruby/object:RPG::EventCommand
@@ -126,7 +295,7 @@ root: !ruby/object:RPG::Map
           - 6
           - 0
           - 0
-          - 0
+          - 14
           indent: 2
           code: 122
         - !ruby/object:RPG::EventCommand
@@ -135,7 +304,7 @@ root: !ruby/object:RPG::Map
           - 7
           - 0
           - 0
-          - 198
+          - 1
           indent: 2
           code: 122
         - !ruby/object:RPG::EventCommand
@@ -206,7 +375,7 @@ root: !ruby/object:RPG::Map
           - 7
           - 0
           - 0
-          - 210
+          - 1
           indent: 2
           code: 122
         - !ruby/object:RPG::EventCommand
@@ -276,7 +445,7 @@ root: !ruby/object:RPG::Map
           - 7
           - 0
           - 0
-          - 199
+          - 265
           indent: 2
           code: 122
         - !ruby/object:RPG::EventCommand
@@ -325,10 +494,10 @@ root: !ruby/object:RPG::Map
           self_switch_ch: A
           switch1_id: 1
           switch1_valid: false
-          variable_value: 0
+          variable_value: 21
           self_switch_valid: false
-          variable_id: 1
-          variable_valid: false
+          variable_id: 2
+          variable_valid: true
           switch2_id: 1
         move_route: !ruby/object:RPG::MoveRoute
           list:
@@ -352,6 +521,12 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
+      name: level 4 controller
+      y: 0
+      x: 0
+      id: 1
+    2: !ruby/object:RPG::Event
+      pages:
       - !ruby/object:RPG::Event::Page
         list:
         - !ruby/object:RPG::EventCommand
@@ -363,8 +538,8 @@ root: !ruby/object:RPG::Map
         condition: !ruby/object:RPG::Event::Page::Condition
           switch2_valid: false
           self_switch_ch: A
-          switch1_id: 12
-          switch1_valid: true
+          switch1_id: 1
+          switch1_valid: false
           variable_value: 0
           self_switch_valid: false
           variable_id: 1
@@ -392,80 +567,24 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: EV001
-      y: 0
-      x: 0
-      id: 1
-    2: !ruby/object:RPG::Event
-      pages:
       - !ruby/object:RPG::Event::Page
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 36
+          - 56
           indent: 0
           code: 117
         - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\p[0]Collect Worm?"
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - - 'Yes'
-            - 'No'
-          - 2
-          indent: 0
-          code: 102
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 0
-          - 'Yes'
-          indent: 0
-          code: 402
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 19
-          - 0
-          - 0
-          - 1
-          indent: 1
-          code: 126
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - A
-          - 0
-          indent: 1
-          code: 123
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 'No'
-          indent: 0
-          code: 402
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 404
-        - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
           code: 0
-        move_type: 0
-        direction_fix: true
+        move_type: 3
+        direction_fix: false
         condition: !ruby/object:RPG::Event::Page::Condition
           switch2_valid: false
           self_switch_ch: A
-          switch1_id: 1
-          switch1_valid: false
+          switch1_id: 15
+          switch1_valid: true
           variable_value: 0
           self_switch_valid: false
           variable_id: 1
@@ -474,17 +593,50 @@ root: !ruby/object:RPG::Map
         move_route: !ruby/object:RPG::MoveRoute
           list:
           - !ruby/object:RPG::MoveCommand
+            parameters:
+            - 8
+            code: 15
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - icegrowx2
+            - 0
+            - 4
+            - 1
+            code: 41
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - 3
+            code: 15
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - icegrowx2
+            - 0
+            - 4
+            - 2
+            code: 41
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - 3
+            code: 15
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - icegrowx2
+            - 0
+            - 4
+            - 3
+            code: 41
+          - !ruby/object:RPG::MoveCommand
             parameters: []
             code: 0
           skippable: false
-          repeat: true
-        trigger: 0
+          repeat: false
+        trigger: 4
         step_anime: false
         move_frequency: 3
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: kidcoda_bedx2
+          character_name: icegrowx2
           pattern: 0
           tile_id: 0
           direction: 4
@@ -492,14 +644,9 @@ root: !ruby/object:RPG::Map
           character_hue: 0
         walk_anime: true
         move_speed: 3
-        through: false
+        through: true
       - !ruby/object:RPG::Event::Page
         list:
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 60
-          indent: 0
-          code: 117
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -509,7 +656,7 @@ root: !ruby/object:RPG::Map
         condition: !ruby/object:RPG::Event::Page::Condition
           switch2_valid: false
           self_switch_ch: A
-          switch1_id: 1
+          switch1_id: 15
           switch1_valid: false
           variable_value: 0
           self_switch_valid: true
@@ -538,9 +685,9 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: worm
-      y: 10
-      x: 5
+      name: spikes
+      y: 2
+      x: 17
       id: 2
     3: !ruby/object:RPG::Event
       pages:
@@ -867,10 +1014,10 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: spikes
-      y: 13
+      y: 4
       x: 18
       id: 4
-  tileset_id: 16
+  tileset_id: 17
   bgs: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
@@ -882,6 +1029,32 @@ root: !ruby/object:RPG::Map
     ysize: 15
     xsize: 20
     data:
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
     - 489
     - 489
     - 489
@@ -896,58 +1069,12 @@ root: !ruby/object:RPG::Map
     - 489
     - 489
     - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
+    - 661
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
     - 489
     - 489
     - 489
@@ -962,24 +1089,15 @@ root: !ruby/object:RPG::Map
     - 438
     - 489
     - 489
-    - 489
-    - 438
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 661
     - 489
     - 489
     - 489
@@ -991,71 +1109,15 @@ root: !ruby/object:RPG::Map
     - 438
     - 489
     - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
+    - 661
+    - 633
+    - 633
+    - 633
+    - 661
+    - 633
+    - 633
+    - 633
+    - 633
     - 489
     - 489
     - 489
@@ -1067,89 +1129,15 @@ root: !ruby/object:RPG::Map
     - 489
     - 438
     - 489
-    - 489
-    - 489
-    - 489
-    - 438
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
     - 489
     - 489
     - 489
@@ -1161,17 +1149,14 @@ root: !ruby/object:RPG::Map
     - 489
     - 489
     - 438
-    - 489
-    - 489
-    - 438
-    - 489
-    - 489
-    - 489
-    - 489
-    - 489
-    - 438
-    - 489
-    - 489
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 661
+    - 633
+    - 633
     - 489
     - 489
     - 489
@@ -1182,21 +1167,176 @@ root: !ruby/object:RPG::Map
     - 489
     - 489
     - 489
+    - 489
+    - 489
+    - 489
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 633
+    - 661
+    - 633
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 633
+    - 633
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 661
+    - 633
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 633
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 633
+    - 633
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 489
+    - 577
     - 0
-    - 136
-    - 121
-    - 0
-    - 0
-    - 705
-    - 682
     - 0
     - 0
     - 0
     - 0
-    - 136
-    - 104
-    - 96
-    - 120
+    - 628
+    - 626
     - 0
     - 0
     - 0
@@ -1204,60 +1344,91 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 137
-    - 141
     - 0
     - 0
-    - 705
-    - 682
+    - 208
+    - 192
+    - 192
+    - 585
     - 0
-    - 0
-    - 0
-    - 0
-    - 112
-    - 96
-    - 120
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 681
-    - 682
-    - 0
-    - 0
-    - 142
-    - 0
-    - 0
-    - 690
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 634
     - 0
     - 0
     - 0
     - 0
-    - 112
-    - 96
-    - 98
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 232
+    - 200
+    - 192
+    - 593
+    - 0
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 628
+    - 625
+    - 626
+    - 0
+    - 0
+    - 573
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 208
+    - 192
+    - 601
+    - 602
+    - 633
+    - 633
+    - 633
+    - 633
+    - 633
+    - 0
+    - 0
+    - 634
+    - 622
+    - 0
+    - 130
+    - 116
+    - 116
     - 132
     - 0
     - 0
+    - 232
+    - 200
     - 0
     - 0
     - 0
-    - 705
-    - 681
-    - 682
     - 0
     - 0
     - 0
-    - 695
     - 0
     - 0
+    - 0
+    - 634
     - 0
     - 130
     - 97
     - 96
     - 96
-    - 120
+    - 98
+    - 132
+    - 0
+    - 0
+    - 232
     - 0
     - 0
     - 0
@@ -1265,35 +1436,13 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 705
-    - 682
+    - 636
+    - 641
+    - 642
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 112
-    - 96
-    - 96
-    - 100
-    - 134
-    - 0
-    - 0
-    - 0
-    - 0
-    - 682
-    - 0
-    - 0
-    - 0
-    - 690
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 112
+    - 114
+    - 124
+    - 104
     - 96
     - 100
     - 134
@@ -1302,190 +1451,184 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 705
-    - 681
-    - 682
-    - 0
-    - 705
-    - 682
-    - 0
-    - 0
-    - 0
-    - 703
-    - 0
-    - 112
-    - 96
-    - 120
     - 0
     - 0
     - 0
     - 0
+    - 636
+    - 642
     - 0
     - 0
     - 0
-    - 0
-    - 690
-    - 0
-    - 0
-    - 690
-    - 0
-    - 0
-    - 0
-    - 690
-    - 0
-    - 136
-    - 104
-    - 98
-    - 132
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 713
-    - 697
-    - 698
-    - 0
-    - 0
-    - 690
-    - 0
-    - 0
-    - 0
-    - 705
-    - 682
-    - 0
-    - 136
-    - 104
-    - 98
-    - 132
-    - 0
-    - 0
-    - 0
-    - 0
-    - 698
-    - 0
-    - 0
-    - 0
-    - 713
-    - 698
-    - 0
-    - 0
-    - 0
-    - 0
-    - 690
-    - 0
-    - 0
-    - 136
-    - 104
-    - 98
-    - 132
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 690
-    - 399
-    - 0
-    - 0
-    - 0
-    - 0
-    - 705
-    - 682
-    - 496
+    - 140
     - 0
     - 112
-    - 96
-    - 120
+    - 100
+    - 134
     - 0
+    - 575
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 713
-    - 698
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 690
-    - 0
-    - 0
-    - 112
-    - 96
-    - 120
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 709
-    - 698
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 705
-    - 682
-    - 0
-    - 112
-    - 96
-    - 120
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 616
-    - 670
-    - 670
-    - 0
-    - 0
-    - 0
-    - 690
     - 130
-    - 97
-    - 100
+    - 633
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 634
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 139
+    - 125
     - 134
     - 0
     - 0
     - 0
+    - 139
+    - 125
+    - 633
+    - 0
+    - 0
+    - 0
+    - 0
+    - 636
+    - 642
+    - 0
+    - 130
+    - 132
     - 0
     - 0
     - 0
     - 0
     - 0
+    - 484
+    - 446
+    - 446
+    - 446
+    - 446
+    - 473
+    - 474
+    - 475
+    - 0
+    - 0
+    - 634
+    - 0
+    - 0
+    - 136
+    - 134
+    - 0
+    - 575
+    - 484
+    - 446
+    - 446
+    - 447
+    - 454
+    - 454
+    - 454
+    - 454
+    - 635
+    - 0
+    - 0
+    - 0
+    - 636
+    - 642
+    - 486
+    - 0
+    - 484
+    - 446
+    - 446
+    - 446
+    - 447
+    - 454
+    - 454
+    - 455
+    - 454
+    - 454
+    - 454
+    - 454
+    - 632
+    - 0
+    - 0
+    - 636
+    - 642
+    - 484
+    - 446
+    - 446
+    - 447
+    - 454
+    - 454
+    - 454
+    - 455
+    - 454
+    - 454
+    - 455
+    - 462
+    - 462
+    - 462
+    - 462
+    - 632
+    - 0
+    - 0
+    - 634
+    - 0
+    - 447
+    - 454
+    - 454
+    - 455
+    - 454
+    - 454
+    - 454
+    - 455
+    - 462
+    - 462
+    - 463
     - 0
     - 0
     - 0
     - 0
+    - 633
+    - 0
+    - 636
+    - 642
+    - 0
+    - 455
+    - 454
+    - 454
+    - 455
+    - 462
+    - 462
+    - 462
+    - 463
+    - 624
+    - 625
+    - 626
     - 0
     - 0
-    - 0
-    - 690
-    - 112
-    - 96
-    - 120
+    - 226
+    - 212
     - 0
     - 0
+    - 634
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 455
+    - 462
+    - 462
+    - 463
+    - 624
+    - 625
+    - 625
+    - 627
+    - 633
+    - 633
+    - 634
+    - 226
+    - 212
+    - 193
+    - 192
     - 0
     - 0
     - 448
@@ -1493,36 +1636,6 @@ root: !ruby/object:RPG::Map
     - 450
     - 451
     - 452
-    - 0
-    - 0
-    - 232
-    - 200
-    - 192
-    - 192
-    - 192
-    - 196
-    - 230
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 456
-    - 457
-    - 458
-    - 459
-    - 460
-    - 567
-    - 0
-    - 0
-    - 208
-    - 192
-    - 192
-    - 196
-    - 230
-    - 0
-    - 0
     - 0
     - 0
     - 0
@@ -1536,13 +1649,13 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 208
-    - 192
-    - 196
-    - 230
     - 0
-    - 433
     - 0
+    - 456
+    - 457
+    - 458
+    - 459
+    - 460
     - 0
     - 0
     - 0
@@ -1555,17 +1668,17 @@ root: !ruby/object:RPG::Map
     - 476
     - 0
     - 0
-    - 226
-    - 193
-    - 192
-    - 216
-    - 0
-    - 440
-    - 441
     - 0
     - 0
     - 0
-    - 486
+    - 464
+    - 465
+    - 466
+    - 467
+    - 468
+    - 0
+    - 0
+    - 0
     - 0
     - 0
     - 0
@@ -1575,78 +1688,14 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 208
-    - 192
-    - 196
-    - 230
     - 0
-    - 448
-    - 449
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 208
-    - 192
-    - 216
-    - 0
-    - 0
-    - 456
-    - 457
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 208
-    - 192
-    - 216
-    - 0
-    - 0
-    - 464
-    - 465
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 232
-    - 200
-    - 194
-    - 228
+    - 588
     - 0
     - 472
     - 473
-    - 0
-    - 471
-    - 0
-    - 0
-    - 0
+    - 474
+    - 475
+    - 476
     - 0
     - 0
     - 0
@@ -1656,38 +1705,16 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 232
-    - 200
-    - 194
-    - 228
     - 0
+    - 0
+    - 0
+    - 0
+    - 433
+    - 434
+    - 435
     - 481
-    - 0
-    - 479
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 583
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 208
-    - 192
-    - 194
-    - 228
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 494
+    - 482
+    - 483
     - 0
     - 0
     - 0
@@ -1697,10 +1724,15 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 232
-    - 200
-    - 192
-    - 216
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 441
+    - 442
+    - 443
+    - 444
     - 0
     - 0
     - 0
@@ -1709,66 +1741,164 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 449
+    - 450
+    - 451
+    - 452
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 581
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 457
+    - 458
+    - 459
+    - 460
+    - 0
+    - 0
+    - 0
+    - 596
+    - 597
+    - 598
+    - 599
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 465
+    - 466
+    - 467
+    - 468
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 484
+    - 446
+    - 446
+    - 446
+    - 446
+    - 502
+    - 500
+    - 501
+    - 476
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 484
+    - 446
+    - 446
+    - 447
+    - 454
+    - 454
+    - 454
+    - 454
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 484
+    - 446
     - 0
     - 0
     - 660
     - 0
+    - 454
+    - 455
+    - 454
+    - 454
+    - 454
+    - 454
+    - 444
     - 0
     - 0
     - 0
     - 0
-    - 0
-    - 208
-    - 196
-    - 230
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 484
+    - 446
+    - 446
+    - 447
+    - 454
     - 0
     - 667
     - 668
     - 669
+    - 454
+    - 388
+    - 389
+    - 390
+    - 462
+    - 462
+    - 452
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 208
-    - 216
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 484
+    - 447
+    - 454
+    - 454
+    - 455
+    - 454
     - 0
     - 675
     - 676
     - 677
+    - 462
+    - 396
+    - 397
+    - 398
+    - 0
+    - 0
+    - 460
     - 0
     - 0
     - 0
+    - 439
+    - 455
     - 0
-    - 226
-    - 193
-    - 216
+    - 660
     - 0
-    - 0
-    - 0
-    - 616
-    - 670
-    - 610
-    - 616
-    - 670
-    - 618
+    - 462
     - 0
     - 683
     - 684
@@ -1777,9 +1907,26 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 208
-    - 192
-    - 216
+    - 0
+    - 0
+    - 468
+    - 0
+    - 0
+    - 484
+    - 447
+    - 455
+    - 667
+    - 668
+    - 669
+    - 0
+    - 0
+    - 691
+    - 692
+    - 693
+    - 0
+    - 0
+    - 0
+    - 0
     - 0
     - 0
   autoplay_bgs: false
