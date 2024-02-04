@@ -2668,127 +2668,90 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(480,472,-"
+    - 24
+    - 24
+    - 0
+    - 0
+    - 472
+    indent: 3
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - railindex=$game_variables[24]
     indent: 3
     code: 355
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 1,false)
+    - i=0
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(481,473,-"
-    indent: 3
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - while i < 6
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(482,474,-"
-    indent: 3
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - "$game_map.replace_tile(railindex+8,railindex,-1,false)"
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(483,475,-"
-    indent: 3
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - railindex+=1
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(484,476,-"
-    indent: 3
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - i+=1
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(485,477,-"
-    indent: 3
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - end
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "--row 2----"
+    - 24
+    - 24
+    - 1
+    - 0
+    - 16
     indent: 3
-    code: 108
+    code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(496,488,-"
+    - railindex=$game_variables[24]
     indent: 3
     code: 355
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 1,false)
+    - i=0
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(497,489,-"
-    indent: 3
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - while i < 6
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(498,490,-"
-    indent: 3
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - "$game_map.replace_tile(railindex+8,railindex,-1,false)"
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(499,491,-"
-    indent: 3
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - railindex+=1
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(500,492,-"
-    indent: 3
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - i+=1
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(501,493,-"
-    indent: 3
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - end
     indent: 3
     code: 655
   - !ruby/object:RPG::EventCommand
@@ -19985,127 +19948,90 @@ root:
     code: 108
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(472,480,-"
+    - 24
+    - 24
+    - 0
+    - 0
+    - 472
+    indent: 2
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - railindex=$game_variables[24]
     indent: 2
     code: 355
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 1,false)
+    - i=0
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(473,481,-"
-    indent: 2
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - while i < 6
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(474,482,-"
-    indent: 2
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - "$game_map.replace_tile(railindex,railindex+8,-1,false)"
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(475,483,-"
-    indent: 2
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - railindex+=1
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(476,484,-"
-    indent: 2
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - i+=1
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(477,485,-"
-    indent: 2
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - end
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "--row 2----"
+    - 24
+    - 24
+    - 1
+    - 0
+    - 16
     indent: 2
-    code: 108
+    code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(488,496,-"
+    - railindex=$game_variables[24]
     indent: 2
     code: 355
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 1,false)
+    - i=0
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(489,497,-"
-    indent: 2
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - while i < 6
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(490,498,-"
-    indent: 2
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - "$game_map.replace_tile(railindex,railindex+8,-1,false)"
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(491,499,-"
-    indent: 2
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - railindex+=1
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(492,500,-"
-    indent: 2
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - i+=1
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(493,501,-"
-    indent: 2
-    code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 1,false)
+    - end
     indent: 2
     code: 655
   - !ruby/object:RPG::EventCommand
