@@ -24,6 +24,8 @@ class Interpreter
     end
     # Set transferring player flag
     $game_temp.player_transferring = true
+    $game_switches[25]=false #edit: this turns off dashing
+    $game_player.move_speed = 4
     # If appointment method is [direct appointment]
     if @parameters[0] == 0
       # Set player move destination

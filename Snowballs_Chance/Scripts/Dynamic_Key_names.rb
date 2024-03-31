@@ -16,5 +16,6 @@ $keyboard  =
 "gather" => Keys::S, #gather
 "diary" => Keys::D, #diary
 "snap" => Keys::MENU, #screenshot (was previously menu/Alt)
-"strafe" => Keys::SHIFT #strafing
+"strafe" => Keys::SHIFT, #strafing
+"dash" => Keys::R #dashing
 } 
