@@ -5439,8 +5439,8 @@ root:
         code: 44
       - &124 !ruby/object:RPG::MoveCommand
         parameters:
-        - frie_slidingx2
-        - 70
+        - ranger_slidex2
+        - 0
         - 2
         - 0
         code: 41
@@ -7744,6 +7744,30 @@ root:
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 12
+    - "$game_temp.message_window_showing"
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    indent: 1
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - skip
+    indent: 1
+    code: 119
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - rotatingg
     indent: 0
     code: 108
@@ -8735,6 +8759,11 @@ root:
     parameters: []
     indent: 0
     code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - skip
+    indent: 0
+    code: 118
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
