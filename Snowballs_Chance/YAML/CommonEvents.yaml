@@ -7938,6 +7938,11 @@ root:
     code: 111
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 139
+    indent: 3
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 2
     indent: 3
     code: 117
@@ -60042,7 +60047,7 @@ root:
     code: 210
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 131
+    - 27
     indent: 0
     code: 117
   - !ruby/object:RPG::EventCommand
@@ -60055,7 +60060,7 @@ root:
     code: 250
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\p[9]\\na[Ranger]Awooooooooooooooooooo!!!!"
+    - "\\p[1]\\na[Ranger]Awooooooooooooooooooo!!!!"
     indent: 0
     code: 101
   - !ruby/object:RPG::EventCommand
@@ -60108,6 +60113,11 @@ root:
     - *691
     indent: 0
     code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - END_MOVEROUTE_Actor(8)
+    indent: 0
+    code: 355
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -60392,8 +60402,254 @@ root:
   switch_id: 1
   id: 144
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: local know-how
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 23
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 36
+    indent: 1
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Probably not the best time for that.
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 115
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 3
+    - 0
+    - 4
+    - 12
+    - 3
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 3
+    - 0
+    - 10
+    - 4
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]\\n[Coda](Not enough spoons...)"
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 115
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 27
+    indent: 0
+    code: 117
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Ranger]Wanna know a couple things?"
+    indent: 0
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - Pine needles
+      - Mushrooms
+      - Berries
+      - Calzones?
+    - 5
+    indent: 0
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - Pine needles
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Ranger]The pine needles 'round here are "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'fresh and perfect for steepin'' into a tea. '
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Ranger]They don't go down without a fight "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'though, so mind your hands when '
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - grabbin' em.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - Mushrooms
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Ranger]Y'know,  I don't think there's all that "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'many mushrooms up this high, except maybe in '
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - caves where its warmer.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Ranger]Mushrooms are pretty particular "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - about what elevations and temps they grow at.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - Berries
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Ranger]I'm always surprised where berries "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - pop up on this mountain.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Ranger]There's two main types that can "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'handle the cold: three leaf and four leaf.'
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Ranger]The four leaf has a lot more seeds, "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'but if you''re fine with a little crunch, '
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - they ain't that bad.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - Calzones?
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Ranger]What about 'em? "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - They're just pizza pockets.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[1]\\na[Ranger]You'd have to be pretty lucky to find "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'one up here, or someone else would have '
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - to be pretty unlucky to lose theirs.
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 403
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 404
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
