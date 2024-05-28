@@ -904,7 +904,7 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 57
+          - 56
           indent: 0
           code: 117
         - !ruby/object:RPG::EventCommand
@@ -927,13 +927,13 @@ root: !ruby/object:RPG::Map
           list:
           - !ruby/object:RPG::MoveCommand
             parameters:
-            - 4
+            - 8
             code: 15
           - !ruby/object:RPG::MoveCommand
             parameters:
             - icegrowx2
             - 0
-            - 2
+            - 4
             - 1
             code: 41
           - !ruby/object:RPG::MoveCommand
@@ -944,7 +944,7 @@ root: !ruby/object:RPG::Map
             parameters:
             - icegrowx2
             - 0
-            - 2
+            - 4
             - 2
             code: 41
           - !ruby/object:RPG::MoveCommand
@@ -955,7 +955,7 @@ root: !ruby/object:RPG::Map
             parameters:
             - icegrowx2
             - 0
-            - 2
+            - 4
             - 3
             code: 41
           - !ruby/object:RPG::MoveCommand
@@ -963,34 +963,23 @@ root: !ruby/object:RPG::Map
             code: 0
           skippable: false
           repeat: false
-        trigger: 1
+        trigger: 4
         step_anime: false
-        move_frequency: 6
+        move_frequency: 3
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
           character_name: icegrowx2
           pattern: 0
           tile_id: 0
-          direction: 2
+          direction: 4
           blend_type: 0
           character_hue: 0
         walk_anime: true
-        move_speed: 6
-        through: false
+        move_speed: 3
+        through: true
       - !ruby/object:RPG::Event::Page
         list:
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 5
-          indent: 0
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - A
-          - 1
-          indent: 0
-          code: 123
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -1014,7 +1003,7 @@ root: !ruby/object:RPG::Map
             code: 0
           skippable: false
           repeat: true
-        trigger: 4
+        trigger: 0
         step_anime: false
         move_frequency: 3
         always_on_top: false
@@ -1029,7 +1018,7 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: blocky inaccess2
+      name: spikes
       y: 3
       x: 17
       id: 12
@@ -1239,7 +1228,7 @@ root: !ruby/object:RPG::Map
           - 7
           - 0
           - 0
-          - 1
+          - 281
           indent: 2
           code: 122
         - !ruby/object:RPG::EventCommand
@@ -1361,7 +1350,7 @@ root: !ruby/object:RPG::Map
           variable_value: 21
           self_switch_valid: false
           variable_id: 2
-          variable_valid: true
+          variable_valid: false
           switch2_id: 1
         move_route: !ruby/object:RPG::MoveRoute
           list:
