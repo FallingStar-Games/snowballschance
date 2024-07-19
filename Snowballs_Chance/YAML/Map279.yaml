@@ -180,6 +180,176 @@ root: !ruby/object:RPG::Map
       y: 11
       x: 8
       id: 5
+    16: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - -1
+          - 8
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 67
+          - 67
+          - 0
+          indent: 1
+          code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &1 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 100
+              code: 44
+            - &2 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 0
+              - -1
+              code: 14
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 1
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *1
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *2
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - -1
+          - 2
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 67
+          - 67
+          - 1
+          indent: 1
+          code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &3 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 100
+              code: 44
+            - &4 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 0
+              - 1
+              code: 14
+            - &5 !ruby/object:RPG::MoveCommand
+              parameters:
+              - snowballschancex2
+              - 0
+              - 2
+              - 0
+              code: 41
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 1
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *3
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *4
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *5
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 14
+          switch1_valid: true
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 2
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: Rail onramp
+      y: 9
+      x: 12
+      id: 16
     11: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -530,6 +700,176 @@ root: !ruby/object:RPG::Map
       y: 9
       x: 7
       id: 6
+    17: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - -1
+          - 8
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 67
+          - 67
+          - 0
+          indent: 1
+          code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &6 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 100
+              code: 44
+            - &7 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 0
+              - -1
+              code: 14
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 1
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *6
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *7
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - -1
+          - 2
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 67
+          - 67
+          - 1
+          indent: 1
+          code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &8 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 100
+              code: 44
+            - &9 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 0
+              - 1
+              code: 14
+            - &10 !ruby/object:RPG::MoveCommand
+              parameters:
+              - snowballschancex2
+              - 0
+              - 2
+              - 0
+              code: 41
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 1
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *8
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *9
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *10
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 14
+          switch1_valid: true
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 2
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: Rail onramp
+      y: 8
+      x: 17
+      id: 17
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -2947,51 +3287,8 @@ root: !ruby/object:RPG::Map
     - 689
     - 438
     - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 438
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 438
-    - 438
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
+    - 484
+    - 480
     - 689
     - 689
     - 689
@@ -3009,6 +3306,50 @@ root: !ruby/object:RPG::Map
     - 689
     - 689
     - 689
+    - 484
+    - 447
+    - 437
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 438
+    - 438
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 484
+    - 446
+    - 447
+    - 455
+    - 445
+    - 480
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
+    - 438
+    - 689
+    - 689
+    - 689
+    - 689
+    - 439
+    - 454
+    - 455
+    - 455
+    - 453
+    - 437
     - 689
     - 689
     - 689
@@ -3023,13 +3364,12 @@ root: !ruby/object:RPG::Map
     - 689
     - 689
     - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
-    - 689
+    - 432
+    - 454
+    - 455
+    - 455
+    - 453
+    - 437
     - 689
     - 689
     - 689
@@ -3045,9 +3385,9 @@ root: !ruby/object:RPG::Map
     - 689
     - 689
     - 689
-    - 689
-    - 689
-    - 689
+    - 432
+    - 455
+    - 455
     - 689
     - 689
     - 689
@@ -3226,10 +3566,10 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 713
+    - 697
+    - 697
+    - 712
     - 0
     - 0
     - 212
@@ -3245,11 +3585,11 @@ root: !ruby/object:RPG::Map
     - 712
     - 0
     - 0
-    - 0
-    - 0
-    - 0
     - 713
-    - 697
+    - 698
+    - 864
+    - 0
+    - 696
     - 697
     - 697
     - 192
@@ -3265,12 +3605,12 @@ root: !ruby/object:RPG::Map
     - 696
     - 697
     - 697
-    - 697
-    - 697
-    - 697
     - 698
-    - 139
-    - 118
+    - 0
+    - 880
+    - 881
+    - 882
+    - 130
     - 116
     - 192
     - 192
@@ -3284,12 +3624,12 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 575
+    - 880
+    - 881
+    - 882
+    - 867
     - 0
-    - 130
-    - 117
-    - 141
-    - 0
+    - 867
     - 136
     - 124
     - 192
@@ -3302,12 +3642,12 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 138
     - 0
+    - 867
     - 0
-    - 0
-    - 139
-    - 125
-    - 134
+    - 868
+    - 869
     - 0
     - 0
     - 0
@@ -3322,14 +3662,14 @@ root: !ruby/object:RPG::Map
     - 228
     - 0
     - 0
+    - 113
+    - 132
     - 0
-    - 139
-    - 141
-    - 0
+    - 431
+    - 884
+    - 885
     - 0
     - 680
-    - 681
-    - 681
     - 681
     - 681
     - 192
@@ -3342,14 +3682,14 @@ root: !ruby/object:RPG::Map
     - 216
     - 0
     - 0
-    - 0
-    - 0
+    - 136
+    - 134
     - 0
     - 680
     - 681
+    - 0
+    - 0
     - 704
-    - 0
-    - 0
     - 0
     - 0
     - 200
@@ -3547,9 +3887,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
+    - 864
+    - 865
+    - 866
     - 0
     - 0
     - 0
@@ -3564,9 +3904,9 @@ root: !ruby/object:RPG::Map
     - 503
     - 0
     - 0
-    - 0
-    - 0
-    - 0
+    - 864
+    - 865
+    - 866
     - 0
     - 0
     - 0
