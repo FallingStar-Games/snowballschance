@@ -17,5 +17,5 @@ $keyboard  =
 "diary" => Keys::D, #diary
 "snap" => Keys::MENU, #screenshot (was previously menu/Alt)
 "strafe" => Keys::SHIFT, #strafing
-"dash" => Keys::R #dashing
+"dash" => Keys::E #dashing
 } 
