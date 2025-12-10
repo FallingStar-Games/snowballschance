@@ -60306,29 +60306,9 @@ root:
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
-    - aaa =1
+    - "$game_party.gather_party"
     indent: 0
     code: 355
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - while aaa < 18
-    indent: 0
-    code: 655
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - "$game_party.set_positiong(aaa, $game_player.x, $game_player.y)"
-    indent: 0
-    code: 655
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - aaa+=1
-    indent: 0
-    code: 655
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - end
-    indent: 0
-    code: 655
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -61052,8 +61032,13 @@ root:
   switch_id: 1
   id: 145
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: Scrungo voice
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - message.sound_audio = 'scrungo'
+    indent: 0
+    code: 355
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -61062,8 +61047,56 @@ root:
   switch_id: 1
   id: 146
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: party face same way as leader
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - aaa = 1
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - bbb = $game_system.allies
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - ccc = $game_player
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - ''
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - while aaa < 10 && bbb[aaa]!= nil
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - bbb[aaa].direction = ccc.direction
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - aaa+=1
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - end
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 80
+      name: boingthing
+      pitch: 100
+    indent: 0
+    code: 250
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0

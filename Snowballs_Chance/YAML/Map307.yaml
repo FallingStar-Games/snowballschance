@@ -2,7 +2,7 @@
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: ''
+    name: scrungohouse
     pitch: 100
   events:
     1: !ruby/object:RPG::Event
@@ -38,6 +38,212 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: EV001
+      y: 0
+      x: 0
+      id: 1
+    2: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &1 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 4
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 0
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *1
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 26
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[1]\\na[Frie](...Coda, are you sure this "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - was a good idea?)
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 37
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]\\na[Coda](Well, they seem nice!)"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 146
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[2]\\na[???]So... who might you all be?"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 37
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]\\na[Coda]I'm Coda Diamondback. "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - I'm leading my clients and friends up this mountain!
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &2 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 1
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 0
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *2
+          indent: 0
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[2]\\na[???]Nice to meetcha! "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'You can call me Scrungo. '
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[1]\\na[Frie]...What kind of name is that?"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[1]\\na[Topaz]Frie, what kind of \\Iquestion\\I is that?!"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[2]\\na[Scrungo]No worries, it's a good question. "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - It's my name and mine alone!
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]\\na[Coda](That doesn't even answer "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - the question...)
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[2]\\na[Scrungo]Anywho, looks like you've "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'all got quite the climb ahead of you. '
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[2]\\na[Scrungo]The last leg beyond the timberline "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - can be a bit of a doozy!
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[1]\\na[Ranger]I'm sure Coda will lead us "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - up there safe 'n sound.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 12
+          switch1_valid: true
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 3
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
           character_name: scrungox2
           pattern: 0
           tile_id: 0
@@ -50,13 +256,13 @@ root: !ruby/object:RPG::Map
       name: scrungo
       y: 10
       x: 9
-      id: 1
+      id: 2
   tileset_id: 8
   bgs: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  autoplay_bgm: false
+  autoplay_bgm: true
   data: !ruby/object:Table
     dim: 3
     zsize: 3
@@ -332,7 +538,7 @@ root: !ruby/object:RPG::Map
     - 406
     - 406
     - 406
-    - 406
+    - 445
     - 406
     - 406
     - 406
@@ -611,9 +817,6 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 586
-    - 587
-    - 588
     - 0
     - 0
     - 0
@@ -711,6 +914,16 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
@@ -718,7 +931,18 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
@@ -727,68 +951,50 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 925
     - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
@@ -796,19 +1002,19 @@ root: !ruby/object:RPG::Map
     - 933
     - 912
     - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 384
+    - 384
+    - 384
+    - 384
     - 485
     - 867
     - 443
@@ -816,19 +1022,19 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
@@ -836,19 +1042,19 @@ root: !ruby/object:RPG::Map
     - 660
     - 935
     - 919
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 384
+    - 384
+    - 384
+    - 384
     - 476
     - 0
     - 0
@@ -856,19 +1062,19 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 927
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 489
     - 490
@@ -876,19 +1082,19 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 471
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 497
     - 498
@@ -896,19 +1102,19 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 540
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
@@ -916,51 +1122,51 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 548
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
+    - 384
     - 0
     - 0
   autoplay_bgs: false
