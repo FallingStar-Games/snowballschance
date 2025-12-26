@@ -295,17 +295,18 @@ root:
   recover_hp: 4
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: true
+  consumable: false
   animation1_id: 0
-  name: The Fucking Sun
+  name: Blini
   minus_state_set: []
-  icon_name: psychicicon
+  icon_name: bliniiconx2
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
   price: 0
   occasion: 0
-  plus_state_set: []
+  plus_state_set:
+  - 21
   recover_sp: 0
   parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
@@ -313,7 +314,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 3
+  scope: 0
   element_set:
   - 1
   recover_sp_rate: 0
@@ -321,7 +322,7 @@ root:
   animation2_id: 0
   hit: 100
   id: 11
-  description: "...how did you get your hands on this?!"
+  description: The herald of Spring, to cast away the mantle of Winter...
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
@@ -611,7 +612,7 @@ root:
   animation2_id: 0
   hit: 100
   id: 21
-  description: An animal fell to give you this meat. Use it wisely.
+  description: Arctos fell to give you this meat. Use it wisely.
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
