@@ -1,7 +1,7 @@
 #------------------------
 # Dynamic keys
 #-----------------------------
-
+=begin
 $keyboard  = 
 {"left" => Keys::LEFT, #left
 "right" => Keys::RIGHT, #right
@@ -19,3 +19,4 @@ $keyboard  =
 "strafe" => Keys::SHIFT, #strafing
 "dash" => Keys::E #dashing
 } 
+=end

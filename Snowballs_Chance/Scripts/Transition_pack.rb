@@ -105,14 +105,14 @@
 #
 #   Enjoy ^_^
 #==============================================================================
-
+=begin
 #==============================================================================
 # ** Screen Module
 #------------------------------------------------------------------------------
 #  This module handles taking screenshots for the transitions.
 #==============================================================================
 module Screen
-  
+# this shit needs to be edited
   @screen = Win32API.new 'screenshot.dll', 'Screenshot', %w(l l l l p l l), ''
   @readini = Win32API.new 'kernel32', 'GetPrivateProfileStringA', %w(p p p p l p), 'l'
   @findwindow = Win32API.new 'user32', 'FindWindowA', %w(p p), 'l'
@@ -773,3 +773,4 @@ class Scene_Map
     Input.update
   end
 end
+=end

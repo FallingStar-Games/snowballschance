@@ -74,8 +74,8 @@ x = 1#32
   for i in 0...[5,@actors.size].min #[4,@actors.size].min
     y = 6
     draw_actor_name(@actors[i], x+58, -4) 
-    draw_actor_hp  (@actors[i], x, 15,width = 144) #144
-    draw_actor_sp  (@actors[i], x, 35, width = 144)
+    draw_actor_hp(@actors[i], x, 15,width = 144) #144
+    draw_actor_sp(@actors[i], x, 35, width = 144)
     if @actors.size == 5
     x += 124
   else

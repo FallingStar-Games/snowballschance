@@ -9,7 +9,7 @@
 # Screenshot Script v2 created/edited by: cybersam
 # Numbered Images created/edited by: MauMau
 #===============================================================================
-
+=begin
 
 module Screen
   SnapShot_Key = $keyboard["snap"] #Input::A # Q key
@@ -57,3 +57,4 @@ module Input
     new_snop
   end
 end
+=end

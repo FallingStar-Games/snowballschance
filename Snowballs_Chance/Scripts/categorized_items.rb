@@ -905,7 +905,7 @@ class Scene_Item
     end
     # If target window is active: call update_target
     if @category_window.active
-      @help_window.set_display ("", "")
+      @help_window.set_display("","")
       update_category
       return
     end
