@@ -126,8 +126,8 @@ class Scene_File
       loop do
         Graphics.update
         Input.update
-        break if Keys.trigger?($keyboard["select"])
-        #Input.trigger?(Input::C)
+        break if Input.trigger?(Input::C)
+        #Keys.trigger?($keyboard["select"])
       end
       Graphics.freeze
       @prompt_window.dispose
@@ -171,16 +171,16 @@ $game_temp.common_event_id = 30
  
   def update_quicksave
     @prompt_window.update
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       if @prompt_window.index == 0
         on_decision(TEMP_SAVE_NAME)
         $scene = Scene_Title.new
       else
         on_cancel
       end
-    elsif Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    elsif Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       on_cancel
     end
   end
@@ -269,12 +269,12 @@ class Window_Prompt < Window_Base
     super
     return unless @mode > 0
     if self.active && @index >= 0
-      if Keys.repeat?($keyboard["down"])
-        #Input.repeat?(Input::DOWN)
+      if Input.repeat?(Input::DOWN)
+        #Keys.repeat?($keyboard["down"])
         $game_system.se_play($data_system.cursor_se)
         @index = (@index + 1) % 2
-      elsif Keys.repeat?($keyboard["up"])
-        #Input.repeat?(Input::UP)
+      elsif Input.repeat?(Input::UP)
+        #Keys.repeat?($keyboard["up"])
         $game_system.se_play($data_system.cursor_se)
         @index = (@index + 3) % 2
       end

@@ -92,8 +92,8 @@ class Scene_Title
     # Update command window
     @command_window.update
     # If C button was pressed
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       # Branch by command window cursor position
       case @command_window.index
       when 0  # New game

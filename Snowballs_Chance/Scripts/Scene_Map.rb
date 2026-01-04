@@ -120,8 +120,8 @@ class Scene_Map
       end
     end
     # If B button was pressed
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       # If event is running, or menu is not forbidden
       unless $game_system.map_interpreter.running? or
              $game_system.menu_disabled

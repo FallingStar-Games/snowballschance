@@ -199,14 +199,14 @@ class Scene_Shop
   # * Frame Update (when command window is active)
   #--------------------------------------------------------------------------
   def update_command
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       $game_system.se_play($data_system.cancel_se)
       $scene = Scene_Map.new
       return
     end
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       case @command_window.index
       when 0
         $game_system.se_play($data_system.decision_se)
@@ -235,8 +235,8 @@ class Scene_Shop
   #--------------------------------------------------------------------------
   def update_buy
     @status_window.item = @buy_window.item
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       if $game_temp.shop_type == 1
          $game_system.se_play($data_system.cancel_se)
          $scene = Scene_Map.new
@@ -252,8 +252,8 @@ class Scene_Shop
       end
       return
     end
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       @item = @buy_window.item
       if @item == nil or @item.price > $game_party.gold
         $game_system.se_play($data_system.buzzer_se)
@@ -285,8 +285,8 @@ class Scene_Shop
   # * Frame Update (when sell window is active)
   #--------------------------------------------------------------------------
   def update_sell
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       if $game_temp.shop_type == 2
          $game_system.se_play($data_system.cancel_se)
          $scene = Scene_Map.new
@@ -301,8 +301,8 @@ class Scene_Shop
       return
       end
     end
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       @item = @sell_window.item
       @status_window.item = @item
       if @item == nil or @item.price == 0
@@ -331,8 +331,8 @@ class Scene_Shop
   # * Frame Update (when quantity input window is active)
   #--------------------------------------------------------------------------
   def update_number
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       $game_system.se_play($data_system.cancel_se)
       @number_window.active = false
       @number_window.visible = false
@@ -347,8 +347,8 @@ class Scene_Shop
       end
       return
     end
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       $game_system.se_play($data_system.shop_se)
       @number_window.active = false
       @number_window.visible = false

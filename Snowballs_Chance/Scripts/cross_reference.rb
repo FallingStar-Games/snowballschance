@@ -1133,8 +1133,8 @@ class Scene_XRef
   #--------------------------------------------------------------------------
   def update_command
     # If B button was pressed
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       # Play cancel SE
       $game_system.se_play($data_system.cancel_se)
       # Switch to map screen
@@ -1142,8 +1142,8 @@ class Scene_XRef
       return
     end
     # If C button was pressed
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
         # Play decision SE
         $game_system.se_play($data_system.decision_se)
         @selection_window.set_mode(@commands[@command_window.index])
@@ -1159,8 +1159,8 @@ class Scene_XRef
   #--------------------------------------------------------------------------
   def update_selection
     # If B button was pressed
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       # Play cancel SE
       $game_system.se_play($data_system.cancel_se)
       # Make command window active
@@ -1170,8 +1170,8 @@ class Scene_XRef
       return
     end
     # If C button was pressed
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       if XRef.refs(@commands[@command_window.index], @selection_window.item).empty?
         # Play buzzer SE
         $game_system.se_play($data_system.buzzer_se)
@@ -1195,8 +1195,8 @@ class Scene_XRef
   #--------------------------------------------------------------------------
   def update_result
     # If B button was pressed
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       # Play cancel SE
       $game_system.se_play($data_system.cancel_se)
       # Make selection window active
@@ -1263,8 +1263,8 @@ class Scene_F9
     @command_window.update
  
     # If B button was pressed
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       # Play cancel SE
       $game_system.se_play($data_system.cancel_se)
       # Switch to map screen
@@ -1273,8 +1273,8 @@ class Scene_F9
     end
    
     # If C button was pressed
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       # Branch by command window cursor position
       case @command_window.index
       when 0  # Debug Menu

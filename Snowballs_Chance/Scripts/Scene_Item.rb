@@ -64,8 +64,8 @@ class Scene_Item
   #--------------------------------------------------------------------------
   def update_item
     # If B button was pressed
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       # Play cancel SE
       $game_system.se_play($data_system.cancel_se)
       # Switch to menu screen
@@ -73,8 +73,8 @@ class Scene_Item
       return
     end
     # If C button was pressed
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       # Get currently selected data on the item window
       @item = @item_window.item
       # If not a use item
@@ -132,8 +132,8 @@ class Scene_Item
   #--------------------------------------------------------------------------
   def update_target
     # If B button was pressed
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       # Play cancel SE
       $game_system.se_play($data_system.cancel_se)
       # If unable to use because items ran out
@@ -148,8 +148,8 @@ class Scene_Item
       return
     end
     # If C button was pressed
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       # If items are used up
       if $game_party.item_number(@item.id) == 0
         # Play buzzer SE

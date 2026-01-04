@@ -205,8 +205,8 @@ class Window_Message < Window_Selectable
     if @input_number_window != nil
       @input_number_window.update
       # Confirm
-      if Keys.trigger?($keyboard["select"])
-        #Input.trigger?(Input::C)
+      if Input.trigger?(Input::C)
+        #Keys.trigger?($keyboard["select"])
         $game_system.se_play($data_system.decision_se)
         $game_variables[$game_temp.num_input_variable_id] =
           @input_number_window.number
@@ -225,8 +225,8 @@ class Window_Message < Window_Selectable
         self.pause = true
       end
       # Cancel
-      if Keys.trigger?($keyboard["cancel"])
-        #Input.trigger?(Input::B)
+      if Input.trigger?(Input::B)
+        #Keys.trigger?($keyboard["cancel"])
         if $game_temp.choice_max > 0 and $game_temp.choice_cancel_type > 0
           $game_system.se_play($data_system.cancel_se)
           $game_temp.choice_proc.call($game_temp.choice_cancel_type - 1)
@@ -234,8 +234,8 @@ class Window_Message < Window_Selectable
         end
       end
       # Confirm
-      if Keys.trigger?($keyboard["select"])
-        #Input.trigger?(Input::C)
+      if Input.trigger?(Input::C)
+        #Keys.trigger?($keyboard["select"])
         if $game_temp.choice_max > 0
           $game_system.se_play($data_system.decision_se)
           $game_temp.choice_proc.call(self.index)

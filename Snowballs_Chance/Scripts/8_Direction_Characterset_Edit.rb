@@ -43,6 +43,7 @@ update_para_quarter
 unless moving? or $game_system.map_interpreter.running? or
 @move_route_forcing or $game_temp.message_window_showing
 # If the direction button is pushed, move the player in that direction
+=begin
   if Keys.press?($keyboard["down"])
 		 if Keys.press?($keyboard["left"])
 		 move_lower_left
@@ -64,7 +65,7 @@ unless moving? or $game_system.map_interpreter.running? or
       elsif Keys.press?($keyboard["right"])
          move_right
     end    
-=begin
+=end
 case Input.dir8
 when 1 # Move Lower Left
 move_lower_left
@@ -75,7 +76,7 @@ move_upper_left
 when 9 # Move Upper Right
 move_upper_right
 end
-=end
+
 end
 end
 end
@@ -104,8 +105,7 @@ if character.dash_on and dash_quarter_graphic_exist?(@character)
 else
 @character_name = @character.character_name + "_quarter"
 end
-self.bitmap = RPG::Cache.character(@character_name,
-@character.character_hue)
+self.bitmap = RPG::Cache.character(@character_name,@character.character_hue)
 # Acquire direction
 case @character.direction
 when 1
@@ -127,8 +127,7 @@ sx = @character.pattern * @cw
 sy = n * @ch
 self.src_rect.set(sx, sy, @cw, @ch)
 else
-self.bitmap = RPG::Cache.character(@character.character_name,
-@character.character_hue)
+self.bitmap = RPG::Cache.character(@character.character_name,@character.character_hue)
 # Set original transfer rectangle
 sx = @character.pattern * @cw
 sy = (@character.direction - 2) / 2 * @ch

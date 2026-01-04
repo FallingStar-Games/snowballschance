@@ -131,8 +131,8 @@ class Window_Selectable < Window_Base
     # If cursor is movable
     if self.active and @item_max > 0 and @index >= 0
       # If pressing down on the directional buttons
-      if Keys.repeat?($keyboard["down"])
-        #Input.repeat?(Input::DOWN)
+      if Input.repeat?(Input::DOWN)
+        #Keys.repeat?($keyboard["down"])
         # If column count is 1 and directional button was pressed down with no
         # repeat, or if cursor position is more to the front than
         # (item count - column count)
@@ -144,8 +144,8 @@ class Window_Selectable < Window_Base
         end
       end
       # If the up directional button was pressed
-      if Keys.repeat?($keyboard["up"])
-        #Input.repeat?(Input::UP)
+      if Input.repeat?(Input::UP)
+        #Keys.repeat?($keyboard["up"])
         # If column count is 1 and directional button was pressed up with no
         # repeat, or if cursor position is more to the back than column count
         if (@column_max == 1 and Input.trigger?(Input::UP)) or
@@ -156,8 +156,8 @@ class Window_Selectable < Window_Base
         end
       end
       # If the right directional button was pressed
-      if Keys.repeat?($keyboard["right"])
-        Input.repeat?(Input::RIGHT)
+      if Input.repeat?(Input::RIGHT)
+        #Keys.repeat?($keyboard["right"])
         # If column count is 2 or more, and cursor position is closer to front
         # than (item count -1)
         if @column_max >= 2 and @index < @item_max - 1
@@ -167,8 +167,8 @@ class Window_Selectable < Window_Base
         end
       end
       # If the left directional button was pressed
-      if Keys.repeat?($keyboard["left"])
-        #Input.repeat?(Input::LEFT)
+      if Input.repeat?(Input::LEFT)
+        #Keys.repeat?($keyboard["left"])
         # If column count is 2 or more, and cursor position is more back than 0
         if @column_max >= 2 and @index > 0
           # Move cursor left
@@ -177,8 +177,8 @@ class Window_Selectable < Window_Base
         end
       end
       # If R button was pressed
-      if Keys.repeat?($keyboard["turn_r"])
-        #Input.repeat?(Input::R)
+      if Input.repeat?(Input::R)
+        #Keys.repeat?($keyboard["turn_r"])
         # If bottom row being displayed is more to front than bottom data row
         if self.top_row + (self.page_row_max - 1) < (self.row_max - 1)
           # Move cursor 1 page back
@@ -188,8 +188,8 @@ class Window_Selectable < Window_Base
         end
       end
       # If L button was pressed
-      if Keys.repeat?($keyboard["turn_l"])
-        #Input.repeat?(Input::L)
+      if Input.repeat?(Input::L)
+        #Keys.repeat?($keyboard["turn_l"])
         # If top row being displayed is more to back than 0
         if self.top_row > 0
           # Move cursor 1 page forward

@@ -76,26 +76,26 @@ class Window_NameInput < Window_Base
     # If cursor is positioned on [OK]
     if @index >= 90
       # Cursor down
-      if Keys.trigger?($keyboard["down"])
-        #Input.trigger?(Input::DOWN)
+      if Input.trigger?(Input::DOWN)
+        #Keys.trigger?($keyboard["down"])
         $game_system.se_play($data_system.cursor_se)
         @index -= 90
       end
       # Cursor up
-      if Keys.repeat?($keyboard["up"]) 
-        #Input.repeat?(Input::UP)
+      if Input.repeat?(Input::UP)
+        #Keys.repeat?($keyboard["up"]) 
         $game_system.se_play($data_system.cursor_se)
         @index -= 90 - 40
       end
     # If cursor is positioned on anything other than [OK]
     else
       # If right directional button is pushed
-      if Keys.repeat?($keyboard["right"]) 
-        #Input.repeat?(Input::RIGHT)
+      if Input.repeat?(Input::RIGHT)
+        #Keys.repeat?($keyboard["right"]) 
         # If directional button pressed down is not a repeat, or
         # cursor is not positioned on the right edge
-        if Keys.trigger?($keyboard["right"]) or
-          #Input.trigger?(Input::RIGHT) or
+        if Input.trigger?(Input::RIGHT) or
+          # Keys.trigger?($keyboard["right"]) or
            @index / 45 < 3 or @index % 5 < 4
           # Move cursor to right
           $game_system.se_play($data_system.cursor_se)
@@ -110,12 +110,12 @@ class Window_NameInput < Window_Base
         end
       end
       # If left directional button is pushed
-      if Keys.repeat?($keyboard["left"]) 
-        #Input.repeat?(Input::LEFT)
+      if Input.repeat?(Input::LEFT)
+        #Keys.repeat?($keyboard["left"]) 
         # If directional button pressed down is not a repeat, or
         # cursor is not positioned on the left edge
-        if Keys.trigger?($keyboard["left"]) or
-          #Input.trigger?(Input::LEFT) or
+        if Input.trigger?(Input::LEFT) or
+          #Keys.trigger?($keyboard["left"]) or
            @index / 45 > 0 or @index % 5 > 0
           # Move cursor to left
           $game_system.se_play($data_system.cursor_se)
@@ -130,8 +130,8 @@ class Window_NameInput < Window_Base
         end
       end
       # If down directional button is pushed
-      if Keys.repeat?($keyboard["down"])
-        #Input.repeat?(Input::DOWN)
+      if Input.repeat?(Input::DOWN)
+        #Keys.repeat?($keyboard["down"])
         # Move cursor down
         $game_system.se_play($data_system.cursor_se)
         if @index % 45 < 40
@@ -141,12 +141,12 @@ class Window_NameInput < Window_Base
         end
       end
       # If up directional button is pushed
-      if Keys.repeat?($keyboard["up"])
-        #Input.repeat?(Input::UP)
+      if Input.repeat?(Input::UP)
+        #Keys.repeat?($keyboard["up"])
         # If directional button pressed down is not a repeat, or
         # cursor is not positioned on the upper edge
-        if Keys.trigger?($keyboard["up"]) or @index % 45 >= 5
-          #Input.trigger?(Input::UP)
+        if Input.trigger?(Input::UP) or @index % 45 >= 5
+          #Keys.trigger?($keyboard["up"])
           # Move cursor up
           $game_system.se_play($data_system.cursor_se)
           if @index % 45 >= 5
@@ -157,8 +157,8 @@ class Window_NameInput < Window_Base
         end
       end
       # If L or R button was pressed
-      if Keys.repeat?($keyboard["turn_l"]) or Keys.repeat?($keyboard["turn_r"])
-        #Input.repeat?(Input::L) or Input.repeat?(Input::R)
+      if Input.repeat?(Input::L) or Input.repeat?(Input::R)
+        #Keys.repeat?($keyboard["turn_l"]) or Keys.repeat?($keyboard["turn_r"])
         # Move capital / small
         $game_system.se_play($data_system.cursor_se)
         if @index < 45
