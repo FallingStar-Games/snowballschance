@@ -51,31 +51,31 @@ class Window_InputNumber < Window_Base
   def update
     super
     # If up or down directional button was pressed
-    if Keys.repeat?($keyboard["up"]) or Keys.repeat?($keyboard["down"]) 
-      #Input.repeat?(Input::UP) or Input.repeat?(Input::DOWN)
+    if Input.repeat?(Input::UP) or Input.repeat?(Input::DOWN)
+      #Keys.repeat?($keyboard["up"]) or Keys.repeat?($keyboard["down"]) 
       $game_system.se_play($data_system.cursor_se)
       # Get current place number and change it to 0
       place = 10 ** (@digits_max - 1 - @index)
       n = @number / place % 10
       @number -= n * place
       # If up add 1, if down substract 1
-      n = (n + 1) % 10 if Keys.repeat?($keyboard["up"]) #Input.repeat?(Input::UP)
-      n = (n + 9) % 10 if Keys.repeat?($keyboard["down"])  #Input.repeat?(Input::DOWN)
+      n = (n + 1) % 10 if Input.repeat?(Input::UP) #Keys.repeat?($keyboard["up"]) 
+      n = (n + 9) % 10 if Input.repeat?(Input::DOWN) #Keys.repeat?($keyboard["down"])
       # Reset current place number
       @number += n * place
       refresh
     end
     # Cursor right
-    if Keys.repeat?($keyboard["right"]) 
-      #Input.repeat?(Input::RIGHT)
+    if Input.repeat?(Input::RIGHT)
+      #Keys.repeat?($keyboard["right"]) 
       if @digits_max >= 2
         $game_system.se_play($data_system.cursor_se)
         @index = (@index + 1) % @digits_max
       end
     end
     # Cursor left
-    if Keys.repeat?($keyboard["left"]) 
-      #Input.repeat?(Input::LEFT)
+    if Input.repeat?(Input::LEFT)
+      #Keys.repeat?($keyboard["left"]) 
       if @digits_max >= 2
         $game_system.se_play($data_system.cursor_se)
         @index = (@index + @digits_max - 1) % @digits_max

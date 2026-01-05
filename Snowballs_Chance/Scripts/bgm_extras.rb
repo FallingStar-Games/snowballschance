@@ -1,3 +1,4 @@
+=begin
 class Game_Temp
   attr_accessor :map_bgm_pos
   alias :fmodex_old_temp_initialize :initialize unless $@
@@ -148,4 +149,4 @@ class Scene_Battle
     end
   end
 end
-
+=end

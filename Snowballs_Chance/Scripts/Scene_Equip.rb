@@ -141,8 +141,8 @@ class Scene_Equip
   #--------------------------------------------------------------------------
   def update_right
     # If B button was pressed
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       # Play cancel SE
       $game_system.se_play($data_system.cancel_se)
       # Switch to menu screen
@@ -150,8 +150,8 @@ class Scene_Equip
       return
     end
     # If C button was pressed
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       # If equipment is fixed
       if @actor.equip_fix?(@right_window.index)
         # Play buzzer SE
@@ -167,8 +167,8 @@ class Scene_Equip
       return
     end
     # If R button was pressed
-    if Keys.trigger?($keyboard["turn_r"]) or Keys.trigger?($keyboard["right"])
-      #Input.trigger?(Input::R)
+    if Input.trigger?(Input::R) || Input.trigger?(Input::RIGHT)
+      #Keys.trigger?($keyboard["turn_r"]) or Keys.trigger?($keyboard["right"])
       # Play cursor SE
       $game_system.se_play($data_system.cursor_se)
       # To next actor
@@ -179,8 +179,8 @@ class Scene_Equip
       return
     end
     # If L button was pressed
-    if Keys.trigger?($keyboard["turn_l"]) or Keys.trigger?($keyboard["left"])
-      #Input.trigger?(Input::L)
+    if Input.trigger?(Input::L) || Input.trigger?(Input::LEFT)
+      #Keys.trigger?($keyboard["turn_l"]) or Keys.trigger?($keyboard["left"])
       # Play cursor SE
       $game_system.se_play($data_system.cursor_se)
       # To previous actor
@@ -196,8 +196,8 @@ class Scene_Equip
   #--------------------------------------------------------------------------
   def update_item
     # If B button was pressed
-    if Keys.trigger?($keyboard["cancel"])
-      #Input.trigger?(Input::B)
+    if Input.trigger?(Input::B)
+      #Keys.trigger?($keyboard["cancel"])
       # Play cancel SE
       $game_system.se_play($data_system.cancel_se)
       # Activate right window
@@ -207,8 +207,8 @@ class Scene_Equip
       return
     end
     # If C button was pressed
-    if Keys.trigger?($keyboard["select"])
-      #Input.trigger?(Input::C)
+    if Input.trigger?(Input::C)
+      #Keys.trigger?($keyboard["select"])
       # Play equip SE
       $game_system.se_play($data_system.equip_se)
       # Get currently selected data on the item window

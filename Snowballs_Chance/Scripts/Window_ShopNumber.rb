@@ -59,29 +59,29 @@ class Window_ShopNumber < Window_Base
     super
     if self.active
       # Cursor right (+1)
-      if Keys.repeat?($keyboard["right"]) and @number < @max 
-        #Input.repeat?(Input::RIGHT)
+      if Input.repeat?(Input::RIGHT) and @number < @max 
+        #Keys.repeat?($keyboard["right"])
         $game_system.se_play($data_system.cursor_se)
         @number += 1
         refresh
       end
       # Cursor left (-1)
-      if Keys.repeat?($keyboard["left"]) and @number > 1
-        #Input.repeat?(Input::LEFT)
+      if Input.repeat?(Input::LEFT) and @number > 1
+        #Keys.repeat?($keyboard["left"])
         $game_system.se_play($data_system.cursor_se)
         @number -= 1
         refresh
       end
       # Cursdr up (+10)
-      if Keys.repeat?($keyboard["up"]) and @number < @max
-        #Input.repeat?(Input::UP)
+      if Input.repeat?(Input::UP) and @number < @max
+        #Keys.repeat?($keyboard["up"])
         $game_system.se_play($data_system.cursor_se)
         @number = [@number + 10, @max].min
         refresh
       end
       # Cursor down (-10)
-      if Keys.repeat?($keyboard["down"]) and @number > 1
-        #Input.repeat?(Input::DOWN)
+      if Input.repeat?(Input::DOWN) and @number > 1
+        #Keys.repeat?($keyboard["down"])
         $game_system.se_play($data_system.cursor_se)
         @number = [@number - 10, 1].max
         refresh

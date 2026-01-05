@@ -24,8 +24,8 @@ class Arrow_Enemy < Arrow_Base
       @index %= $game_troop.enemies.size
     end
     # Cursor right
-    if Keys.repeat?($keyboard["right"]) 
-      #Input.repeat?(Input::RIGHT)
+    if Input.repeat?(Input::RIGHT)
+      #Keys.repeat?($keyboard["right"]) 
       $game_system.se_play($data_system.cursor_se)
       $game_troop.enemies.size.times do
         @index += 1
@@ -34,8 +34,8 @@ class Arrow_Enemy < Arrow_Base
       end
     end
     # Cursor left
-    if Keys.repeat?($keyboard["left"]) 
-      #Input.repeat?(Input::LEFT)
+    if Input.repeat?(Input::LEFT)
+      #Keys.repeat?($keyboard["left"]) 
       $game_system.se_play($data_system.cursor_se)
       $game_troop.enemies.size.times do
         @index += $game_troop.enemies.size - 1
