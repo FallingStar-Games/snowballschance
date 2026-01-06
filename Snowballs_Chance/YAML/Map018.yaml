@@ -2,7 +2,7 @@
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: trialmountain
+    name: beyondthewaterfall
     pitch: 100
   events:
     5: !ruby/object:RPG::Event
@@ -3343,6 +3343,11 @@ root: !ruby/object:RPG::Map
           - 'Yes'
           indent: 0
           code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_map.replace_tile(3,4,-1,false)"
+          indent: 1
+          code: 355
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1

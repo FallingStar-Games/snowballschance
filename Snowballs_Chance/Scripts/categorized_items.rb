@@ -515,7 +515,7 @@ class Window_ItemMenu < Window_Selectable
     case @category
     when "Recent"
       if @items_max > 20
-        return @recent[self.index + (@items_max - 20)]
+        return @recent[self.index +(@items_max - 20)]
       else
         return @recent[self.index]
       end
@@ -846,7 +846,7 @@ class Scene_Item
     # Associate help window
     @item_window.help_window = @help_window
     # Make target window (set to active)
-    @category_window = Window_Category.new(320, [])
+    @category_window = Window_Category.new(320,[])
     @category_window.active = true
     @category_window.help_window = @itemtop_window
     # Make target window (set to invisible / inactive)

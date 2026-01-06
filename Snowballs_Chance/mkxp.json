@@ -307,7 +307,7 @@
     // fullscreen
     // (default: disabled)
     //
-    // "anyAltToggleFS": false,
+"anyAltToggleFS": true,
 
 
     // Enable F12 game reset
@@ -358,11 +358,11 @@
     // execution starts
     // (default: none)
     //
-    // "preloadScript": [
-    //     "scripts/preload/ruby_classic_wrap.rb",
+	"preloadScript": [
+         "scripts/preload/ruby_classic_wrap.rb",
     //     "scripts/preload/mkxp_wrap.rb",
     //     "scripts/preload/win32_wrap.rb",
-    // ],
+     ],
 
 
     // Define raw scripts to be executed before the
@@ -420,10 +420,10 @@
     // requested by RGSS.
     // (default: none)
     //
-    // "fontSub": [
-    //     "Arial>Open Sans",
-    //     "Times New Roman>Liberation Serif",
-    // ],
+     "fontSub": [
+         "Arial>Open Sans",
+         "Times New Roman>Liberation Serif",
+     ],
 
     // Scales the sizes of all fonts.
     // If you think text tends to be too large or too small,
@@ -512,7 +512,7 @@
     // SoundFont to use for midi playback (via fluidsynth)
     // (default: none)
     //
-    // "midiSoundFont": "Audio/BGM/GMGSx.sf2",
+     "midiSoundFont": "Audio/FinalFantasyVI.sf2",
 
 
     // Activate "chorus" effect for midi playback
@@ -522,7 +522,7 @@
 
     // Activate "reverb" effect for midi playback
     //
-    // "midiReverb": false,
+     "midiReverb": true,
 
 
     // Number of OpenAL sources to allocate for SE playback.
@@ -530,7 +530,7 @@
     // and audibly cutting each other off, try increasing
     // this number. Maximum: 64.
     //
-    // "SESourceCount": 6,
+     "SESourceCount": 3,
 
     // Number of streams to open for BGM tracks. If the game
     // needs multitrack audio, this should be set to as many

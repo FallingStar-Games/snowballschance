@@ -2,7 +2,7 @@
 root:
 -
 - !ruby/object:RPG::CommonEvent
-  name: melt snow
+  name: melt snow to drink
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
@@ -21402,12 +21402,12 @@ root:
     code: 355
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "$game_map.replace_tile(224,225,-"
+    - f=false
     indent: 1
     code: 355
   - !ruby/object:RPG::EventCommand
     parameters:
-    - 1,false)
+    - "$game_map.replace_tile(224,225,-1,f)"
     indent: 1
     code: 655
   - !ruby/object:RPG::EventCommand

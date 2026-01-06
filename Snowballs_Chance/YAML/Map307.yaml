@@ -1038,9 +1038,9 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - FMod::bgm_volume -= 15
+          - 10
           indent: 0
-          code: 355
+          code: 242
         - !ruby/object:RPG::EventCommand
           parameters:
           - 39
@@ -1058,19 +1058,9 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - FMod::bgm_volume -= 15
-          indent: 0
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 15
           indent: 0
           code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - FMod::bgm_volume -= 15
-          indent: 0
-          code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
           - 3
@@ -1102,11 +1092,6 @@ root: !ruby/object:RPG::Map
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
-          - FMod::bgm_volume -= 15
-          indent: 0
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - "\\p[3]\\na[Frie]...my home was destroyed "
           indent: 0
           code: 101
@@ -1120,11 +1105,6 @@ root: !ruby/object:RPG::Map
           - 15
           indent: 0
           code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - FMod::bgm_volume -= 15
-          indent: 0
-          code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
           - 37
@@ -1202,11 +1182,6 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - FMod::bgm_volume -= 15
-          indent: 0
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 146
           indent: 0
           code: 117
@@ -1227,72 +1202,17 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - FMod::bgm_volume -= 15
-          indent: 0
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 10
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 1
-          - 1
-          - 0
-          - 0
-          - 0
+          - !ruby/object:RPG::AudioFile
+            volume: 100
+            name: scrungohouse
+            pitch: 100
           indent: 0
-          code: 122
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 112
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 1
-          - 1
-          - 0
-          - 0
-          indent: 1
-          code: 122
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - FMod::bgm_volume += 2
-          indent: 1
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          indent: 1
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 12
-          - FMod::bgm_volume > 90
-          indent: 1
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 113
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 413
+          code: 241
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[2]\\na[Scrungo]Now, does anyone want a blini?"

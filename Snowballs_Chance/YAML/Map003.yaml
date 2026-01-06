@@ -2,7 +2,7 @@
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 65
-    name: slowsuspense
+    name: temporaryrest_midi
     pitch: 100
   events:
     27: !ruby/object:RPG::Event
@@ -1114,6 +1114,11 @@ root: !ruby/object:RPG::Map
           - Agent tat, do you copy?
           indent: 0
           code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - print("id is '#{__id__}'")
+          indent: 0
+          code: 355
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
