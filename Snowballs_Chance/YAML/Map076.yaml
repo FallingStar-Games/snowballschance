@@ -1,10 +1,10 @@
---- !ruby/object:Hash
+---
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
     name: temporicdream
     pitch: 100
-  events: !ruby/object:Hash
+  events:
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -103,17 +103,17 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'Speaking of my dad, I haven''t seen him in years. I''ve '
+          - 'Speaking of my dad, I haven''t seen him in years. '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'been stuck living with my adoptive mom on Frostel '
+          - 'I''ve been stuck living with my adoptive mom on '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - Island, since he was "unfit to raise me."
+          - Frostel Island, since he was "unfit to raise me."
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -123,12 +123,12 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'I''ve had enough of this cold - the cold climate and the '
+          - 'I''ve had enough of this cold. The cold climate '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'cold strangers who don''t care about me both. '
+          - and the cold strangers who don't care about me.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -138,7 +138,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'I''m going to become a trail guide to earn enough '
+          - 'I''m gonna become a trail guide to earn enough '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -199,16 +199,11 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 20
-          indent: 0
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - newtitlex2
-          - 1
+          - 5
+          - white
           - 0
-          - 320
+          - 0
+          - 0
           - 0
           - 100
           - 100
@@ -218,7 +213,111 @@ root: !ruby/object:RPG::Map
           code: 231
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 5
+          - 40
+          - 0
+          - 0
+          - 0
+          - 0
+          - 100
+          - 100
+          - 255
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - You are here -----------------------
+          indent: 0
+          code: 108
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 40
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 1
+          - peakview
+          - 0
+          - 0
+          - 0
+          - -320
+          - 100
+          - 100
+          - 255
+          - 0
+          indent: 0
+          code: 231
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - newtitlex2
+          - 1
+          - 0
+          - 320
+          - 150
+          - 100
+          - 100
+          - 0
+          - 0
+          indent: 0
+          code: 231
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          - 20
+          - 0
+          - 0
+          - 0
+          - 0
+          - 100
+          - 100
+          - 0
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 40
+          - 0
+          - 0
+          - 0
+          - -100
+          - 100
+          - 100
+          - 255
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 40
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 60
+          - 0
+          - 0
+          - 0
+          - 0
+          - 100
+          - 100
+          - 255
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 90
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
           - 20
           - 1
           - 0
@@ -232,7 +331,7 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 100
+          - 20
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -242,12 +341,17 @@ root: !ruby/object:RPG::Map
             green: 255.0
             blue: 255.0
             alpha: 119.0
-          - 10
+          - 20
           indent: 0
           code: 224
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 1
+          - 100
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
           - 20
           - 1
           - 0
@@ -261,15 +365,73 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 5
+          indent: 0
+          code: 242
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 20
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 50
+          - blapk
+          - 0
+          - 0
+          - 0
+          - 0
+          - 100
+          - 100
+          - 0
+          - 0
+          indent: 0
+          code: 231
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 50
+          - 40
+          - 0
+          - 0
+          - 0
+          - 0
+          - 100
+          - 100
+          - 255
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 2
           - 0
           indent: 0
           code: 104
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 20
+          - 50
           indent: 0
           code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          indent: 0
+          code: 235
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          indent: 0
+          code: 235
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 3
+          indent: 0
+          code: 235
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          indent: 0
+          code: 235
         - !ruby/object:RPG::EventCommand
           parameters:
           - 36
@@ -295,11 +457,6 @@ root: !ruby/object:RPG::Map
           - 20
           indent: 0
           code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 17
-          indent: 0
-          code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
           - 21
@@ -383,7 +540,7 @@ root: !ruby/object:RPG::Map
           character_hue: 0
         walk_anime: false
         move_speed: 6
-        through: false
+        through: true
       name: EV001
       y: 11
       x: 9
