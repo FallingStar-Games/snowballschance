@@ -38,6 +38,7 @@ class Game_Map
     else
       a0 = a*48 ; a1 = (a+1)*48
       b0 = b*48 ; b1 = (b+1)*48
+      #that number 48... has something to do with autotiles.
       a_array = []
       b_array = []
       
@@ -47,13 +48,14 @@ class Game_Map
       for i in b0...b1
         b_array.push(i)
       end
-      
+      print(k) #k isn't defined here yet
       for i in 0..width
         for j in 0..height
           if @layer == -1
             for l in 0..2
-              for k in 0..a_array.size
+              for k in 0..a_array.size #48
                 data[i,j,l] = b_array[k] if data[i,j,l] == a_array[k]
+                # don't print here, you will experience hell
               end
             end
           else

@@ -199,6 +199,11 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 30
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 5
           - white
           - 0
@@ -256,7 +261,7 @@ root: !ruby/object:RPG::Map
           - 1
           - 0
           - 320
-          - 150
+          - 350
           - 100
           - 100
           - 0
@@ -280,7 +285,7 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - 1
-          - 40
+          - 50
           - 0
           - 0
           - 0
@@ -293,7 +298,26 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 40
+          - 50
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 50
+          - 0
+          - 0
+          - -50
+          - 0
+          - 100
+          - 100
+          - 255
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 50
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -346,7 +370,17 @@ root: !ruby/object:RPG::Map
           code: 224
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 100
+          - 1
+          indent: 0
+          code: 105
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          indent: 0
+          code: 242
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 40
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -363,11 +397,6 @@ root: !ruby/object:RPG::Map
           - 0
           indent: 0
           code: 232
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 5
-          indent: 0
-          code: 242
         - !ruby/object:RPG::EventCommand
           parameters:
           - 20
@@ -447,6 +476,14 @@ root: !ruby/object:RPG::Map
           - Cozio Town
           indent: 0
           code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 100
+            name: buspass
+            pitch: 100
+          indent: 0
+          code: 249
         - !ruby/object:RPG::EventCommand
           parameters:
           - 37
