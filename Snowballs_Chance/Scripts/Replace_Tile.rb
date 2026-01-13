@@ -20,49 +20,58 @@
 #==============================================================================
 
 class Game_Map
-  def replace_tile(a,b,layer=-1,autotile=false)
+  def replace_tile(intialtile,finaltile,layer=-1,autotile=false)
     @layer = layer
     if autotile == false
-      for i in 0..width
-        for j in 0..height
-          if @layer == -1
-            for l in 0..2
-              data[i,j,l] = b+384 if data[i,j,l] == a+384
-            end
+      for currentwidth in 0..width
+        for currentheight in 0..height
+          if @layer == -1 #if we're working on all layers
+            for currentlayer in 0..2 #do all this stuff for all 3 layers
+              data[currentwidth,currentheight,currentlayer] = finaltile+384 if data[currentwidth,currentheight,currentlayer] == intialtile+384
+            end #cram the width and height and layer into data array and set it to final tile plus 384 if data as set up is still at initial tile stuff
           else
-            l = @layer
-            data[i,j,l] = b+384 if data[i,j,l] == a+384
-          end
+            currentlayer = @layer #store the layer in currentlayer
+            data[currentwidth,currentheight,currentlayer] = finaltile+384 if data[currentwidth,currentheight,currentlayer] == intialtile+384
+          end #set the stuff in data
         end
       end
-    else
-      a0 = a*48 ; a1 = (a+1)*48
-      b0 = b*48 ; b1 = (b+1)*48
-      #that number 48... has something to do with autotiles.
-      a_array = []
-      b_array = []
+    else #if it is an autotile
+      init0 = intialtile*48 ; init1 = (intialtile+1)*48 
+      #initial0 if initial tile times 48, initial1 is one more than initialtile times 48
+      final0 = finaltile*48 ; final1 = (finaltile+1)*48
+      #do the same shit with final tile stuff
+      init_array = [] 
+      final_array = [] #set these arrays up
       
-      for i in a0...a1
-        a_array.push(i)
+      for currentwidth in init0...init1
+        init_array.push(currentwidth)
       end
-      for i in b0...b1
-        b_array.push(i)
+      for currentwidth in final0...final1
+        final_array.push(currentwidth)
       end
-      print(k) #k isn't defined here yet
-      for i in 0..width
-        for j in 0..height
-          if @layer == -1
-            for l in 0..2
-              for k in 0..a_array.size #48
-                data[i,j,l] = b_array[k] if data[i,j,l] == a_array[k]
-                # don't print here, you will experience hell
+      ass = 0 #test var
+      for currentwidth in 0..width 
+        for currentheight in 0..height
+          if @layer == -1 #if we're working with all the layers
+            for currentlayer in 0..2 #there are 3 layers in every map
+              for atilepermutcount in 0..init_array.size #autotile permutation count, goeds up to 48 from 0
+                
+                if asslord != nil
+                data[currentwidth,currentheight,currentlayer] = final_array[atilepermutcount] if data[currentwidth,currentheight,currentlayer] == init_array[atilepermutcount]
+                ass += 1
+                puts(ass) #log this shit
+              else
+                put("asses")
+                break
+              end
+              
               end
             end
-          else
-            l = @layer
-            for k in 0..a_array.size
-              if data[i,j,l] == a_array[k]
-                data[i,j,l] = b_array[k]
+          else #if it's just one layer
+            currentlayer = @layer #log the layer here
+            for atilepermutcount in 0..init_array.size # make autotile permutationcount go from 0 to however big the array of stuff from the initial tile ended up
+              if data[currentwidth,currentheight,currentlayer] == init_array[atilepermutcount] #if the data matches the initial
+                data[currentwidth,currentheight,currentlayer] = final_array[atilepermutcount] #then set the data to the final
               end
             end
           end

@@ -7,7 +7,7 @@
  0.95 - original release
  1.0 - fixed a small bug with directional footprints and
        updated the compatibility list
-  
+  #turns out this is even more fucked when you try to use mkxp-z
  SETUP:
  1) From the database (Tileset tab), give the appropriate tiles of any
     tilesets that you want to show footprints (e.g. sand in "Desert",
