@@ -49,34 +49,28 @@ class Game_Map
       for currentwidth in final0...final1
         final_array.push(currentwidth)
       end
-      ass = 0 #test var
+
       for currentwidth in 0..width 
         for currentheight in 0..height
           if @layer == -1 #if we're working with all the layers
             for currentlayer in 0..2 #there are 3 layers in every map
               for atilepermutcount in 0..init_array.size #autotile permutation count, goeds up to 48 from 0
-                
-                if asslord != nil
+                next if data[currentwidth,currentheight,currentlayer].nil?
                 data[currentwidth,currentheight,currentlayer] = final_array[atilepermutcount] if data[currentwidth,currentheight,currentlayer] == init_array[atilepermutcount]
-                ass += 1
-                puts(ass) #log this shit
-              else
-                put("asses")
-                break
-              end
-              
-              end
+                #it's OVER 9000!!!!! *crushes scouter in bare hands*
+                end
             end
           else #if it's just one layer
             currentlayer = @layer #log the layer here
-            for atilepermutcount in 0..init_array.size # make autotile permutationcount go from 0 to however big the array of stuff from the initial tile ended up
-              if data[currentwidth,currentheight,currentlayer] == init_array[atilepermutcount] #if the data matches the initial
-                data[currentwidth,currentheight,currentlayer] = final_array[atilepermutcount] #then set the data to the final
-              end
+            for atilepermutcount in 0..init_array.size 
+              # make autotile permutationcount go from 0 to however big the array of stuff from the initial tile ended up
+              next if data[currentwidth,currentheight,currentlayer].nil? 
+              # move past this shit if the array goes out of bounds
+              data[currentwidth,currentheight,currentlayer] = final_array[atilepermutcount] if data[currentwidth,currentheight,currentlayer] == init_array[atilepermutcount] 
+              end #set the data to the final if the data matches the initial 
             end
           end
         end
       end
     end
   end
-end
