@@ -186,7 +186,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #==============================================================================
-
+=begin
 #==============================================================================
 # ** FModEx
 #------------------------------------------------------------------------------
@@ -716,7 +716,7 @@ module FMod
   #--------------------------------------------------------------------------
   # * Get Path of RTP Folder From Registry
   #-------------------------------------------------------------------------- 
-=begin
+# =begin
   def self.getRTPFolder
     if @rtp_folder
       return @rtp_folder
@@ -741,7 +741,7 @@ module FMod
     @rtp_folder += "\\" if @rtp_folder[-1].chr != "\\"
     return @rtp_folder
   end
-=end
+#=eend
   #--------------------------------------------------------------------------
   # * Return Proper File Name (With Extensions)
   #     name            : Name of the file
@@ -1043,7 +1043,7 @@ module FMod
   #     volume          : Channel volume
   #     pitch           : Channel frequency
   #-------------------------------------------------------------------------- 
-=begin
+#=begin
   def self.se_play(name, volume, pitch)
     if @fmod_se.size > @fmod.maxChannels
       se = @fmod_se.shift
@@ -1052,7 +1052,7 @@ module FMod
     # Load SE into memory and play it
     @fmod_se << self.play(name, volume, pitch, 0, false, false)
   end
-=end
+#=eend
   #--------------------------------------------------------------------------
   # * Stop and Dispose of all SEs
   #-------------------------------------------------------------------------- 

@@ -7,6 +7,7 @@
 #---
 #Script written by the menbers of the Community Script Project
 #===
+=begin
 module Audio
   LOOP_TABLE = [
   # [ "Audio/xxx/File_name", begin, end ]
@@ -119,6 +120,7 @@ end
   end
 
 =end
+=begin
   def se_stop
     return @se_stop.call if(@library != ::FmodEx)
     ::FmodEx.se_stop
@@ -150,3 +152,4 @@ end
   end
   end
 end
+=end

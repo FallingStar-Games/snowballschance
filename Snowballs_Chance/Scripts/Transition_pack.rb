@@ -2,7 +2,7 @@
 # ** Transition Pack
 #------------------------------------------------------------------------------
 # by Fantasist
-# Version: 1.11
+# Version: 1.12
 # Date: 9-December-2009
 #------------------------------------------------------------------------------
 # Version History:
@@ -10,6 +10,7 @@
 #   1.0 - First released version
 #   1.1 - Added code to make battle scene use the transitions
 #   1.11 - Transitions are used when switching maps, fixed some bugs
+#   1.12 - an attempt to port to mkxp
 #------------------------------------------------------------------------------
 # Description:
 #
@@ -22,7 +23,7 @@
 #==============================================================================
 # Instructions:
 #
-#     This script NEEDS "screenshot.dll"! Place it in the game folder.
+#     If you're not using mkxp specific stuff, This script NEEDS "screenshot.dll"! Place it in the game folder.
 #     Place this script below Scene_Debug and above Main. To use this, instead
 #   of calling a scene directly like this:
 #
@@ -105,26 +106,31 @@
 #
 #   Enjoy ^_^
 #==============================================================================
-=begin
 #==============================================================================
 # ** Screen Module
 #------------------------------------------------------------------------------
 #  This module handles taking screenshots for the transitions.
 #==============================================================================
 module Screen
+=begin
 # this shit needs to be edited
   @screen = Win32API.new 'screenshot.dll', 'Screenshot', %w(l l l l p l l), ''
   @readini = Win32API.new 'kernel32', 'GetPrivateProfileStringA', %w(p p p p l p), 'l'
   @findwindow = Win32API.new 'user32', 'FindWindowA', %w(p p), 'l'
+=end
   #--------------------------------------------------------------------------
   # * Snap (take screenshot)
   #--------------------------------------------------------------------------
-  def self.snap(file_name='scrn_tmp', file_type=0)
-    game_name = "\0" * 256
-    @readini.call('Game', 'Title', '', game_name, 255, '.\Game.ini')
-    game_name.delete!('\0')
-    window = @findwindow.call('RGSS Player', game_name)
-    @screen.call(0, 0, 640, 480, file_name, window, file_type)
+  def self.snap(file_name='scrn_tmp', file_type=2) 
+    #the snap method. makes a bmp that's called scrn_tmp by default.
+    
+    #game_name = "\0" * 256
+    #@readini.call('Game', 'Title', '', game_name, 255, '.\Game.ini')
+    #game_name.delete!('\0')
+    #window = @findwindow.call('RGSS Player', game_name)
+    Graphics.screenshot(file_name) #pretty sure this is all you gotta do
+      
+    #@screen.call(0, 0, 640, 480, file_name, window, file_type)
   end
 end
 
@@ -217,7 +223,8 @@ class Transition
       return
     end
     # Take screenshot and prepare sprite
-    path = ENV['appdata'] + "\\scrn_tmp"
+    path = "Snapshots" + "\\scrn_tmp.png" #ENV['appdata'] + "\\scrn_tmp" 
+    #probably should fix this
     Screen.snap(path)
     @sprite = Sprite.new
     @sprite.bitmap = Bitmap.new(path)
@@ -773,4 +780,3 @@ class Scene_Map
     Input.update
   end
 end
-=end
