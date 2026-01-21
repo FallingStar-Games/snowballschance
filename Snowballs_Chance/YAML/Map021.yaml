@@ -40,32 +40,6 @@ root: !ruby/object:RPG::Map
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "$game_party.gain_item(16, 5)"
-          indent: 0
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_party.gain_item(27, 20)"
-          indent: 0
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 2
-          - 2
-          - 0
-          - 0
-          - -2
-          indent: 0
-          code: 122
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 38
-          - 38
-          - 0
-          indent: 0
-          code: 121
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 36
           indent: 0
           code: 117
@@ -127,6 +101,120 @@ root: !ruby/object:RPG::Map
           parameters: []
           indent: 0
           code: 404
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 12
+          - "$DEBUG"
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Looks like you're playing in debug mode!
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'Would you like to continue as usual '
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - or proceed to a debug room?
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - - Proceed as usual
+            - Go to Debug Room
+          - 1
+          indent: 1
+          code: 102
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - Proceed as usual
+          indent: 1
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - Go to Debug Room
+          indent: 1
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 3
+          - 18
+          - 8
+          - 2
+          - 1
+          indent: 2
+          code: 201
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          indent: 2
+          code: 208
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 18
+          indent: 2
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 115
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 116
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 404
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_party.gain_item(16, 5)"
+          indent: 0
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_party.gain_item(27, 20)"
+          indent: 0
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 2
+          - 0
+          - 0
+          - -2
+          indent: 0
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 38
+          - 38
+          - 0
+          indent: 0
+          code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
           - 2
