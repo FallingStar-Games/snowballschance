@@ -106,33 +106,6 @@
 #
 #   Enjoy ^_^
 #==============================================================================
-#==============================================================================
-# ** Screen Module
-#------------------------------------------------------------------------------
-#  This module handles taking screenshots for the transitions.
-#==============================================================================
-module Screen
-=begin
-# this shit needs to be edited
-  @screen = Win32API.new 'screenshot.dll', 'Screenshot', %w(l l l l p l l), ''
-  @readini = Win32API.new 'kernel32', 'GetPrivateProfileStringA', %w(p p p p l p), 'l'
-  @findwindow = Win32API.new 'user32', 'FindWindowA', %w(p p), 'l'
-=end
-  #--------------------------------------------------------------------------
-  # * Snap (take screenshot)
-  #--------------------------------------------------------------------------
-  def self.snap(file_name='scrn_tmp', file_type=2) 
-    #the snap method. makes a bmp that's called scrn_tmp by default.
-    
-    #game_name = "\0" * 256
-    #@readini.call('Game', 'Title', '', game_name, 255, '.\Game.ini')
-    #game_name.delete!('\0')
-    #window = @findwindow.call('RGSS Player', game_name)
-    Graphics.screenshot(file_name) #pretty sure this is all you gotta do
-      
-    #@screen.call(0, 0, 640, 480, file_name, window, file_type)
-  end
-end
 
 #==============================================================================
 # ** Transition
@@ -210,6 +183,7 @@ class Transition
   def initialize(next_scene=Scene_Menu.new, type=nil, *args)
     @next_scene = next_scene
     @args = args
+    # $game_temp.background_bitmap = 0 #broken
     # If transition type is specified, use it.
     # Otherwise, use default.
     @type = type.nil? ? $game_temp.transition_type : type
@@ -223,21 +197,21 @@ class Transition
       return
     end
     # Take screenshot and prepare sprite
-    path = "Snapshots" + "\\scrn_tmp.png" #ENV['appdata'] + "\\scrn_tmp" 
-    #probably should fix this
-    Screen.snap(path)
+    #$game_temp.background_bitmap&.dispose
+    #$game_temp.background_bitmap = Graphics.snap_to_bitmap
+    path = Graphics.snap_to_bitmap
+  
     @sprite = Sprite.new
-    @sprite.bitmap = Bitmap.new(path)
+    @sprite.bitmap = path #Bitmap.new(path)
     @sprite.x = @sprite.ox = @sprite.bitmap.width / 2
     @sprite.y = @sprite.oy = @sprite.bitmap.height / 2
     # Activate effect
-    Graphics.transition(0)
+    Graphics.transition(5)
     call_effect(@type, @args)
     # Freeze screen and clean up and switch scene
     Graphics.freeze
     @sprite.bitmap.dispose unless @sprite.bitmap.nil?
     @sprite.dispose unless @sprite.nil?
-    File.delete(path)
     $scene = @next_scene
   end
   #--------------------------------------------------------------------------
