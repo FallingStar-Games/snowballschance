@@ -1,8 +1,9 @@
+# encoding: utf-8
 #==============================================================================
 # ** Transition Pack
 #------------------------------------------------------------------------------
 # by Fantasist
-# Version: 1.12
+# Version: 1.12a
 # Date: 9-December-2009
 #------------------------------------------------------------------------------
 # Version History:
@@ -10,7 +11,7 @@
 #   1.0 - First released version
 #   1.1 - Added code to make battle scene use the transitions
 #   1.11 - Transitions are used when switching maps, fixed some bugs
-#   1.12 - an attempt to port to mkxp
+#	1.12a - orochii edited this thing
 #------------------------------------------------------------------------------
 # Description:
 #
@@ -23,7 +24,7 @@
 #==============================================================================
 # Instructions:
 #
-#     If you're not using mkxp specific stuff, This script NEEDS "screenshot.dll"! Place it in the game folder.
+#     This script used to need "screenshot.dll", but not anymore cuz VXA yay.
 #     Place this script below Scene_Debug and above Main. To use this, instead
 #   of calling a scene directly like this:
 #
@@ -58,7 +59,12 @@
 #     7 - Transpose (by Blizzard)
 #     8 - Shutter
 #     9 - Drop Off
-#     10- downward Spiral
+#     10- double_zoom
+#     11- ff_IV_style
+#     12- downward_spiral
+#     13- blackhole
+#     14- wave_distort
+#     15- radial_break
 #
 #   For Scripters:
 #
@@ -113,16 +119,33 @@
 #  This scene handles transition effects while switching to another scene.
 #==============================================================================
 class Transition
-  
+  attr_accessor :spriteset
   #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   # * CONFIG BEGIN
+  #    -1 - Uses the default effect (in most cases, simple transition)
+  #     0 - Zoom In
+  #     1 - Zoom Out
+  #     2 - Shred Horizontal
+  #     3 - Shred Vertical
+  #     4 - Fade
+  #     5 - Explode
+  #     6 - Explode (Chaos Project Style)
+  #     7 - Transpose (by Blizzard)
+  #     8 - Shutter
+  #     9 - Drop Off
+  #     10- double_zoom
+  #     11- ff_IV_style
+  #     12- downward_spiral
+  #     13- blackhole
+  #     14- wave_distort
+  #     15- radial_break
   #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  BATTLE_EFFECT = [5]#[2,3,6,7,8,9] # randomly choose from any of those
+  DEFAULT_TRANSITION = 0
+  BATTLE_EFFECT = [5] # randomly choose from any of those
   SHOP_EFFECT = 0
   NAME_EFFECT = nil # uses default effect set in $game_temp.transition_type
   MENU_EFFECT = -1
-  SAVE_EFFECT = -1 # disable effect/use default
-  
+  SAVE_EFFECT = 4 # disable effect/use default
   
   
   Explosion_Sound = "explosion"
@@ -136,6 +159,246 @@ class Transition
   #     type : Transition type
   #     args : Arguments for specified transition type
   #--------------------------------------------------------------------------
+  
+  def tile_sprites(tilesize)
+    tiles = []
+    t_cx = @sprite.bitmap.width / tilesize
+    t_cy = @sprite.bitmap.height / tilesize
+    # Iterate through main sprite, creating sprites for each square.
+    (0...t_cx).each {|x|
+      (0...t_cy).each {|y|
+        sprite = Sprite.new
+        sprite.x, sprite.y = x*tilesize, y*tilesize
+        sprite.bitmap = @sprite.bitmap
+        sprite.src_rect = Rect.new(sprite.x, sprite.y, tilesize, tilesize)
+        tiles.push(sprite)
+      }
+    }
+    @sprite.opacity = 0
+    return tiles
+  end
+  
+  def double_zoom(frames = 30, zoom1 = 12, zoom2 = 32)
+    # Calculate the stages. Account for final zoom being longer.
+    stage3 = (frames * (zoom1.to_f / zoom2)).round
+    stages = [(frames - stage3) / 2, (frames - stage3) / 2, stage3]
+    # Calculate the zoom rates to apply each frame, for each stage.
+    zoom_rates, opacity_rate = [zoom1-1, -zoom1+1, zoom2], (255 / frames.to_f)
+    zoom_rates.each_index {|i| zoom_rates[i] /= stages[i].to_f }
+    # Initialize local variable to keep track of current stage being executed.
+    current_stage = 0
+    3.times do
+      # Iterate each stage, using the calculated rates for each one.
+      stages[current_stage].times do
+        @sprite.zoom_x += zoom_rates[current_stage]
+        @sprite.zoom_y += zoom_rates[current_stage]
+        @sprite.opacity -= opacity_rate
+        Graphics.update
+      end
+      current_stage += 1
+    end
+  end
+  
+  def ff_IV_style(zoom1 = 1.2, zoom2 = 32)
+    # Set number of frames and zoom rates for each stage.
+    stages = [4, 4, 4, 4, 20]
+    zooms = [zoom1, -zoom1, zoom1, -zoom1, zoom2]
+    zooms.each_index {|i| zooms[i] /= stages[i].to_f }
+    current_stage = 0
+    5.times do
+      # Begin processing.
+      stages[current_stage].times do
+        @sprite.zoom_x += zooms[current_stage]
+        @sprite.zoom_y += zooms[current_stage]
+        @sprite.opacity -= 12 if current_stage == 4
+        Graphics.update
+      end
+      # Increase current stage.
+      current_stage += 1
+    end
+  end
+  
+  def downward_spiral(frames = 40, rotation_speed = 15)
+    # Calculate the zoom to subtract each frame.
+    zoom, opacity = 1.0 / frames, 128.0 / frames
+    frames.times do
+      # Begin processing.
+      @sprite.zoom_x -= zoom
+      @sprite.zoom_y -= zoom
+      @sprite.opacity -= opacity
+      @sprite.angle += rotation_speed
+      Graphics.update
+    end
+  end
+  
+  def blackhole(speed = 4, tilesize = 12, source = [320, 240])
+    # Initialize squares array to hold each sprite.
+    tiles = tile_sprites(tilesize)
+    # Make each sprite slightly smaller than full size.
+    tiles.each {|tile| tile.zoom_x = tile.zoom_y = 0.85 }
+    # Begin looping until all sprites have been disposed.
+    until tiles.compact == []
+      # Iterate each tiles.
+      tiles.each_index {|i|
+        next if tiles[i] == nil
+        # Get distance of this sprite from the source for each axis.
+        sx = source[0] - tiles[i].x
+        sy = source[1] - tiles[i].y
+        # Calculate total distance and set base speed for each axis.
+        dist = Math.hypot(sx, sy).to_f
+        move_x = (dist / (sx == 0 ? 1 : sx)) 
+        move_y = (dist / (sy == 0 ? 1 : sy))
+        # Add a little randomness to the mix.
+        move_x += move_x < 0 ? -rand(speed) : rand(speed)
+        move_y += move_y < 0 ? -rand(speed) : rand(speed)
+        # Apply movement.
+        tiles[i].x += move_x
+        tiles[i].y += move_y
+        tiles[i].angle += rand(20)
+        # If tile is within its own size from source, dispose it.
+        if sx.abs <= tilesize && sy.abs <= tilesize
+           tiles[i] = tiles[i].dispose
+        end
+      }
+      Graphics.update
+    end
+  end
+  
+  def wave_distort(frames = 60, direction = 2, power = 0.4)
+    radius, tiles = 0, tile_sprites(16)
+    # Define starting point for zoom, depending on direction.
+    origin = case direction
+    when 2 then [@sprite.bitmap.width / 2, @sprite.bitmap.height]
+    when 4 then [0, @sprite.bitmap.height / 2]
+    when 6 then [@sprite.bitmap.width, @sprite.bitmap.height / 2]
+    when 8 then [@sprite.bitmap.width / 2, 0]
+    end
+    # Initialize local variable for the rate the radius will increase.
+    rate = Math.hypot(@sprite.bitmap.width, @sprite.bitmap.height) / frames
+    # Begin processing.
+    frames.times do
+      # Iterate through each tile, calculating distance from focal point.
+      tiles.each {|tile|
+        dist = Math.hypot((origin[0] - tile.x), (origin[1] - tile.y))
+        # Zoom tile on one axis, depending on direction.
+        next if radius < dist 
+        [4, 6].include?(direction) ? tile.zoom_x += power : tile.zoom_y += power
+      }
+      # Increase radius for next iteration.
+      radius += rate
+      Graphics.update
+    end
+    # Dispose each bitmap and sprite used for the tiles.
+    tiles.each {|tile| tile.dispose }
+  end
+  
+  def radial_break(frames = 30, tilesize = 32, direction = 4, speed = 9)
+    radius, tiles = 0, tile_sprites(tilesize)
+    # Define starting point for zoom, depending on direction.
+    origin = case direction
+    when 2 then [@sprite.bitmap.width / 2, @sprite.bitmap.height]
+    when 4 then [0, @sprite.bitmap.height / 2]
+    when 6 then [@sprite.bitmap.width, @sprite.bitmap.height / 2]
+    when 8 then [@sprite.bitmap.width / 2, 0]
+    end
+    # Initialize local variable for the rate the radius will increase.
+    rate = Math.hypot(@sprite.bitmap.width, @sprite.bitmap.height) / frames
+    # Begin processing.
+    until tiles == []
+      tiles.compact!
+      # Iterate through each tile, calculating distance from focal point.
+      tiles.each_index {|i|
+        # Get distance of this sprite from the source for each axis.
+        sx = origin[0] - tiles[i].x
+        sy = origin[1] - tiles[i].y
+        dist = Math.hypot(sx, sy).to_f
+        # Zoom tile on one axis, depending on direction.
+        next if radius < dist 
+        # Calculate total distance and set base speed for each axis.
+        move_x = (dist / (sx == 0 ? 1 : sx)) 
+        move_y = (dist / (sy == 0 ? 1 : sy))
+        # Add a little randomness to the mix.
+        move_x += move_x < 0 ? -rand(speed) : rand(speed)
+        move_y += move_y < 0 ? -rand(speed) : rand(speed)
+        # Half distance of one axis, depending on rate.
+        [2, 8].include?(direction) ? move_x /= 2 : move_y /= 2
+        # Apply movement.
+        tiles[i].x += move_x
+        tiles[i].y += move_y
+        angle = (tiles[i].object_id % 2 == 0) ? rand(25) : -rand(25) 
+        tiles[i].angle += (angle + 5)
+        # If tile is within its own size from source, dispose it.
+        if sx.abs <= tilesize || sy.abs <= tilesize
+           tiles[i] = tiles[i].dispose
+        end
+      }
+      # Increase radius for next iteration.
+      radius += rate / 2
+      Graphics.update
+    end
+  end
+  
+  def wave_explode(wave_mode=1,frames=320,wave_amp=360,wave_length=180,wave_speed=360,wave_size=16)
+    # @sprite
+    @sprite.color = Color.new(255,0,0,255)
+    @sprite.wave_speed = wave_speed
+    @sprite.wave_size = wave_size
+    @sprite.wave_mode = wave_mode
+    for i in (0..frames)
+      # Lerp through wave
+      t = i * (1.0 / frames)
+      if (wave_mode > 7)
+        @sprite.wave_amp = 10
+        @sprite.wave_length = wave_length
+      else
+        @sprite.wave_amp = OZMath.lerp(t,0,wave_amp).to_i
+        @sprite.wave_length = OZMath.lerp(t,wave_length,0).to_i
+      end
+      # Update color
+      f = OZMath.lerp(t,0,255).to_i
+      @sprite.opacity = 255 - f
+      @sprite.color.alpha = f
+      @sprite.update
+      Graphics.update
+    end
+  end
+  
+  def heroen_style(tilesize=64,tileTime=32, tileDelay=2)
+    tiles = tile_sprites(tilesize)
+    frame = 0
+    nextTileDelay = tileDelay
+    total_frames = tiles.size + tileTime
+    opacityStep = 256 / tileTime
+    angleStep = 180 / tileTime
+    # Fix tile center
+    tiles.each {|t|
+      t.ox = tilesize/2
+      t.oy = t.ox
+      t.x += t.ox
+      t.y += t.ox
+    }
+    # Iter trough frames
+    while(frame < total_frames)
+      tiles.each_with_index {|t,i|
+        # Update tile
+        if (i <= frame && t.visible)
+          t.opacity -= opacityStep
+          t.angle += angleStep
+          t.visible = false if t.opacity==0
+        end
+        t.update
+      }
+      nextTileDelay -= 1
+      if nextTileDelay < 0
+        nextTileDelay = tileDelay if (frame < tiles.size)
+        frame += 1
+      end
+      Graphics.update
+    end
+    # Clean
+    tiles.each {|t| t.dispose}
+  end
+  
   def call_effect(type, args)
     # if "type" is an array, choose a random element.
     if type.is_a?(Array)
@@ -156,7 +419,14 @@ class Transition
       when 7 then transpose
       when 8 then shutter
       when 9 then drop_off
-      when 10 then downward_spiral
+      when 10 then double_zoom
+      when 11 then ff_IV_style
+      when 12 then downward_spiral
+      when 13 then blackhole
+      when 14 then wave_distort
+      when 15 then radial_break
+      when 16 then wave_explode
+      when 17 then heroen_style
       end
     else
       case type
@@ -170,7 +440,14 @@ class Transition
       when 7 then transpose(*args)
       when 8 then shutter(*args)
       when 9 then drop_off(*args)
-      when 10 then downward_spiral(*args)
+      when 10 then double_zoom(*args)
+      when 11 then ff_IV_style(*args)
+      when 12 then downward_spiral(*args)
+      when 13 then blackhole(*args)
+      when 14 then wave_distort(*args)
+      when 15 then radial_break(*args)
+      when 16 then wave_explode(*args)
+      when 17 then heroen_style(*args)
       end
     end
   end
@@ -183,10 +460,12 @@ class Transition
   def initialize(next_scene=Scene_Menu.new, type=nil, *args)
     @next_scene = next_scene
     @args = args
-    # $game_temp.background_bitmap = 0 #broken
     # If transition type is specified, use it.
     # Otherwise, use default.
     @type = type.nil? ? $game_temp.transition_type : type
+    if ($game_temp.background_bitmap==nil)
+      $game_temp.background_bitmap = Graphics.snap_to_bitmap
+    end
   end
   #--------------------------------------------------------------------------
   # * Main
@@ -197,21 +476,31 @@ class Transition
       return
     end
     # Take screenshot and prepare sprite
-    #$game_temp.background_bitmap&.dispose
-    #$game_temp.background_bitmap = Graphics.snap_to_bitmap
-    path = Graphics.snap_to_bitmap
-  
+    #path = ENV['appdata'] + "\\scrn_tmp"
+    #Screen.snap(path)
     @sprite = Sprite.new
-    @sprite.bitmap = path #Bitmap.new(path)
+    @sprite.bitmap = $game_temp.background_bitmap.clone #Bitmap.new(path)
+=begin
+    if ($config_manager.config[2]==1)
+      d_r = Rect.new(0,0,640,480)
+      s_r = Rect.new(0,0,320,240)
+      b = @sprite.bitmap.dup
+      @sprite.bitmap.dispose
+      @sprite.bitmap = Bitmap.new(640,480)
+      @sprite.bitmap.stretch_blt(d_r, b, s_r)
+      b.dispose
+    end
+=end
     @sprite.x = @sprite.ox = @sprite.bitmap.width / 2
     @sprite.y = @sprite.oy = @sprite.bitmap.height / 2
     # Activate effect
-    Graphics.transition(5)
+    Graphics.transition(0)
     call_effect(@type, @args)
     # Freeze screen and clean up and switch scene
     Graphics.freeze
     @sprite.bitmap.dispose unless @sprite.bitmap.nil?
     @sprite.dispose unless @sprite.nil?
+    #File.delete(path)
     $scene = @next_scene
   end
   #--------------------------------------------------------------------------
@@ -243,10 +532,22 @@ class Transition
     # zooms (1 and max_zoom)
     zoom_diff = max_zoom - 1
     # Calculate unit values
+    ox_logic = @sprite.ox
+    oy_logic = @sprite.oy
     unit_zoom = zoom_diff.to_f / frames
     unit_opacity = (255.0 / frames).ceil
+    
+    $game_temp.player_old_scr_x = 0 if $game_temp.player_old_scr_x==nil
+    $game_temp.player_old_scr_y = 0 if $game_temp.player_old_scr_y==nil
+    unit_x = ( ($game_temp.player_old_scr_x-320.0) / frames)
+    unit_y = ( ($game_temp.player_old_scr_y-240.0) / frames)
+    
     # Apply unit values to sprite
     frames.times do
+      ox_logic += unit_x
+      oy_logic += unit_y
+      @sprite.ox = ox_logic
+      @sprite.oy = oy_logic
       @sprite.zoom_x += unit_zoom
       @sprite.zoom_y += unit_zoom
       @sprite.opacity -= unit_opacity
@@ -629,23 +930,6 @@ class Transition
     hor = nil
   end
 end
-  #--------------------------------------------------------------------------
-  # * Downward Spiral
-  #     FRAMES: Total number of frames the transition takes to fall away completely.
-  #     ROTATION SPEED: Defines how fast the screen rotates in degrees.
-  #--------------------------------------------------------------------------
- def downward_spiral(frames = 40, rotation_speed = 15)
-    # Calculate the zoom to subtract each frame.
-    zoom, opacity = 1.0 / frames, 128.0 / frames
-    frames.times do
-      # Begin processing.
-      @sprite.zoom_x -= zoom
-      @sprite.zoom_y -= zoom
-      @sprite.opacity -= opacity
-      @sprite.angle += rotation_speed
-      Graphics.update
-    end
-  end
 #==============================================================================
 # ** Game_Temp
 #------------------------------------------------------------------------------
@@ -658,7 +942,7 @@ class Game_Temp
   #--------------------------------------------------------------------------
   alias transpack_game_temp_init initialize
   def initialize
-    @transition_type = 0
+    @transition_type = Transition::DEFAULT_TRANSITION
     transpack_game_temp_init
   end
 end
@@ -673,30 +957,37 @@ class Scene_Map
   #--------------------------------------------------------------------------
   alias transpack_call_battle call_battle
   def call_battle
+    $game_temp.background_bitmap = Graphics.snap_to_bitmap
     transpack_call_battle
-    $scene = Transition.new($scene, Transition::BATTLE_EFFECT)
+    if $game_switches[10] == false
+      $scene = Transition.new($scene, Transition::BATTLE_EFFECT)
+    else
+      $scene = Transition.new($scene, nil)
+    end
   end
   #--------------------------------------------------------------------------
   # * Shop Call
   #--------------------------------------------------------------------------
   alias transpack_call_shop call_shop
   def call_shop
+    $game_temp.background_bitmap = Graphics.snap_to_bitmap
     transpack_call_shop
     $scene = Transition.new($scene, Transition::SHOP_EFFECT)
   end
   #--------------------------------------------------------------------------
   # * Name Input Call
   #--------------------------------------------------------------------------
-  alias transpack_call_name call_name
-  def call_name
-    transpack_call_name
-    $scene = Transition.new($scene, Transition::NAME_EFFECT)
-  end
+  #alias transpack_call_name call_name
+  #def call_name
+  #  transpack_call_name
+  #  $scene = Transition.new($scene, Transition::NAME_EFFECT)
+  #end
   #--------------------------------------------------------------------------
   # * Menu Call
   #--------------------------------------------------------------------------
   alias transpack_call_menu call_menu
   def call_menu
+    $game_temp.background_bitmap = Graphics.snap_to_bitmap
     transpack_call_menu
     $scene = Transition.new($scene, Transition::MENU_EFFECT)
   end
@@ -705,6 +996,7 @@ class Scene_Map
   #--------------------------------------------------------------------------
   alias transpack_call_save call_save
   def call_save
+    $game_temp.background_bitmap = Graphics.snap_to_bitmap
     transpack_call_save
     $scene = Transition.new($scene, Transition::SAVE_EFFECT)
   end
@@ -712,45 +1004,59 @@ class Scene_Map
   # * Player Place Move
   #--------------------------------------------------------------------------
   def transfer_player
+    $game_temp.player_old_scr_x = $game_player.screen_x
+    $game_temp.player_old_scr_y = $game_player.screen_y
     # Clear player place move call flag
     $game_temp.player_transferring = false
+    
+    if $game_temp.player_new_map_id != $game_map.map_id
+    _change = true
+    $game_temp.transition_processing = true
+  else
+    _change = false
+    p "waitwhat"
+      end
+    #
+    #self.transfer_player($game_temp.player_new_map_id, $game_temp.player_new_x, $game_temp.player_new_y, $game_temp.player_new_direction)
     # If move destination is different than current map
-    if $game_map.map_id != $game_temp.player_new_map_id
-      # Set up a new map
-      $game_map.setup($game_temp.player_new_map_id)
+    if _change == true
+      # Remake sprite set
+      @spriteset.dispose
+      @spriteset = Spriteset_Map.new
+      # Set fade
+      if $game_temp.transition_processing
+        p "ass"
+      # Execute transition
+      #Graphics.transition(20)
+        #$game_screen.tone = Tone.new(-128,-128,-128,0)
+      end
     end
-    # Set up player position
-    $game_player.moveto($game_temp.player_new_x, $game_temp.player_new_y)
-    # Set player direction
-    case $game_temp.player_new_direction
-    when 2  # down
-      $game_player.turn_down
-    when 4  # left
-      $game_player.turn_left
-    when 6  # right
-      $game_player.turn_right
-    when 8  # up
-      $game_player.turn_up
+=begin    
+    if !($game_map.exterior)
+      @spriteset.clear_weather
     end
-    # Straighten player position
-    $game_player.straighten
-    # Update map (run parallel process event)
-    $game_map.update
-    # Remake sprite set
-    @spriteset.dispose
-    @spriteset = Spriteset_Map.new
+=end    
+    # AAAA
     # If processing transition
     if $game_temp.transition_processing
       # Clear transition processing flag
+      p "super ass"
       $game_temp.transition_processing = false
       # Execute transition
       $scene = Transition.new($scene)
+    else
+      $scene = Transition.new($scene, -1)
     end
-    # Run automatic change for BGM and BGS set on the map
-    $game_map.autoplay
     # Frame reset
     Graphics.frame_reset
     # Update input information
     Input.update
+=begin
+    $game_player.update_player_sprite
+    unless SaveFile::QUICKSAVE_EXCEPTIONS.include?($game_map.map_id)
+      SaveFile.quicksave
+      $game_player.set_autosave_count
+    end
+=end
   end
 end
