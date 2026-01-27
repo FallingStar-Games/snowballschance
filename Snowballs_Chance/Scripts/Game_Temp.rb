@@ -54,9 +54,6 @@ class Game_Temp
   attr_accessor :last_file_index          # last save file no.
   attr_accessor :debug_top_row            # debug screen: for saving conditions
   attr_accessor :debug_index              # debug screen: for saving conditions
-  attr_accessor :background_bitmap        # a container to stick bitmaps into
-  attr_accessor :player_old_scr_x
-  attr_accessor :player_old_scr_y
   #--------------------------------------------------------------------------
   # * Object Initialization
   #--------------------------------------------------------------------------
@@ -106,8 +103,5 @@ class Game_Temp
     @last_file_index = 0
     @debug_top_row = 0
     @debug_index = 0
-    @background_bitmap = nil # EDIT: new variableee
-    @player_old_scr_x = 0
-    @player_old_scr_y = 0
   end
 end

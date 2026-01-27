@@ -113,48 +113,91 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 36
+          - 13
           indent: 0
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[0]Collect Yellow mushroom?"
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - - 'Yes'
-            - 'No'
-          - 2
-          indent: 0
-          code: 102
-        - !ruby/object:RPG::EventCommand
-          parameters:
+          - 5
+          - 5
           - 0
-          - 'Yes'
-          indent: 0
-          code: 402
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 49
-          indent: 1
-          code: 117
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - A
+          - 6
+          - -1
           - 0
-          indent: 1
-          code: 123
+          indent: 0
+          code: 122
         - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
+          parameters:
+          - 6
+          - 6
+          - 0
+          - 6
+          - -1
+          - 1
+          indent: 0
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - -1
+          - 8
+          indent: 0
+          code: 111
         - !ruby/object:RPG::EventCommand
           parameters:
           - 1
-          - 'No'
-          indent: 0
-          code: 402
+          - 6
+          - 0
+          - 0
+          - 0
+          indent: 1
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - 6
+          - 0
+          - 0
+          - 14
+          indent: 2
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 7
+          - 7
+          - 0
+          - 0
+          - 33
+          indent: 2
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          - 5
+          - 0
+          - 6
+          - -1
+          - 0
+          indent: 2
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 7
+          - 5
+          - 6
+          - 0
+          - 0
+          indent: 2
+          code: 201
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 412
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
@@ -162,7 +205,7 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
-          code: 404
+          code: 412
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -186,7 +229,7 @@ root: !ruby/object:RPG::Map
             code: 0
           skippable: false
           repeat: true
-        trigger: 0
+        trigger: 4
         step_anime: false
         move_frequency: 3
         always_on_top: false
@@ -194,7 +237,7 @@ root: !ruby/object:RPG::Map
           opacity: 255
           character_name: ''
           pattern: 0
-          tile_id: 667
+          tile_id: 0
           direction: 2
           blend_type: 0
           character_hue: 0
@@ -212,10 +255,10 @@ root: !ruby/object:RPG::Map
         condition: !ruby/object:RPG::Event::Page::Condition
           switch2_valid: false
           self_switch_ch: A
-          switch1_id: 1
-          switch1_valid: false
+          switch1_id: 12
+          switch1_valid: true
           variable_value: 0
-          self_switch_valid: true
+          self_switch_valid: false
           variable_id: 1
           variable_valid: false
           switch2_id: 1
@@ -242,8 +285,8 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: EV001
-      y: 7
-      x: 11
+      y: 0
+      x: 0
       id: 1
     2: !ruby/object:RPG::Event
       pages:
@@ -527,91 +570,48 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 13
+          - 36
           indent: 0
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 5
-          - 5
-          - 0
-          - 6
-          - -1
-          - 0
+          - "\\p[0]Collect Yellow mushroom?"
           indent: 0
-          code: 122
+          code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 6
-          - 6
-          - 0
-          - 6
-          - -1
-          - 1
+          - - 'Yes'
+            - 'No'
+          - 2
           indent: 0
-          code: 122
+          code: 102
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 6
-          - -1
-          - 8
+          - 0
+          - 'Yes'
           indent: 0
-          code: 111
+          code: 402
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 1
-          - 6
-          - 0
-          - 0
+          - 49
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - A
           - 0
           indent: 1
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - 6
-          - 0
-          - 0
-          - 14
-          indent: 2
-          code: 122
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 7
-          - 7
-          - 0
-          - 0
-          - 33
-          indent: 2
-          code: 122
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 5
-          - 5
-          - 0
-          - 6
-          - -1
-          - 0
-          indent: 2
-          code: 122
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 7
-          - 5
-          - 6
-          - 0
-          - 0
-          indent: 2
-          code: 201
+          code: 123
         - !ruby/object:RPG::EventCommand
           parameters: []
-          indent: 2
+          indent: 1
           code: 0
         - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 412
+          parameters:
+          - 1
+          - 'No'
+          indent: 0
+          code: 402
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
@@ -619,7 +619,7 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
-          code: 412
+          code: 404
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -643,7 +643,7 @@ root: !ruby/object:RPG::Map
             code: 0
           skippable: false
           repeat: true
-        trigger: 4
+        trigger: 0
         step_anime: false
         move_frequency: 3
         always_on_top: false
@@ -651,7 +651,7 @@ root: !ruby/object:RPG::Map
           opacity: 255
           character_name: ''
           pattern: 0
-          tile_id: 0
+          tile_id: 667
           direction: 2
           blend_type: 0
           character_hue: 0
@@ -669,10 +669,10 @@ root: !ruby/object:RPG::Map
         condition: !ruby/object:RPG::Event::Page::Condition
           switch2_valid: false
           self_switch_ch: A
-          switch1_id: 12
-          switch1_valid: true
+          switch1_id: 1
+          switch1_valid: false
           variable_value: 0
-          self_switch_valid: false
+          self_switch_valid: true
           variable_id: 1
           variable_valid: false
           switch2_id: 1
@@ -699,8 +699,8 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: EV004
-      y: 0
-      x: 0
+      y: 7
+      x: 11
       id: 4
   tileset_id: 7
   bgs: !ruby/object:RPG::AudioFile
