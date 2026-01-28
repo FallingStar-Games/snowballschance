@@ -1,10 +1,10 @@
---- !ruby/object:Hash
+---
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 70
     name: solitude
     pitch: 60
-  events: !ruby/object:Hash
+  events:
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -268,7 +268,7 @@ root: !ruby/object:RPG::Map
           code: 241
         - !ruby/object:RPG::EventCommand
           parameters:
-          - FMod::bgm_volume = 100
+          - AudioExtras.bgm_volume = 100
           indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand

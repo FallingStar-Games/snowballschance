@@ -200,7 +200,7 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: true
       name: pineconespot
-      y: 16
+      y: 10
       x: 8
       id: 6
     1: !ruby/object:RPG::Event
@@ -313,6 +313,103 @@ root: !ruby/object:RPG::Map
       y: 8
       x: 5
       id: 1
+    7: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 36
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Its a tough block!
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Powerslam it?
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - - 'Yes'
+            - 'No'
+          - 2
+          indent: 0
+          code: 102
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 'Yes'
+          indent: 0
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 122
+          indent: 1
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 'No'
+          indent: 0
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 404
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: tallstonex2
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: false
+        move_speed: 3
+        through: false
+      name: EV007
+      y: 16
+      x: 7
+      id: 7
     2: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -1226,7 +1323,7 @@ root: !ruby/object:RPG::Map
     - 689
     - 689
     - 689
-    - 438
+    - 689
     - 438
     - 689
     - 689
@@ -1260,7 +1357,7 @@ root: !ruby/object:RPG::Map
     - 689
     - 689
     - 438
-    - 438
+    - 689
     - 438
     - 438
     - 438
@@ -1291,7 +1388,7 @@ root: !ruby/object:RPG::Map
     - 689
     - 689
     - 438
-    - 438
+    - 689
     - 438
     - 689
     - 689
@@ -1322,7 +1419,7 @@ root: !ruby/object:RPG::Map
     - 438
     - 689
     - 689
-    - 438
+    - 689
     - 438
     - 689
     - 689
@@ -2143,9 +2240,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 208
-    - 192
-    - 192
+    - 232
+    - 220
+    - 200
     - 192
     - 192
     - 192
@@ -2177,10 +2274,10 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 208
-    - 192
-    - 192
-    - 192
+    - 689
+    - 689
+    - 232
+    - 200
     - 192
     - 192
     - 196
@@ -2211,10 +2308,10 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 689
+    - 689
+    - 689
     - 208
-    - 192
-    - 192
-    - 192
     - 192
     - 192
     - 216
@@ -2245,11 +2342,11 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 208
-    - 192
-    - 192
-    - 192
-    - 192
+    - 689
+    - 689
+    - 689
+    - 232
+    - 200
     - 192
     - 194
     - 212
@@ -2274,17 +2371,17 @@ root: !ruby/object:RPG::Map
     - 634
     - 0
     - 0
-    - 131
+    - 139
     - 141
     - 0
     - 0
     - 0
-    - 208
-    - 192
-    - 192
-    - 192
-    - 192
-    - 192
+    - 689
+    - 689
+    - 689
+    - 689
+    - 232
+    - 200
     - 192
     - 192
     - 192
@@ -2307,18 +2404,18 @@ root: !ruby/object:RPG::Map
     - 0
     - 634
     - 0
-    - 131
-    - 135
+    - 689
+    - 689
     - 0
     - 0
     - 0
     - 0
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
     - 208
-    - 192
-    - 192
-    - 192
-    - 192
-    - 192
     - 192
     - 192
     - 192
@@ -2340,19 +2437,19 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 634
+    - 689
+    - 142
     - 0
-    - 128
+    - 689
     - 0
     - 0
     - 0
-    - 0
-    - 0
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
     - 208
-    - 192
-    - 192
-    - 192
-    - 192
-    - 192
     - 192
     - 192
     - 192
@@ -2375,18 +2472,18 @@ root: !ruby/object:RPG::Map
     - 0
     - 634
     - 0
-    - 137
-    - 133
+    - 689
+    - 689
     - 0
     - 0
     - 0
     - 0
+    - 689
+    - 689
+    - 689
+    - 689
+    - 689
     - 232
-    - 220
-    - 220
-    - 220
-    - 220
-    - 220
     - 220
     - 220
     - 220
@@ -2410,7 +2507,7 @@ root: !ruby/object:RPG::Map
     - 634
     - 0
     - 0
-    - 113
+    - 130
     - 116
     - 116
     - 132
@@ -2460,7 +2557,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 0
+    - 689
     - 0
     - 0
     - 0
@@ -3302,9 +3399,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 0
+    - 0
     - 609
-    - 0
-    - 0
     - 0
     - 0
     - 0
