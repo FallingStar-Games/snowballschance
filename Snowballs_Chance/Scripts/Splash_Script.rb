@@ -18,7 +18,7 @@ module SSConfig
   #     :folder- :Graphics/Picture
   #     :config- :['filename', 'filename', ..., ...]
   #----------------------------------------------------------------------------
-  SplashFiles = ['company_logo_dark', 'obligitoryfmodsplash','fontwarningb']
+  SplashFiles = ['company_logo_dark', 'mkxpsplash']
   #----------------------------------------------------------------------------
   # * Splash Speed / Wait
   #     :the speed of transition, 2-4 is ideal

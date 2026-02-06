@@ -116,14 +116,13 @@ end
 # * Diagonal Charset?
 #--------------------------------------------------------------------------
 def quarter_graphic_exist?(character)
-	# Reading check
-	begin
+
+    if FileTest.exist?( "Graphics/Characters/" + @character.character_name.to_s + "_quarter") #+ "_aa.wav" ) 
 		RPG::Cache.character(character.character_name.to_s + "_quarter", character.character_hue)
-  rescue
-        # this is the place
-	return false
-end
-return true
+    return true
+  else
+    return false
+  end
 end
 #--------------------------------------------------------------------------
 # * Dashing Diagonal Charset?

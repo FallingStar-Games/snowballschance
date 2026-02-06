@@ -298,7 +298,7 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 50
+          - 40
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -307,8 +307,8 @@ root: !ruby/object:RPG::Map
           - 50
           - 0
           - 0
-          - -50
           - 0
+          - -50
           - 100
           - 100
           - 255
@@ -336,7 +336,7 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 90
+          - 60
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -360,6 +360,39 @@ root: !ruby/object:RPG::Map
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 2
+          - 20
+          - 1
+          - 0
+          - 320
+          - 130
+          - 100
+          - 100
+          - 255
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: ding
+            pitch: 85
+          indent: 0
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - !ruby/object:Tone
+            red: 255.0
+            green: 255.0
+            blue: 255.0
+            gray: 0.0
+          - 3
+          indent: 0
+          code: 234
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - !ruby/object:Color
             red: 255.0
             green: 255.0
@@ -370,19 +403,51 @@ root: !ruby/object:RPG::Map
           code: 224
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 2
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: ding
+            pitch: 130
+          indent: 0
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - !ruby/object:Tone
+            red: 0.0
+            green: 0.0
+            blue: 0.0
+            gray: 0.0
+          - 3
+          indent: 0
+          code: 234
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: ding
+            pitch: 150
+          indent: 0
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 1
           indent: 0
           code: 105
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 5
-          indent: 0
-          code: 242
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 40
-          indent: 0
-          code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - 2
@@ -399,7 +464,33 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 20
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: ding
+            pitch: 100
+          indent: 0
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          indent: 0
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: saved
+            pitch: 100
+          indent: 0
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          indent: 0
+          code: 242
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 40
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
