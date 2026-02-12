@@ -5,6 +5,185 @@ root: !ruby/object:RPG::Map
     name: ''
     pitch: 100
   events:
+    16: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 12
+          - "$game_self_switches[[143, 2, 'A']] == false"
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - -1
+          - 2
+          indent: 1
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 36
+          indent: 2
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 8
+          - 6
+          indent: 2
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Disarm trap with a stick?
+          indent: 3
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - - 'Yes'
+            - 'No'
+          - 2
+          indent: 3
+          code: 102
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 'Yes'
+          indent: 3
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          - 5
+          - 5
+          indent: 4
+          code: 225
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 52
+          indent: 4
+          code: 207
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - 1
+          - 0
+          - 1
+          indent: 4
+          code: 126
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_self_switches[[143, 2, 'A']] = "
+          indent: 4
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'true'
+          indent: 4
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_map.need_refresh = true"
+          indent: 4
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 4
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 'No'
+          indent: 3
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 4
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 404
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - You don't have any sticks to disarm this with!
+          indent: 3
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: EV016
+      y: 11
+      x: 7
+      id: 16
     5: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -189,185 +368,6 @@ root: !ruby/object:RPG::Map
       y: 9
       x: 13
       id: 5
-    16: !ruby/object:RPG::Event
-      pages:
-      - !ruby/object:RPG::Event::Page
-        list:
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 12
-          - "$game_self_switches[[143, 2, 'A']] == false"
-          indent: 0
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - -1
-          - 2
-          indent: 1
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 36
-          indent: 2
-          code: 117
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 8
-          - 6
-          indent: 2
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - Disarm trap with a stick?
-          indent: 3
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - - 'Yes'
-            - 'No'
-          - 2
-          indent: 3
-          code: 102
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 0
-          - 'Yes'
-          indent: 3
-          code: 402
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 4
-          - 5
-          - 5
-          indent: 4
-          code: 225
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 2
-          - 52
-          indent: 4
-          code: 207
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - 1
-          - 0
-          - 1
-          indent: 4
-          code: 126
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_self_switches[[143, 2, 'A']] = "
-          indent: 4
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'true'
-          indent: 4
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_map.need_refresh = true"
-          indent: 4
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 4
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 'No'
-          indent: 3
-          code: 402
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 4
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 3
-          code: 404
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 3
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 411
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - You don't have any sticks to disarm this with!
-          indent: 3
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 3
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 0
-        move_type: 0
-        direction_fix: false
-        condition: !ruby/object:RPG::Event::Page::Condition
-          switch2_valid: false
-          self_switch_ch: A
-          switch1_id: 1
-          switch1_valid: false
-          variable_value: 0
-          self_switch_valid: false
-          variable_id: 1
-          variable_valid: false
-          switch2_id: 1
-        move_route: !ruby/object:RPG::MoveRoute
-          list:
-          - !ruby/object:RPG::MoveCommand
-            parameters: []
-            code: 0
-          skippable: false
-          repeat: true
-        trigger: 0
-        step_anime: false
-        move_frequency: 3
-        always_on_top: false
-        graphic: !ruby/object:RPG::Event::Page::Graphic
-          opacity: 255
-          character_name: ''
-          pattern: 0
-          tile_id: 0
-          direction: 2
-          blend_type: 0
-          character_hue: 0
-        walk_anime: true
-        move_speed: 3
-        through: false
-      name: EV016
-      y: 10
-      x: 7
-      id: 16
     11: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -552,97 +552,6 @@ root: !ruby/object:RPG::Map
       y: 2
       x: 13
       id: 11
-    12: !ruby/object:RPG::Event
-      pages:
-      - !ruby/object:RPG::Event::Page
-        list:
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 78
-          indent: 0
-          code: 117
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 0
-        move_type: 0
-        direction_fix: false
-        condition: !ruby/object:RPG::Event::Page::Condition
-          switch2_valid: false
-          self_switch_ch: A
-          switch1_id: 15
-          switch1_valid: false
-          variable_value: 0
-          self_switch_valid: false
-          variable_id: 1
-          variable_valid: false
-          switch2_id: 1
-        move_route: !ruby/object:RPG::MoveRoute
-          list:
-          - !ruby/object:RPG::MoveCommand
-            parameters: []
-            code: 0
-          skippable: false
-          repeat: false
-        trigger: 4
-        step_anime: false
-        move_frequency: 3
-        always_on_top: false
-        graphic: !ruby/object:RPG::Event::Page::Graphic
-          opacity: 255
-          character_name: moarobjectsx2
-          pattern: 3
-          tile_id: 0
-          direction: 4
-          blend_type: 0
-          character_hue: 0
-        walk_anime: true
-        move_speed: 3
-        through: true
-      - !ruby/object:RPG::Event::Page
-        list:
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 0
-        move_type: 0
-        direction_fix: false
-        condition: !ruby/object:RPG::Event::Page::Condition
-          switch2_valid: false
-          self_switch_ch: A
-          switch1_id: 15
-          switch1_valid: false
-          variable_value: 0
-          self_switch_valid: true
-          variable_id: 1
-          variable_valid: false
-          switch2_id: 1
-        move_route: !ruby/object:RPG::MoveRoute
-          list:
-          - !ruby/object:RPG::MoveCommand
-            parameters: []
-            code: 0
-          skippable: false
-          repeat: true
-        trigger: 0
-        step_anime: false
-        move_frequency: 3
-        always_on_top: false
-        graphic: !ruby/object:RPG::Event::Page::Graphic
-          opacity: 255
-          character_name: moarobjectsx2
-          pattern: 3
-          tile_id: 0
-          direction: 2
-          blend_type: 0
-          character_hue: 0
-        walk_anime: true
-        move_speed: 3
-        through: true
-      name: bear trap
-      y: 11
-      x: 7
-      id: 12
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -999,6 +908,97 @@ root: !ruby/object:RPG::Map
       y: 0
       x: 0
       id: 1
+    12: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 78
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 15
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: false
+        trigger: 4
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: moarobjectsx2
+          pattern: 3
+          tile_id: 0
+          direction: 4
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: true
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 15
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: true
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: moarobjectsx2
+          pattern: 3
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: true
+      name: bear trap
+      y: 12
+      x: 7
+      id: 12
     7: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -1090,6 +1090,97 @@ root: !ruby/object:RPG::Map
       y: 3
       x: 13
       id: 7
+    2: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 78
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 15
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: false
+        trigger: 4
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: moarobjectsx2
+          pattern: 3
+          tile_id: 0
+          direction: 4
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: true
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 15
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: true
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: moarobjectsx2
+          pattern: 3
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: true
+      name: bear trap
+      y: 9
+      x: 12
+      id: 2
     13: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -1266,100 +1357,9 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: EV013
-      y: 11
+      y: 12
       x: 6
       id: 13
-    2: !ruby/object:RPG::Event
-      pages:
-      - !ruby/object:RPG::Event::Page
-        list:
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 78
-          indent: 0
-          code: 117
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 0
-        move_type: 0
-        direction_fix: false
-        condition: !ruby/object:RPG::Event::Page::Condition
-          switch2_valid: false
-          self_switch_ch: A
-          switch1_id: 15
-          switch1_valid: false
-          variable_value: 0
-          self_switch_valid: false
-          variable_id: 1
-          variable_valid: false
-          switch2_id: 1
-        move_route: !ruby/object:RPG::MoveRoute
-          list:
-          - !ruby/object:RPG::MoveCommand
-            parameters: []
-            code: 0
-          skippable: false
-          repeat: false
-        trigger: 4
-        step_anime: false
-        move_frequency: 3
-        always_on_top: false
-        graphic: !ruby/object:RPG::Event::Page::Graphic
-          opacity: 255
-          character_name: moarobjectsx2
-          pattern: 3
-          tile_id: 0
-          direction: 4
-          blend_type: 0
-          character_hue: 0
-        walk_anime: true
-        move_speed: 3
-        through: true
-      - !ruby/object:RPG::Event::Page
-        list:
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 0
-        move_type: 0
-        direction_fix: false
-        condition: !ruby/object:RPG::Event::Page::Condition
-          switch2_valid: false
-          self_switch_ch: A
-          switch1_id: 15
-          switch1_valid: false
-          variable_value: 0
-          self_switch_valid: true
-          variable_id: 1
-          variable_valid: false
-          switch2_id: 1
-        move_route: !ruby/object:RPG::MoveRoute
-          list:
-          - !ruby/object:RPG::MoveCommand
-            parameters: []
-            code: 0
-          skippable: false
-          repeat: true
-        trigger: 0
-        step_anime: false
-        move_frequency: 3
-        always_on_top: false
-        graphic: !ruby/object:RPG::Event::Page::Graphic
-          opacity: 255
-          character_name: moarobjectsx2
-          pattern: 3
-          tile_id: 0
-          direction: 2
-          blend_type: 0
-          character_hue: 0
-        walk_anime: true
-        move_speed: 3
-        through: true
-      name: bear trap
-      y: 9
-      x: 12
-      id: 2
     8: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -1544,6 +1544,185 @@ root: !ruby/object:RPG::Map
       y: 3
       x: 12
       id: 8
+    14: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 12
+          - "$game_self_switches[[143, 2, 'A']] == false"
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - -1
+          - 4
+          indent: 1
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 36
+          indent: 2
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 8
+          - 6
+          indent: 2
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Disarm trap with a stick?
+          indent: 3
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - - 'Yes'
+            - 'No'
+          - 2
+          indent: 3
+          code: 102
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 'Yes'
+          indent: 3
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          - 5
+          - 5
+          indent: 4
+          code: 225
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 52
+          indent: 4
+          code: 207
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - 1
+          - 0
+          - 1
+          indent: 4
+          code: 126
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_self_switches[[143, 2, 'A']] = "
+          indent: 4
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'true'
+          indent: 4
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_map.need_refresh = true"
+          indent: 4
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 4
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 'No'
+          indent: 3
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 4
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 404
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - You don't have any sticks to disarm this with!
+          indent: 3
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: EV014
+      y: 12
+      x: 8
+      id: 14
     3: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -1728,185 +1907,6 @@ root: !ruby/object:RPG::Map
       y: 8
       x: 12
       id: 3
-    14: !ruby/object:RPG::Event
-      pages:
-      - !ruby/object:RPG::Event::Page
-        list:
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 12
-          - "$game_self_switches[[143, 2, 'A']] == false"
-          indent: 0
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - -1
-          - 4
-          indent: 1
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 36
-          indent: 2
-          code: 117
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 8
-          - 6
-          indent: 2
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - Disarm trap with a stick?
-          indent: 3
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - - 'Yes'
-            - 'No'
-          - 2
-          indent: 3
-          code: 102
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 0
-          - 'Yes'
-          indent: 3
-          code: 402
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 4
-          - 5
-          - 5
-          indent: 4
-          code: 225
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 2
-          - 52
-          indent: 4
-          code: 207
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - 1
-          - 0
-          - 1
-          indent: 4
-          code: 126
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_self_switches[[143, 2, 'A']] = "
-          indent: 4
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'true'
-          indent: 4
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_map.need_refresh = true"
-          indent: 4
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 4
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 'No'
-          indent: 3
-          code: 402
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 4
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 3
-          code: 404
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 3
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 411
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - You don't have any sticks to disarm this with!
-          indent: 3
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 3
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 0
-        move_type: 0
-        direction_fix: false
-        condition: !ruby/object:RPG::Event::Page::Condition
-          switch2_valid: false
-          self_switch_ch: A
-          switch1_id: 1
-          switch1_valid: false
-          variable_value: 0
-          self_switch_valid: false
-          variable_id: 1
-          variable_valid: false
-          switch2_id: 1
-        move_route: !ruby/object:RPG::MoveRoute
-          list:
-          - !ruby/object:RPG::MoveCommand
-            parameters: []
-            code: 0
-          skippable: false
-          repeat: true
-        trigger: 0
-        step_anime: false
-        move_frequency: 3
-        always_on_top: false
-        graphic: !ruby/object:RPG::Event::Page::Graphic
-          opacity: 255
-          character_name: ''
-          pattern: 0
-          tile_id: 0
-          direction: 2
-          blend_type: 0
-          character_hue: 0
-        walk_anime: true
-        move_speed: 3
-        through: false
-      name: EV014
-      y: 11
-      x: 8
-      id: 14
     9: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -2091,6 +2091,185 @@ root: !ruby/object:RPG::Map
       y: 3
       x: 14
       id: 9
+    15: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 12
+          - "$game_self_switches[[143, 2, 'A']] == false"
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - -1
+          - 8
+          indent: 1
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 36
+          indent: 2
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 8
+          - 6
+          indent: 2
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Disarm trap with a stick?
+          indent: 3
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - - 'Yes'
+            - 'No'
+          - 2
+          indent: 3
+          code: 102
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 'Yes'
+          indent: 3
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          - 5
+          - 5
+          indent: 4
+          code: 225
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 52
+          indent: 4
+          code: 207
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - 1
+          - 0
+          - 1
+          indent: 4
+          code: 126
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_self_switches[[143, 2, 'A']] = "
+          indent: 4
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'true'
+          indent: 4
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_map.need_refresh = true"
+          indent: 4
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 4
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 'No'
+          indent: 3
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 4
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 404
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - You don't have any sticks to disarm this with!
+          indent: 3
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: EV015
+      y: 13
+      x: 7
+      id: 15
     4: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -2275,185 +2454,6 @@ root: !ruby/object:RPG::Map
       y: 9
       x: 11
       id: 4
-    15: !ruby/object:RPG::Event
-      pages:
-      - !ruby/object:RPG::Event::Page
-        list:
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 12
-          - "$game_self_switches[[143, 2, 'A']] == false"
-          indent: 0
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - -1
-          - 8
-          indent: 1
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 36
-          indent: 2
-          code: 117
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 8
-          - 6
-          indent: 2
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - Disarm trap with a stick?
-          indent: 3
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - - 'Yes'
-            - 'No'
-          - 2
-          indent: 3
-          code: 102
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 0
-          - 'Yes'
-          indent: 3
-          code: 402
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 4
-          - 5
-          - 5
-          indent: 4
-          code: 225
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 2
-          - 52
-          indent: 4
-          code: 207
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - 1
-          - 0
-          - 1
-          indent: 4
-          code: 126
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_self_switches[[143, 2, 'A']] = "
-          indent: 4
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'true'
-          indent: 4
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_map.need_refresh = true"
-          indent: 4
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 4
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 'No'
-          indent: 3
-          code: 402
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 4
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 3
-          code: 404
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 3
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 411
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - You don't have any sticks to disarm this with!
-          indent: 3
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 3
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 0
-        move_type: 0
-        direction_fix: false
-        condition: !ruby/object:RPG::Event::Page::Condition
-          switch2_valid: false
-          self_switch_ch: A
-          switch1_id: 1
-          switch1_valid: false
-          variable_value: 0
-          self_switch_valid: false
-          variable_id: 1
-          variable_valid: false
-          switch2_id: 1
-        move_route: !ruby/object:RPG::MoveRoute
-          list:
-          - !ruby/object:RPG::MoveCommand
-            parameters: []
-            code: 0
-          skippable: false
-          repeat: true
-        trigger: 0
-        step_anime: false
-        move_frequency: 3
-        always_on_top: false
-        graphic: !ruby/object:RPG::Event::Page::Graphic
-          opacity: 255
-          character_name: ''
-          pattern: 0
-          tile_id: 0
-          direction: 2
-          blend_type: 0
-          character_hue: 0
-        walk_anime: true
-        move_speed: 3
-        through: false
-      name: EV015
-      y: 12
-      x: 7
-      id: 15
     10: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -2757,7 +2757,7 @@ root: !ruby/object:RPG::Map
     - 689
     - 689
     - 689
-    - 689
+    - 633
     - 689
     - 689
     - 689
@@ -2777,7 +2777,7 @@ root: !ruby/object:RPG::Map
     - 689
     - 438
     - 689
-    - 689
+    - 633
     - 689
     - 689
     - 689
@@ -3030,14 +3030,14 @@ root: !ruby/object:RPG::Map
     - 682
     - 0
     - 0
-    - 0
+    - 444
     - 0
     - 705
-    - 681
-    - 682
-    - 640
-    - 641
-    - 635
+    - 0
+    - 0
+    - 0
+    - 633
+    - 633
     - 628
     - 626
     - 0
@@ -3050,16 +3050,16 @@ root: !ruby/object:RPG::Map
     - 705
     - 682
     - 0
+    - 452
     - 0
     - 0
-    - 469
-    - 470
-    - 705
-    - 681
+    - 0
+    - 0
+    - 0
+    - 0
     - 682
-    - 640
-    - 635
-    - 634
+    - 633
+    - 628
     - 616
     - 618
     - 0
@@ -3070,17 +3070,17 @@ root: !ruby/object:RPG::Map
     - 0
     - 705
     - 681
+    - 460
     - 0
     - 0
-    - 477
-    - 478
+    - 0
+    - 0
     - 0
     - 0
     - 705
-    - 682
-    - 632
-    - 628
-    - 618
+    - 641
+    - 635
+    - 634
     - 0
     - 0
     - 680
@@ -3090,16 +3090,16 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 0
+    - 468
     - 575
     - 0
     - 0
     - 0
     - 0
     - 0
+    - 0
     - 690
-    - 640
-    - 635
+    - 632
     - 634
     - 0
     - 0
@@ -3110,6 +3110,7 @@ root: !ruby/object:RPG::Map
     - 682
     - 0
     - 0
+    - 476
     - 0
     - 0
     - 0
@@ -3117,8 +3118,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 705
-    - 682
+    - 690
     - 640
     - 642
     - 0
@@ -3137,7 +3137,7 @@ root: !ruby/object:RPG::Map
     - 116
     - 132
     - 0
-    - 573
+    - 0
     - 690
     - 596
     - 597
@@ -3195,7 +3195,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 136
     - 134
-    - 0
+    - 567
     - 0
     - 0
     - 713
@@ -3214,7 +3214,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 567
+    - 0
     - 0
     - 0
     - 0
@@ -3313,10 +3313,10 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 954
+    - 955
+    - 956
+    - 957
     - 0
     - 0
     - 0
@@ -3331,13 +3331,13 @@ root: !ruby/object:RPG::Map
     - 0
     - 504
     - 444
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 960
+    - 961
+    - 962
+    - 963
+    - 964
+    - 965
+    - 966
     - 0
     - 0
     - 0
@@ -3351,16 +3351,16 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 452
+    - 968
+    - 969
+    - 970
+    - 971
+    - 972
+    - 973
+    - 974
     - 0
-    - 469
-    - 470
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 626
     - 0
     - 0
     - 0
@@ -3371,16 +3371,16 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 460
+    - 976
+    - 977
+    - 978
+    - 979
+    - 980
+    - 981
+    - 982
+    - 682
     - 0
-    - 477
-    - 648
-    - 649
-    - 650
     - 0
-    - 0
-    - 0
-    - 0
-    - 626
     - 0
     - 0
     - 0
@@ -3391,13 +3391,13 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 468
-    - 0
-    - 0
-    - 656
-    - 657
-    - 658
-    - 0
-    - 0
+    - 984
+    - 985
+    - 986
+    - 987
+    - 988
+    - 989
+    - 990
     - 0
     - 0
     - 0
@@ -3411,31 +3411,13 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 476
-    - 0
-    - 0
-    - 664
-    - 665
-    - 666
-    - 596
-    - 598
-    - 599
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 672
-    - 673
-    - 674
+    - 992
+    - 993
+    - 994
+    - 995
+    - 996
+    - 997
+    - 998
     - 0
     - 0
     - 0
@@ -3449,6 +3431,13 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 1000
+    - 1001
+    - 1002
+    - 931
+    - 1004
+    - 1005
+    - 1006
     - 0
     - 0
     - 0
@@ -3462,9 +3451,20 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 1008
+    - 1009
+    - 1010
+    - 1011
+    - 1012
+    - 1013
+    - 1014
     - 0
     - 0
     - 0
+    - 0
+    - 0
+    - 0
+    - 471
     - 0
     - 433
     - 434
@@ -3476,7 +3476,6 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 471
     - 0
     - 0
     - 0
@@ -3485,6 +3484,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
+    - 479
     - 440
     - 441
     - 442
@@ -3496,7 +3496,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 479
+    - 0
     - 0
     - 0
     - 0
