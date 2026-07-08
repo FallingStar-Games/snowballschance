@@ -36,19 +36,20 @@ class Game_Character
   def run_path
     return if moving?
     step = @map[@x,@y]
-    if step == 1
+    if step == 1 #initalizes map and runpath if map isn't set up as map array yet
       @map = nil
       @runpath = false
       return
     end
-    dir = rand(2)
+    dir = rand(2) #give us a random direction!
+    # because really it could go either way
     case dir
-    when 0
+    when 0 #check it the plus way in thise case
       move_right if @map[@x+1,@y] == step - 1 and step != 0
       move_down if @map[@x,@y+1] == step - 1 and step != 0
       move_left if @map[@x-1,@y] == step -1 and step != 0
       move_up if @map[@x,@y-1] == step - 1 and step != 0
-    when 1
+    when 1 #check it the minus way in that case
       move_up if @map[@x,@y-1] == step - 1 and step != 0
       move_left if @map[@x-1,@y] == step -1 and step != 0
       move_down if @map[@x,@y+1] == step - 1 and step != 0
@@ -57,10 +58,10 @@ class Game_Character
   end
   #--------------------------------------------------------------------------
   def find_path(x,y)
-    sx, sy = @x, @y
-    result = setup_map(sx,sy,x,y)
-    @runpath = result[0]
-    @map = result[1]
+    sx, sy = @x, @y #pass the variables
+    result = setup_map(sx,sy,x,y) #stick those into setup map
+    @runpath = result[0] # runpath is whatever the hevk the 0th result is supposed to be
+    @map = result[1] #map now equals the 1st result
     @map[sx,sy] = result[2] if result[2] != nil
   end
   #--------------------------------------------------------------------------
@@ -123,7 +124,7 @@ class Game_Player
   alias pf_game_player_update update
   #--------------------------------------------------------------------------
   def update
-    $game_player.clear_path if Input.dir4 != 0
+    $game_player.clear_path if Input.dir8 != 0
     pf_game_player_update
   end
 end
