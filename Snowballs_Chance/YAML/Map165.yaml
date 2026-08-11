@@ -1952,7 +1952,7 @@ root: !ruby/object:RPG::Map
           opacity: 255
           character_name: ''
           pattern: 0
-          tile_id: 0
+          tile_id: 656
           direction: 2
           blend_type: 0
           character_hue: 0
@@ -2032,7 +2032,7 @@ root: !ruby/object:RPG::Map
           opacity: 255
           character_name: ''
           pattern: 0
-          tile_id: 0
+          tile_id: 656
           direction: 2
           blend_type: 0
           character_hue: 0
@@ -3358,6 +3358,11 @@ root: !ruby/object:RPG::Map
           - vern
           indent: 0
           code: 108
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          indent: 0
+          code: 208
         - !ruby/object:RPG::EventCommand
           parameters:
           - 38
@@ -5625,7 +5630,7 @@ root: !ruby/object:RPG::Map
           opacity: 255
           character_name: ''
           pattern: 0
-          tile_id: 0
+          tile_id: 656
           direction: 2
           blend_type: 0
           character_hue: 0
@@ -5705,7 +5710,7 @@ root: !ruby/object:RPG::Map
           opacity: 255
           character_name: ''
           pattern: 0
-          tile_id: 0
+          tile_id: 656
           direction: 2
           blend_type: 0
           character_hue: 0
@@ -6489,7 +6494,7 @@ root: !ruby/object:RPG::Map
           opacity: 255
           character_name: ''
           pattern: 0
-          tile_id: 0
+          tile_id: 656
           direction: 2
           blend_type: 0
           character_hue: 0
@@ -6569,7 +6574,7 @@ root: !ruby/object:RPG::Map
           opacity: 255
           character_name: ''
           pattern: 0
-          tile_id: 0
+          tile_id: 656
           direction: 2
           blend_type: 0
           character_hue: 0
@@ -6860,7 +6865,7 @@ root: !ruby/object:RPG::Map
           opacity: 255
           character_name: ''
           pattern: 0
-          tile_id: 384
+          tile_id: 656
           direction: 2
           blend_type: 0
           character_hue: 0
@@ -7615,6 +7620,56 @@ root: !ruby/object:RPG::Map
           pattern: 0
           tile_id: 0
           direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 36
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - You have no business down there.
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: true
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 6
+          self_switch_valid: false
+          variable_id: 56
+          variable_valid: true
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: true
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 656
+          direction: 8
           blend_type: 0
           character_hue: 0
         walk_anime: true
