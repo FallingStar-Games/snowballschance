@@ -34,7 +34,7 @@
     alias new_snop update
   end
   def self.update
-    if Input.trigger?(Input::F2)
+    if Input.trigger?(Input::F5)
       #Keys.trigger?(Screen::SnapShot_Key) 
       shot #hahaha, GET IT?
     end

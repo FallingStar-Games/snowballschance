@@ -29720,9 +29720,14 @@ root:
     code: 117
   - !ruby/object:RPG::EventCommand
     parameters:
-    - "\\p[0]Nothing here..."
+    - "\\p[0]Nothing in this spot..."
     indent: 0
     code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - maybe another elsewhere?
+    indent: 0
+    code: 401
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -61036,8 +61041,113 @@ root:
   switch_id: 1
   id: 147
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: "(scaled heal) boost randnum by maxhp"
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Make sure to set var 24 first!!!
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 57
+    - 0
+    - -1
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    - 24
+    - 4
+    - 0
+    - 2
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 57
+    - 0
+    - 0
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "(do nothing)"
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 57
+    - 0
+    - 1
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    - 24
+    - 3
+    - 0
+    - 2
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 57
+    - 0
+    - 2
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 24
+    - 24
+    - 3
+    - 0
+    - 4
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
