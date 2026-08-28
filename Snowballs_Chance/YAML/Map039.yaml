@@ -174,9 +174,34 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - Keep an eye out for ingredients!
+          - 'In this adventure, your party will need to '
           indent: 0
           code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'be healed from time to time. '
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - The primary way to heal them is through food.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'At the end of each day, you will have to '
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - pick out what your party will eat for the night.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - For best results, seek out additional ingredients!
+          indent: 0
+          code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
           - 'You don''t have to worry about your party starving, '
@@ -189,7 +214,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - member would like for them to be happy.
+          - member would enjoy for them to be happy.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -217,6 +242,16 @@ root: !ruby/object:RPG::Map
           - Investigate with the action button!
           indent: 0
           code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'Some things can be gathered with the S key, '
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - noted by a HUD icon in the upper corner.
+          indent: 0
+          code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
           - A

@@ -1293,11 +1293,214 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - !ruby/object:RPG::AudioFile
+            volume: 100
+            name: cookingintro_a
+            pitch: 100
+          indent: 1
+          code: 249
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &17 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 2
+            - &18 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 20
+            - &19 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &20 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 20
+            - &21 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &22 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 20
+            - &23 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &24 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 20
+            - &25 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &26 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 20
+            - &27 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &28 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 20
+            - &29 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &30 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 20
+            - &31 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &32 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 20
+            - &33 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 2
+              code: 15
+            - &34 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 18
+            - &35 !ruby/object:RPG::MoveCommand
+              parameters:
+              - codasp4x2
+              - 0
+              - 6
+              - 2
+              code: 41
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 1
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *17
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *18
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *19
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *20
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *21
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *22
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *23
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *24
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *25
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *26
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *27
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *28
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *29
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *30
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *31
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *32
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *33
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *34
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *35
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 210
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
             volume: 80
             name: saved
             pitch: 100
           indent: 1
           code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:Color
+            red: 255.0
+            green: 255.0
+            blue: 255.0
+            alpha: 170.0
+          - 10
+          indent: 1
+          code: 224
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          indent: 1
+          code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - 36
@@ -1310,7 +1513,27 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
+          - You can now make snacks on the road!
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - Check the pause menu!
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'Snacks, as well as other foodstuffs, '
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'can restore health and spoons, '
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - depending on the item.
           indent: 1
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -1343,6 +1566,38 @@ root: !ruby/object:RPG::Map
           - 10
           indent: 1
           code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &36 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 19
+            - &37 !ruby/object:RPG::MoveCommand
+              parameters:
+              - snowballschancex2
+              - 0
+              - 8
+              - 0
+              code: 41
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 1
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *36
+          indent: 1
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *37
+          indent: 1
+          code: 509
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
