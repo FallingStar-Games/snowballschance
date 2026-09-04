@@ -61156,8 +61156,24 @@ root:
   switch_id: 1
   id: 148
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: reset save timer
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 50
+    - 50
+    - 0
+    - 0
+    - -900
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 38
+    - 38
+    - 0
+    indent: 0
+    code: 121
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
