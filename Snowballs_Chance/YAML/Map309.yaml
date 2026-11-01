@@ -57,6 +57,11 @@ root: !ruby/object:RPG::Map
           code: 111
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 36
+          indent: 2
+          code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 'There is a distinct feeling that there is no going back '
           indent: 2
           code: 101
@@ -95,6 +100,13 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 12
+          - 12
+          - 0
+          indent: 3
+          code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 0
           - 312
           - 11
@@ -103,62 +115,6 @@ root: !ruby/object:RPG::Map
           - 1
           indent: 3
           code: 201
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - -1
-          - !ruby/object:RPG::MoveRoute
-            list:
-            - &1 !ruby/object:RPG::MoveCommand
-              parameters: []
-              code: 4
-            - &2 !ruby/object:RPG::MoveCommand
-              parameters: []
-              code: 4
-            - &3 !ruby/object:RPG::MoveCommand
-              parameters: []
-              code: 4
-            - &4 !ruby/object:RPG::MoveCommand
-              parameters: []
-              code: 4
-            - !ruby/object:RPG::MoveCommand
-              parameters: []
-              code: 0
-            skippable: false
-            repeat: false
-          indent: 3
-          code: 209
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - *1
-          indent: 3
-          code: 509
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - *2
-          indent: 3
-          code: 509
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - *3
-          indent: 3
-          code: 509
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - *4
-          indent: 3
-          code: 509
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 18
-          indent: 3
-          code: 117
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 12
-          - 12
-          - 0
-          indent: 3
-          code: 121
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 3
@@ -174,10 +130,10 @@ root: !ruby/object:RPG::Map
           - -1
           - !ruby/object:RPG::MoveRoute
             list:
-            - &5 !ruby/object:RPG::MoveCommand
+            - &1 !ruby/object:RPG::MoveCommand
               parameters: []
               code: 16
-            - &6 !ruby/object:RPG::MoveCommand
+            - &2 !ruby/object:RPG::MoveCommand
               parameters: []
               code: 1
             - !ruby/object:RPG::MoveCommand
@@ -189,12 +145,12 @@ root: !ruby/object:RPG::Map
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
-          - *5
+          - *1
           indent: 3
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - *6
+          - *2
           indent: 3
           code: 509
         - !ruby/object:RPG::EventCommand
