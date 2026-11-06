@@ -1220,7 +1220,8 @@ if (/\\[Nn][Aa][Mm][Ee]\[(.+?)\]/.match(@text)) != nil
       end
       # record coords of character's center
       char_x = char.screen_x
-      char_y = char.screen_y - char_height/2 -16 #added the minus 16
+      char_y = char.screen_y - 24 #char_height # was /2 
+      # you need to minus something smaller thasn char height 
     end
     params = [char_height, char_width, char_x, char_y]
     # position window and message tail
@@ -1232,7 +1233,7 @@ if (/\\[Nn][Aa][Mm][Ee]\[(.+?)\]/.match(@text)) != nil
     # check if any window locations need to be "flipped"
     # because of Window Location
     
-    if @location == 4 and
+    if @location == 4 and #pretty sure this uses numpad notation
        ((x < 0 and 
        (not $game_system.message.allow_offscreen or $game_temp.in_battle)) or
        flip)
@@ -1316,7 +1317,7 @@ if (/\\[Nn][Aa][Mm][Ee]\[(.+?)\]/.match(@text)) != nil
       if @auto_orient == 1 and need_flip?(@float_id, @location, x, y)
         @location = put_behind(@float_id, 2)
       else
-        # switch to bottom
+        # switch to bottom EDIT: changed to side
         @location = 2
       end
       vars = new_position(params)
