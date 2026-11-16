@@ -568,7 +568,7 @@ MSG
 
   def try_link0(src, opt="", *opts, &b) # :nodoc:
     exe = CONFTEST+$EXEEXT
-    cmd = link_command("", opt)
+    cmd = link_command(CONFIG['MKXP_DISABLE_LTO_FOR_LINK_TESTS'] == 'yes' ? '-fno-lto' : '', opt)
     if $universal
       require 'tmpdir'
       Dir.mktmpdir("mkmf_", oldtmpdir = ENV["TMPDIR"]) do |tmpdir|
