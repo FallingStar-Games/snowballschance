@@ -550,7 +550,7 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: Destination1
-      y: 15
+      y: 14
       x: 13
       id: 17
     6: !ruby/object:RPG::Event
@@ -1021,6 +1021,161 @@ root: !ruby/object:RPG::Map
           - *1
           indent: 2
           code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 57
+          - 0
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 59
+          - 0
+          - 0
+          - 3
+          indent: 1
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 59
+          - 0
+          - 15
+          - 4
+          indent: 2
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - -1
+          - 66
+          indent: 3
+          code: 207
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: bip
+            pitch: 80
+          indent: 3
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 59
+          - 59
+          - 2
+          - 0
+          - 1
+          indent: 3
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 20
+          indent: 3
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: bip
+            pitch: 150
+          indent: 3
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 59
+          - 59
+          - 2
+          - 0
+          - 1
+          indent: 3
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          indent: 3
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: bip
+            pitch: 110
+          indent: 3
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          indent: 3
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 3
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          - 5
+          - 5
+          indent: 2
+          code: 225
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: bearroar-reverb-mightuser-263159
+            pitch: 80
+          indent: 2
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 57
+          - 57
+          - 1
+          indent: 2
+          code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - failstate
+          indent: 2
+          code: 108
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 2
@@ -2620,192 +2775,6 @@ root: !ruby/object:RPG::Map
       y: 8
       x: 14
       id: 4
-    10: !ruby/object:RPG::Event
-      pages:
-      - !ruby/object:RPG::Event::Page
-        list:
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 59
-          - 0
-          - 0
-          - 3
-          indent: 0
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 59
-          - 0
-          - 15
-          - 4
-          indent: 1
-          code: 111
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - -1
-          - 66
-          indent: 2
-          code: 207
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - !ruby/object:RPG::AudioFile
-            volume: 80
-            name: bip
-            pitch: 80
-          indent: 2
-          code: 250
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 59
-          - 59
-          - 2
-          - 0
-          - 1
-          indent: 2
-          code: 122
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 20
-          indent: 2
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 411
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - !ruby/object:RPG::AudioFile
-            volume: 80
-            name: bip
-            pitch: 150
-          indent: 2
-          code: 250
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 59
-          - 59
-          - 2
-          - 0
-          - 1
-          indent: 2
-          code: 122
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 10
-          indent: 2
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - !ruby/object:RPG::AudioFile
-            volume: 80
-            name: bip
-            pitch: 110
-          indent: 2
-          code: 250
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 10
-          indent: 2
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 2
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 411
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 5
-          - 5
-          - 5
-          indent: 1
-          code: 225
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - !ruby/object:RPG::AudioFile
-            volume: 80
-            name: bearroar-reverb-mightuser-263159
-            pitch: 80
-          indent: 1
-          code: 250
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 57
-          - 57
-          - 1
-          indent: 1
-          code: 121
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - failstate
-          indent: 1
-          code: 108
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 412
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 0
-        move_type: 0
-        direction_fix: false
-        condition: !ruby/object:RPG::Event::Page::Condition
-          switch2_valid: false
-          self_switch_ch: A
-          switch1_id: 57
-          switch1_valid: true
-          variable_value: 0
-          self_switch_valid: false
-          variable_id: 1
-          variable_valid: false
-          switch2_id: 1
-        move_route: !ruby/object:RPG::MoveRoute
-          list:
-          - !ruby/object:RPG::MoveCommand
-            parameters: []
-            code: 0
-          skippable: false
-          repeat: true
-        trigger: 4
-        step_anime: false
-        move_frequency: 3
-        always_on_top: false
-        graphic: !ruby/object:RPG::Event::Page::Graphic
-          opacity: 255
-          character_name: ''
-          pattern: 0
-          tile_id: 0
-          direction: 2
-          blend_type: 0
-          character_hue: 0
-        walk_anime: true
-        move_speed: 3
-        through: false
-      name: timer watcher
-      y: 20
-      x: 11
-      id: 10
   tileset_id: 17
   bgs: !ruby/object:RPG::AudioFile
     volume: 80
