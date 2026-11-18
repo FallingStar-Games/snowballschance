@@ -1755,6 +1755,9 @@ root: !ruby/object:RPG::Map
               - 1
               - 0
               code: 14
+            - &18 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 19
             - !ruby/object:RPG::MoveCommand
               parameters: []
               code: 0
@@ -1803,6 +1806,17 @@ root: !ruby/object:RPG::Map
           indent: 2
           code: 509
         - !ruby/object:RPG::EventCommand
+          parameters:
+          - *18
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 11
+          - 47
+          indent: 2
+          code: 207
+        - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 2
           code: 0
@@ -1813,6 +1827,132 @@ root: !ruby/object:RPG::Map
           indent: 1
           code: 402
         - !ruby/object:RPG::EventCommand
+          parameters:
+          - 11
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &19 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 130
+              code: 44
+            - &20 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 1
+              - 0
+              code: 14
+            - &21 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 100
+              code: 44
+            - &22 !ruby/object:RPG::MoveCommand
+              parameters:
+              - -1
+              - 0
+              code: 14
+            - &23 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 130
+              code: 44
+            - &24 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 1
+              - 0
+              code: 14
+            - &25 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 100
+              code: 44
+            - &26 !ruby/object:RPG::MoveCommand
+              parameters:
+              - -1
+              - 0
+              code: 14
+            - &27 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 19
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 2
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *19
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *20
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *21
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *22
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *23
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *24
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *25
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *26
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *27
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: wigglyfall
+            pitch: 100
+          indent: 2
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 11
+          - 66
+          indent: 2
+          code: 207
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 115
+        - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 2
           code: 0
@@ -1822,6 +1962,163 @@ root: !ruby/object:RPG::Map
           - "> > > >"
           indent: 1
           code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 11
+          - !ruby/object:RPG::MoveRoute
+            list:
+            - &28 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 100
+              code: 44
+            - &29 !ruby/object:RPG::MoveCommand
+              parameters:
+              - -1
+              - 0
+              code: 14
+            - &30 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 100
+              code: 44
+            - &31 !ruby/object:RPG::MoveCommand
+              parameters:
+              - -1
+              - 0
+              code: 14
+            - &32 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 100
+              code: 44
+            - &33 !ruby/object:RPG::MoveCommand
+              parameters:
+              - -1
+              - 0
+              code: 14
+            - &34 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 100
+              code: 44
+            - &35 !ruby/object:RPG::MoveCommand
+              parameters:
+              - -1
+              - 0
+              code: 14
+            - &36 !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 19
+            - &37 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 6
+              code: 15
+            - &38 !ruby/object:RPG::MoveCommand
+              parameters:
+              - !ruby/object:RPG::AudioFile
+                volume: 80
+                name: boingthing
+                pitch: 80
+              code: 44
+            - &39 !ruby/object:RPG::MoveCommand
+              parameters:
+              - 5
+              - 0
+              code: 14
+            - !ruby/object:RPG::MoveCommand
+              parameters: []
+              code: 0
+            skippable: false
+            repeat: false
+          indent: 2
+          code: 209
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *28
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *29
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *30
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *31
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *32
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *33
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *34
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *35
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *36
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *37
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *38
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - *39
+          indent: 2
+          code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 80
+            name: wigglyfall
+            pitch: 100
+          indent: 2
+          code: 250
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 11
+          - 66
+          indent: 2
+          code: 207
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 2
+          code: 115
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 2
