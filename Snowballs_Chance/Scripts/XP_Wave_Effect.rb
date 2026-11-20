@@ -86,8 +86,9 @@ class Sprite
   end
 end
 
-for Klass in [Game_Character, Game_Battler, Game_Picture]
-  class Klass
+for Complainer in [Game_Character, Game_Battler, Game_Picture]
+  class Complainer #keeps complaining because the multiples of the constant
+    #(who designed this shit?!)
     attr_accessor   :wave_amp
     attr_accessor   :wave_length
     attr_accessor   :wave_speed
@@ -100,6 +101,7 @@ for Klass in [Game_Character, Game_Battler, Game_Picture]
     end
   end
 end
+
 
 class Spriteset_Map
   alias wave_effect_upd update unless $@

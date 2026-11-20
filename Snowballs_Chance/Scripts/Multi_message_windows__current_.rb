@@ -258,7 +258,7 @@ class Game_Message
     # font details
     # overrides all defaults; leave nil to just use defaults (e.g. as above)
     @font_name = $defaultfont
-    @font_size = 20
+    @font_size = 16
     @font_color = nil
     
 

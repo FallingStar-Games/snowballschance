@@ -9,7 +9,7 @@
 # snack system still needs to use this!
 # When it comes to calculating values, you're on your own
 # current cooking system is all common events and scriptlets now so it hardly even needs this
-
+=begin
 class Cookcalc
 #under new system, this may only wind up being used for the snack system
   ResultHash = {
@@ -379,3 +379,4 @@ end
 
 
 end
+=end

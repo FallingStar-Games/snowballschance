@@ -11,7 +11,7 @@ def initialize
 font_fix_initialize
 $defaultfont =  ["BPixelDouble","PlopDump","Comic Sans MS"]# Font
 self.name = $defaultfont
-self.size = 20 # Size
+self.size = 16 # Size
 
 $defaultfonttype = self.name
 $defaultfontsize = self.size

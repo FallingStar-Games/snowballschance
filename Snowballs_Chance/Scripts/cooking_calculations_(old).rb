@@ -1,7 +1,7 @@
 #cooking calculations
 #the number returned is an armor entry in the database.
 # by Theo and lavendersiren
-
+=begin
 class Cookcalc
 
   ResultHash = {
@@ -300,3 +300,4 @@ end
 
 
 end
+=end

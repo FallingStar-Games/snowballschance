@@ -1,9 +1,8 @@
 -- A Snowball's Chance - Level 4 edition 3.0.9 --
 
-Install BPixelDouble and CodaHandwritingP before starting the game!
-Otherwise you'll have to deal with comic sans.
+If all works as expected, everything should work right out of the box.
 
-Doubleclick the Game.exe to run the game. That's the orange ball gear thing.
+Double-click the Game.exe to run the game. That's the red and gray ball thing.
 
 ---Controls---
 Directional keys: Standard movement
@@ -13,6 +12,7 @@ Action key: Examine, Talk to others
 A key: Toggle HUD
 S key: Collect water/??? water
 D key: Diary hotkey
+Shift: ??? action
 ESC: Menu
-ALT: Screenshot
+F5: Screenshot
 F12: Pause
