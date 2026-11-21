@@ -174,14 +174,14 @@
   # defaults for speech text
   SPEECH_FONT_COLOR = "#FFFFFF"
   SPEECH_FONT_NAME = $defaultfont
-  SPEECH_FONT_SIZE = 20
+  SPEECH_FONT_SIZE = 16
   
 
   
   # defaults for thought text
   THOUGHT_FONT_COLOR = "#333333"
   THOUGHT_FONT_NAME = ["CodaHandwritingP","BPixelDouble","PlopDump","Comic Sans MS"]
-  THOUGHT_FONT_SIZE = 20
+  THOUGHT_FONT_SIZE = 16
 
   # note that you can use an array of fonts for SPEECH_FONT_NAME, etc.
   # e.g. ['Komika Slim', 'Arial']
@@ -359,7 +359,7 @@ class Game_Message
  @name_box_width = 30           #Choose the width of the Name Box. default= 8  
  @name_box_height = 28        #Choose the height of the Name Box. default= 26
  @name_font_type = $defaultfont #Choose the Font Name (Case Sensitive) for Name Box
- @name_font_size = 20            #Choose the deafault Font Size for Name Box text
+ @name_font_size = 16          #Choose the deafault Font Size for Name Box text
  #@name_box_text_color= 3        #Choose the Text Color of the Name Box
  @name_box_skin = "mainskin"       #Choose the WindowSkin for the Name Box
  

@@ -375,6 +375,7 @@ class Scene_Load < Scene_File
         # Create an instance of the map sprite.
         map = Spriteset_Map.new
         $game_switches[2]=true #Allows Coda to Die
+        #Font.font_size = 16 #squishes it down # fix this later
         Graphics.transition(tran_in[1], folder + tran_in[0], tran_in[2])
         Graphics.freeze
         # Dispose sprite.
